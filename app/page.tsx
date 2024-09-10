@@ -1,6 +1,3 @@
-import DarkModeSwitch from "@/components/switch/DarkModeSwitch";
-import LangModeSwitch from "@/components/switch/LangModeSwitch";
-
 export default async function Home() {
   return (
     <div className="p-4">
