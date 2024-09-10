@@ -14,6 +14,10 @@ const config: Config = {
         primary: "#171717",
         secondary: "#F7F9FA",
       },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+      },
     },
   },
   plugins: [],

@@ -1,12 +1,15 @@
-import NavBar from "./nav/NavBar"
+import NavBar from "./nav/NavBar";
 
 export default function Header() {
   return (
-    <header>
-      <div>Euiclee</div>
+    <header className='flex justify-between items-center px-10 py-4'>
+      <div className='text-primary text-xs font-bold font-mono'>
+        Euiclee
+      </div>
       <NavBar />
-      <div>Resume</div>
+      <div className='text-primary text-xs font-bold font-mono'>
+        Resume
+      </div>
     </header>
   );
 }
-
