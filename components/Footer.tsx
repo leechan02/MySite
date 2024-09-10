@@ -7,7 +7,7 @@ export default function Footer() {
   const lastUpdateTime = getLastUpdateTime();
 
   return (
-    <div className='w-full px-6 sm:px-28 py-8 sm:py-16 bg-[#353535] rounded-t-[40px] flex-col justify-center items-center inline-flex'>
+    <footer className='w-full px-6 sm:px-28 py-8 sm:py-16 bg-[#353535] rounded-t-[40px] flex-col justify-center items-center inline-flex'>
       <div className='self-stretch flex-col justify-start items-center gap-10 flex'>
         <div className='self-stretch justify-between items-center inline-flex'>
           <div className='justify-start items-center gap-4 sm:gap-12 flex'>
@@ -58,6 +58,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

@@ -31,9 +31,9 @@ export default function RootLayout({
       <ReduxProvider>
         <ThemeProvider>
           <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
           >
-            {children}
+            <main className='flex-grow'>{children}</main>
             <Footer />
           </body>
         </ThemeProvider>
