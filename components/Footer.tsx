@@ -27,14 +27,14 @@ export default function Footer() {
               <div className="text-center text-white/50 text-[8px] font-medium font-[family-name:var(--font-geist-mono)] leading-[9.60px]">
                 CONTACT
               </div>
-              <div className='justify-start items-center gap-1 inline-flex'>
+              <div className='justify-start items-center gap-2 inline-flex'>
                 <FiPrinter className='w-4 h-4 text-white' />
                 <div className="text-center text-white text-xs font-medium font-[family-name:var(--font-geist-mono)] leading-[14.40px]">
                   Resume
                 </div>
               </div>
-              <div className='self-stretch justify-start items-center gap-1 inline-flex'>
-                <FiMail className='w-4 text-white' />
+              <div className='justify-start items-center gap-2 inline-flex'>
+                <FiMail className='w-4 h-4 text-white' />
                 <div className="text-center text-white text-xs font-medium font-[family-name:var(--font-geist-mono)] leading-[14.40px]">
                   lechan137@gmail.com
                 </div>
