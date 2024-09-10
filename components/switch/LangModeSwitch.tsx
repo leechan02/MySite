@@ -19,7 +19,7 @@ export default function LangModeSwitch() {
         isKorean ? "justify-end" : "justify-start"
       }`}
     >
-      <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-white font-bold text-xs font-[family-name:var(--font-geist-sans)]">
+      <div className="w-6 h-6 rounded-full bg-white/5 flex items-center justify-center text-primary font-bold text-xs font-[family-name:var(--font-geist-sans)]">
         {isKorean ? "Kr" : "En"}
       </div>
     </button>
