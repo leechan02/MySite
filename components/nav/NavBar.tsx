@@ -1,20 +1,21 @@
 "use client";
-
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "@/lib/redux/store";
+import { setNavItem } from "@/lib/redux/navSlice";
 
 interface NavItemProps {
   text: string;
   link: string;
-  onClick: () => void;
 }
 
-const NavItem = ({ text, link, onClick }: NavItemProps) => (
+const NavItem = ({ text, link }: NavItemProps) => (
   <Link href={link}>
     <div
       className={`w-[64px] py-2 rounded-full justify-center items-center flex cursor-pointer text-primary`}
-      onClick={onClick}
     >
       <div className='text-center text-xs font-semibold font-mono'>{text}</div>
     </div>
@@ -22,7 +23,18 @@ const NavItem = ({ text, link, onClick }: NavItemProps) => (
 );
 
 export default function NavBar() {
-  const [selected, setSelected] = useState("Work");
+  const dispatch = useDispatch();
+  const selected = useSelector((state: RootState) => state.nav.selectedItem);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    // Update selected item based on current path
+    if (pathname === "/") {
+      dispatch(setNavItem("Work"));
+    } else if (pathname === "/info") {
+      dispatch(setNavItem("Info"));
+    }
+  }, [pathname, dispatch]);
 
   return (
     <div className='p-1 bg-primary/5 rounded-full shadow border-2 border-primary/10 backdrop-blur-[15px] justify-start items-center gap-1 inline-flex relative'>
@@ -38,8 +50,8 @@ export default function NavBar() {
           damping: 30,
         }}
       />
-      <NavItem text='Work' link='/' onClick={() => setSelected("Work")} />
-      <NavItem text='Info' link='/info' onClick={() => setSelected("Info")} />
+      <NavItem text='Work' link='/' />
+      <NavItem text='Info' link='/info' />
     </div>
   );
 }
