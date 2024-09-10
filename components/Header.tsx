@@ -2,11 +2,11 @@ import NavBar from "./nav/NavBar"
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <div>Euiclee</div>
       <NavBar />
       <div>Resume</div>
-    </div>
+    </header>
   );
 }
 
