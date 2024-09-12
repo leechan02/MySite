@@ -15,7 +15,7 @@ interface NavItemProps {
 const NavItem = ({ text, link }: NavItemProps) => (
   <Link href={link}>
     <div
-      className={`w-[80px] py-2 rounded-full justify-center items-center flex cursor-pointer text-primary`}
+      className={`w-[80px] py-2 rounded-full justify-center items-center flex cursor-pointer text-foreground`}
     >
       <div className='text-center text-sm font-bold font-mono'>{text}</div>
     </div>
@@ -37,9 +37,9 @@ export default function NavBar() {
   }, [pathname, dispatch]);
 
   return (
-    <div className='p-1 bg-primary/5 rounded-full shadow border-2 border-primary/10 backdrop-blur-[15px] justify-start items-center gap-1 inline-flex relative'>
+    <div className='p-1 bg-foreground/5 rounded-full shadow border-2 border-foreground/10 backdrop-blur-[15px] justify-start items-center gap-1 inline-flex relative'>
       <motion.div
-        className='absolute w-[80px] h-[36px] bg-primary/5 rounded-full'
+        className='absolute w-[80px] h-[36px] bg-foreground opacity-5 rounded-full'
         initial={false}
         animate={{
           x: selected === "Work" ? 0 : 84,

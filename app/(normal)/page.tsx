@@ -4,10 +4,10 @@ export default async function Home() {
   return (
     <div className='flex-col justify-center items-center inline-flex gap-16'>
       <div className='flex flex-col justify-center items-center gap-2'>
-        <div className='font-mono text-primary text-3xl font-extrabold'>
+        <div className='font-mono text-foreground text-3xl font-extrabold'>
           I enjoy create something.
         </div>
-        <div className='font-mono text-primary/30 text-sm font-bold'>
+        <div className='font-mono text-foreground/30 text-sm font-bold'>
           Baeksu in Seoul.
         </div>
       </div>
