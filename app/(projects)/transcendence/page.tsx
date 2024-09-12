@@ -12,7 +12,7 @@ export default async function Transcendence() {
             42 Seoul Nov.2023-April.2024
           </div>
         </div>
-        <Image src='/transcendence.svg' alt='title image' width={800} height={500} />
+        <Image src='/image/transcendence.svg' alt='title image' width={800} height={500} />
         <div className="absolute -bottom-10 w-full h-60 bg-gradient-to-t from-white to-transparent"></div>
       </div>
     </div>
