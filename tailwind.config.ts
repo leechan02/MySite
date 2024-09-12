@@ -15,7 +15,7 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#171717",
+        primary: "#353535",
         secondary: "#F7F9FA",
         red: "#FF6057",
         green: "#28C841",
@@ -32,5 +32,6 @@ const config: Config = {
     },
   },
   plugins: [],
+  darkMode: "selector",
 };
 export default config;
