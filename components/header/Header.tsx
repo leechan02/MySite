@@ -1,3 +1,4 @@
+import Link from "next/link";
 import NavBar from "../nav/NavBar";
 
 export default function Header() {
@@ -10,7 +11,9 @@ export default function Header() {
         <NavBar />
       </div>
       <div className='text-foreground text-base font-bold font-mono w-1/3 flex justify-end'>
-        Resume
+        <Link href='/Resume(En).pdf' target='_blank' rel='noopener noreferrer'>
+          Resume
+        </Link>
       </div>
     </header>
   );
