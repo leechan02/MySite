@@ -34,8 +34,12 @@ export default function RootLayout({
           <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
           >
-            <Header />
-            <main className="flex-col justify-center items-center inline-flex py-10 flex-grow">{children}</main>
+            <div className="sticky top-0 z-50">
+              <Header />
+            </div>
+            <main className='flex-col justify-center items-center inline-flex py-10 flex-grow'>
+              {children}
+            </main>
             <Footer />
           </body>
         </ThemeProvider>
