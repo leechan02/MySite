@@ -1,3 +1,4 @@
+import { color } from "framer-motion";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -16,6 +17,10 @@ const config: Config = {
         red: "#FF6057",
         green: "#28C841",
         yellow: "#FEBC2E",
+        color1: "#FDCA6B",
+        color2: "#98BFBF",
+        color3: "#EEEBDE",
+        color4: "#3A82AF",
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
