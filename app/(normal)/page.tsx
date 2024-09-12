@@ -39,7 +39,7 @@ export default async function Home() {
           video='/video/webserv.mp4'
           bgColor='bg-color2'
           link='/webserv'
-          size="big"
+          size="small"
         />
         <ProjectBox
           title='transcendence'
@@ -48,7 +48,7 @@ export default async function Home() {
           video='/video/transcendence.mp4'
           bgColor='bg-color1'
           link='/transcendence'
-          size="small"
+          size="big"
         />
       </div>
     </div>
