@@ -8,7 +8,7 @@ export default async function Home() {
           I enjoy create something.
         </div>
         <div className='font-mono text-foreground/30 text-sm font-bold'>
-          Baeksu in Seoul.
+          Baeksu in Korea.
         </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
