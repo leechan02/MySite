@@ -20,7 +20,7 @@ export default function ProjectBoxSmall({title, description, date, video, bgColo
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='w-[480px] h-[320px] rounded-2xl drop-shadow-3xl overflow-hidden relative z-10'>
+      <div className='w-[280px] h-[320px] rounded-2xl drop-shadow-3xl overflow-hidden relative z-10'>
         <video
           className='w-full h-full object-cover'
           autoPlay
@@ -35,7 +35,7 @@ export default function ProjectBoxSmall({title, description, date, video, bgColo
       </div>
       {isHovered && (
         <div className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'>
-          <div className='flex flex-col justify-between items-start p-10 h-full'>
+          <div className='flex flex-col justify-between items-start p-8 h-full'>
             <div className="flex flex-col justify-center items-start gap-4">
               <MacButtons />
               <h2 className='text-4xl font-bold'>{title}</h2>

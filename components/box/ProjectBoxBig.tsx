@@ -35,7 +35,7 @@ export default function ProjectBoxBig({title, description, date, video, bgColor}
       </div>
       {isHovered && (
         <div className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'>
-          <div className='flex flex-col justify-between items-start p-10 h-full'>
+          <div className='flex flex-col justify-between items-start p-8 h-full'>
             <div className="flex flex-col justify-center items-start gap-4">
               <MacButtons />
               <h2 className='text-4xl font-bold'>{title}</h2>
