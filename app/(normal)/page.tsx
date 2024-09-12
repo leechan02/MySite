@@ -12,7 +12,7 @@ export default async function Home() {
           Baeksu in Seoul.
         </div>
       </div>
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-16'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
         <ProjectBoxBig
           title='bookmoeum'
           description='Book Search Web site.'
@@ -40,7 +40,7 @@ export default async function Home() {
           link='/webserv'
         />
         <ProjectBoxBig
-          title='ft_transcendence'
+          title='transcendence'
           description='SPA Ping Pong Web site.'
           date='42 Seoul Nov.2023-April.2024'
           video='/video/transcendence.mp4'
