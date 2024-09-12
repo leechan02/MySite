@@ -30,7 +30,7 @@ export default function LangModeSwitch() {
         }}
       >
         <div 
-          className="w-6 h-6 rounded-full bg-primary/5 flex items-center justify-center text-primary font-semibold text-xs font-mono"
+          className="w-6 h-6 rounded-full bg-primary/5 flex items-center justify-center text-foreground font-semibold text-xs font-mono"
         >
           {isKorean ? "Kr" : "En"}
         </div>
