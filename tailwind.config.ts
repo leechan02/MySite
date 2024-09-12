@@ -13,6 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary: "#171717",
         secondary: "#F7F9FA",
+        red: "#FF6057",
+        green: "#28C841",
+        yellow: "#FEBC2E",
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
