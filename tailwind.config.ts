@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        "3xl": "0 54px 60px 0px rgba(0, 0, 0, 0.25)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -23,8 +26,8 @@ const config: Config = {
         color4: "#3A82AF",
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)'],
-        mono: ['var(--font-geist-mono)'],
+        sans: ["var(--font-geist-sans)"],
+        mono: ["var(--font-geist-mono)"],
       },
     },
   },

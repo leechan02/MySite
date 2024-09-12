@@ -11,7 +11,13 @@ interface ProjectBoxBigProps {
   bgColor: string;
 }
 
-export default function ProjectBoxBig({title, description, date, video, bgColor}: ProjectBoxBigProps) {
+export default function ProjectBoxBig({
+  title,
+  description,
+  date,
+  video,
+  bgColor,
+}: ProjectBoxBigProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -20,7 +26,10 @@ export default function ProjectBoxBig({title, description, date, video, bgColor}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='w-[480px] h-[320px] rounded-2xl drop-shadow-3xl overflow-hidden relative z-10'>
+      <div
+        className='w-[480px] h-[320px] rounded-2xl overflow-hidden relative z-10'
+        style={{ filter: "drop-shadow(0 54px 60px rgba(0, 0, 0, 0.25))" }}
+      >
         <video
           className='w-full h-full object-cover'
           autoPlay
@@ -36,11 +45,11 @@ export default function ProjectBoxBig({title, description, date, video, bgColor}
       {isHovered && (
         <div className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'>
           <div className='flex flex-col justify-between items-start p-8 h-full'>
-            <div className="flex flex-col justify-center items-start gap-4">
+            <div className='flex flex-col justify-center items-start gap-4'>
               <MacButtons />
               <h2 className='text-4xl font-bold'>{title}</h2>
             </div>
-            <div className="flex flex-col justify-center items-start gap-1">
+            <div className='flex flex-col justify-center items-start gap-1'>
               <p className='text-xl font-bold'>{description}</p>
               <p className='text-xs text-white/70'>{date}</p>
             </div>
