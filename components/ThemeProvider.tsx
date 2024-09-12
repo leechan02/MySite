@@ -23,7 +23,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, [dispatch]);
 
   useEffect(() => {
-    document.body.classList.toggle('dark', isDarkMode);
+    document.documentElement.classList.toggle('dark', isDarkMode);
   }, [isDarkMode]);
 
   return <>{children}</>;
