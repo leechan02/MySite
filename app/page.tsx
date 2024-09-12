@@ -9,14 +9,14 @@ export default async function Home() {
           title='bookmoeum'
           description='Book Search Web site.'
           date='Seoul Aug.2024'
-          video='/video/transcendence.mp4'
+          video='/video/bookmoeum.mp4'
           bgColor='bg-color3'
         />
         <ProjectBoxSmall
           title='MySite'
           description='Portfolio Web site.'
           date='Seoul Sep.2024'
-          video='/video/transcendence.mp4'
+          video='/video/mysite.mp4'
           bgColor='bg-color4'
         />
       </div>
@@ -25,7 +25,7 @@ export default async function Home() {
           title='webserv'
           description='Build webserver with c++98.'
           date='42 Seoul Jul.2023-Nov.2023'
-          video='/video/transcendence.mp4'
+          video='/video/webserv.mp4'
           bgColor='bg-color2'
         />
         <ProjectBoxBig
