@@ -11,6 +11,7 @@ export default async function Home() {
           date='Seoul Aug.2024'
           video='/video/bookmoeum.mp4'
           bgColor='bg-color3'
+          link="/bookmoeum"
         />
         <ProjectBoxSmall
           title='MySite'
@@ -18,6 +19,7 @@ export default async function Home() {
           date='Seoul Sep.2024'
           video='/video/mysite.mp4'
           bgColor='bg-color4'
+          link="/mysite"
         />
       </div>
       <div className='flex justify-center items-center gap-16'>
@@ -27,6 +29,7 @@ export default async function Home() {
           date='42 Seoul Jul.2023-Nov.2023'
           video='/video/webserv.mp4'
           bgColor='bg-color2'
+          link="/webserv"
         />
         <ProjectBoxBig
           title='ft_transcendence'
@@ -34,6 +37,7 @@ export default async function Home() {
           date='42 Seoul Nov.2023-April.2024'
           video='/video/transcendence.mp4'
           bgColor='bg-color1'
+          link="/transcendence"
         />
       </div>
     </div>

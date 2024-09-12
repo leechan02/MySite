@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import MacButtons from "../button/MacButtons";
+import Link from "next/link";
 
 interface ProjectBoxBigProps {
   title: string;
@@ -9,6 +10,7 @@ interface ProjectBoxBigProps {
   date: string;
   video: string;
   bgColor: string;
+  link: string;
 }
 
 export default function ProjectBoxBig({
@@ -17,6 +19,7 @@ export default function ProjectBoxBig({
   date,
   video,
   bgColor,
+  link,
 }: ProjectBoxBigProps) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -43,18 +46,20 @@ export default function ProjectBoxBig({
         </video>
       </div>
       {isHovered && (
-        <div className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'>
-          <div className='flex flex-col justify-between items-start p-8 h-full'>
-            <div className='flex flex-col justify-center items-start gap-4'>
-              <MacButtons />
-              <h2 className='text-4xl font-bold'>{title}</h2>
-            </div>
-            <div className='flex flex-col justify-center items-start gap-1'>
-              <p className='text-xl font-bold'>{description}</p>
-              <p className='text-xs text-white/70'>{date}</p>
+        <Link href={link}>
+          <div className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'>
+            <div className='flex flex-col justify-between items-start p-8 h-full'>
+              <div className='flex flex-col justify-center items-start gap-4'>
+                <MacButtons />
+                <h2 className='text-4xl font-bold'>{title}</h2>
+              </div>
+              <div className='flex flex-col justify-center items-start gap-1'>
+                <p className='text-xl font-bold'>{description}</p>
+                <p className='text-xs text-white/70'>{date}</p>
+              </div>
             </div>
           </div>
-        </div>
+        </Link>
       )}
     </div>
   );
