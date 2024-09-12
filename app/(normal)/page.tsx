@@ -12,7 +12,7 @@ export default async function Home() {
           Baeksu in Seoul.
         </div>
       </div>
-      <div className='flex flex-col sm:flex-row justify-center items-center gap-16'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-16'>
         <ProjectBoxBig
           title='bookmoeum'
           description='Book Search Web site.'
@@ -30,7 +30,7 @@ export default async function Home() {
           link='/mysite'
         />
       </div>
-      <div className='flex flex-col sm:flex-row justify-center items-center gap-16'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-16'>
         <ProjectBoxSmall
           title='webserv'
           description='Build webserver with c++98.'
