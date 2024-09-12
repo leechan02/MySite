@@ -35,7 +35,7 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
           >
             <ProjectHeader />
-            <main className='flex-col justify-center items-center inline-flex py-10 flex-grow'>
+            <main className='flex-col justify-center items-center inline-flex flex-grow'>
               {children}
             </main>
             <Footer />
