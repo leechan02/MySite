@@ -7,7 +7,7 @@ export default async function Home() {
         <div className='font-mono text-foreground text-3xl font-extrabold'>
           I enjoy create something.
         </div>
-        <div className='font-mono text-foreground/30 text-sm font-bold'>
+        <div className='font-mono text-foreground opacity-30 text-sm font-bold'>
           Baeksu in Korea.
         </div>
       </div>
