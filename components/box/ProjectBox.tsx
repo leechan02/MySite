@@ -1,36 +1,48 @@
 "use client";
-
 import React, { useState } from "react";
 import MacButtons from "../button/MacButtons";
 import Link from "next/link";
 
-interface ProjectBoxBigProps {
+interface ProjectBoxProps {
   title: string;
   description: string;
   date: string;
   video: string;
   bgColor: string;
   link: string;
+  size: 'small' | 'big';
 }
 
-export default function ProjectBoxBig({
+export default function ProjectBox({
   title,
   description,
   date,
   video,
   bgColor,
   link,
-}: ProjectBoxBigProps) {
+  size
+}: ProjectBoxProps) {
   const [isHovered, setIsHovered] = useState(false);
+
+  const sizeClasses = {
+    small: {
+      container: "w-[320px] xl:w-[400px] h-[600px]",
+      video: "w-[240px] xl:w-[280px] h-[400px] xl:h-[360px]"
+    },
+    big: {
+      container: "w-[320px] lg:w-[640px] xl:w-[800px] h-[480px] lg:h-[600px]",
+      video: "w-[280px] lg:w-[480px] xl:w-[640px] h-[160px] lg:h-[280px] xl:h-[360px]"
+    }
+  };
 
   return (
     <div
-      className={`w-[320px] lg:w-[640px] xl:w-[800px] h-[480px] lg:h-[600px] rounded-[40px] shadow-md flex justify-center items-center ${bgColor} relative overflow-hidden`}
+      className={`${sizeClasses[size].container} rounded-[40px] shadow-md flex justify-center items-center ${bgColor} relative overflow-hidden`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className='w-[280px] lg:w-[480px] xl:w-[640px] h-[160px] lg:h-[280px] xl:h-[360px] rounded-2xl overflow-hidden relative z-10'
+        className={`${sizeClasses[size].video} rounded-2xl overflow-hidden relative z-10`}
         style={{ filter: "drop-shadow(0 54px 60px rgba(0, 0, 0, 0.25))" }}
       >
         <video

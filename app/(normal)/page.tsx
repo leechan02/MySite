@@ -1,5 +1,4 @@
-import ProjectBoxBig from "@/components/box/ProjectBoxBig";
-import ProjectBoxSmall from "@/components/box/ProjectBoxSmall";
+import ProjectBox from "@/components/box/ProjectBox";
 
 export default async function Home() {
   return (
@@ -13,39 +12,43 @@ export default async function Home() {
         </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
-        <ProjectBoxBig
+        <ProjectBox
           title='bookmoeum'
           description='Book Search Web site.'
           date='Seoul Aug.2024'
           video='/video/bookmoeum.mp4'
           bgColor='bg-color3'
           link='/bookmoeum'
+          size="big"
         />
-        <ProjectBoxSmall
+        <ProjectBox
           title='MySite'
           description='Portfolio Web site.'
           date='Seoul Sep.2024'
           video='/video/mysite.mp4'
           bgColor='bg-color4'
           link='/mysite'
+          size="small"
         />
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-16'>
-        <ProjectBoxSmall
+        <ProjectBox
           title='webserv'
           description='Build webserver with c++98.'
           date='42 Seoul Jul.2023-Nov.2023'
           video='/video/webserv.mp4'
           bgColor='bg-color2'
           link='/webserv'
+          size="big"
         />
-        <ProjectBoxBig
+        <ProjectBox
           title='transcendence'
           description='SPA Ping Pong Web site.'
           date='42 Seoul Nov.2023-April.2024'
           video='/video/transcendence.mp4'
           bgColor='bg-color1'
           link='/transcendence'
+          size="small"
         />
       </div>
     </div>
