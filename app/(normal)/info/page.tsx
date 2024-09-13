@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FiGithub, FiMail, FiYoutube } from "react-icons/fi";
 import About from "./_components/About";
+import Education from "./_components/Education";
 
 export default async function Info() {
   return (
@@ -27,6 +28,7 @@ export default async function Info() {
       </h1>
       <About />
       <div className="w-[900px] border border-foreground opacity-20" />
+      <Education />
     </div>
   );
 }
