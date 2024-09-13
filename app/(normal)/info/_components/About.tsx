@@ -1,3 +1,4 @@
+import Chip from '@/components/chip/Chip';
 import React from 'react';
 
 export default function About() {
@@ -7,6 +8,7 @@ export default function About() {
         I enjoy defining problems and finding solutions <br /> to make the world
         a bit more convenient.
       </h1>
+      <Chip label='ABOUT ME' />
     </div>
   );
 }

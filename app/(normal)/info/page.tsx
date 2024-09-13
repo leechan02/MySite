@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FiGithub, FiMail, FiYoutube } from "react-icons/fi";
+import About from "./_components/About";
 
 export default async function Info() {
   return (
@@ -20,6 +21,7 @@ export default async function Info() {
           </Link>
         </div>
       </div>
+      <About />
     </div>
   );
 }
