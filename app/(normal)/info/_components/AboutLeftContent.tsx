@@ -20,7 +20,7 @@ export default function AboutLeftContent() {
           development to address real-world challenges.
         </div>
       </div>
-      <div className='relative w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
+      <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
           src='/image/profile.jpg'
           alt='profile'
@@ -45,7 +45,7 @@ export default function AboutLeftContent() {
           others can easily understand.
         </div>
       </div>
-      <div className='relative w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
+      <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
           src='/image/street.jpeg'
           alt='profile'

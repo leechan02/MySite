@@ -5,7 +5,7 @@ import Education from "./_components/Education";
 
 export default async function Info() {
   return (
-    <div className='flex flex-col justify-center items-center gap-16 px-16'>
+    <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>
         <h1 className='text-3xl font-bold font-mono text-foreground'>
           Hello I'm Euichan Lee

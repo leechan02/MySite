@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function AboutRightContent() {
   return (
     <div className='flex flex-col justify-center items-center gap-16'>
-      <div className='relative w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
+      <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
           src='/image/mountain.jpeg'
           alt='profile'
@@ -29,7 +29,7 @@ export default function AboutRightContent() {
           using Next.js in just two weeks.
         </div>
       </div>
-      <div className='relative w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
+      <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
           src='/image/himalaya.jpeg'
           alt='profile'
