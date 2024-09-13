@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className='flex flex-col justify-center items-start w-[640px] lg:w-[900px] gap-4'>
       <Chip label='ABOUT ME' />
-      <div className='flex justify-center items-center gap-16'>
+      <div className='flex flex-col md:flex-row justify-center items-center gap-16'>
         <AboutLeftContent />
         <AboutRightContent />
       </div>

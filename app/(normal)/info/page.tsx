@@ -22,14 +22,14 @@ export default async function Info() {
           </Link>
         </div>
       </div>
-      <h1 className='text-3xl font-black font-mono text-foreground text-center'>
-        I enjoy defining problems and finding solutions <br /> to make the world
-        a bit more convenient.
+      <h1 className='w-[640px] lg:w-[900px] text-xl sm:text-3xl font-black font-mono text-foreground text-center px-2'>
+        I enjoy defining problems and finding solutions to make the world a bit
+        more convenient.
       </h1>
       <About />
-      <div className="w-[900px] border border-foreground opacity-10" />
-      <Education />
-      <div className="w-[900px] border border-foreground opacity-10" />
+      <div className='w-[640px] lg:w-[900px] border border-foreground opacity-10' />
+      {/* <Education /> */}
+      {/* <div className='w-[900px] border border-foreground opacity-10' /> */}
     </div>
   );
 }
