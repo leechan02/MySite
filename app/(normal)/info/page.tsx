@@ -26,6 +26,7 @@ export default async function Info() {
         a bit more convenient.
       </h1>
       <About />
+      <div className="w-[900px] border border-foreground opacity-20" />
     </div>
   );
 }
