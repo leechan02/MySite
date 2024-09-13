@@ -5,9 +5,9 @@ import AboutRightContent from "./AboutRightContent";
 
 export default function About() {
   return (
-    <div className='flex flex-col justify-center items-start w-[640px] lg:w-[900px] gap-4'>
+    <div className='flex flex-col justify-center items-start sm:w-[640px] lg:w-[900px] gap-4'>
       <Chip label='ABOUT ME' />
-      <div className='flex flex-col md:flex-row justify-center items-center gap-16'>
+      <div className='flex flex-col sm:flex-row justify-center items-center gap-10 lg:gap-[100px]'>
         <AboutLeftContent />
         <AboutRightContent />
       </div>

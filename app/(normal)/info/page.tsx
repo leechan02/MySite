@@ -7,7 +7,7 @@ export default async function Info() {
   return (
     <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>
-        <h1 className='text-3xl font-bold font-mono text-foreground'>
+        <h1 className='text-xl sm:text-3xl font-bold font-mono text-foreground'>
           Hello I'm Euichan Lee
         </h1>
         <div className='flex justify-center items-center gap-10'>
@@ -27,7 +27,7 @@ export default async function Info() {
         more convenient.
       </h1>
       <About />
-      <div className='w-[320px] md:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
+      <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
       {/* <Education /> */}
       {/* <div className='w-[900px] border border-foreground opacity-10' /> */}
     </div>

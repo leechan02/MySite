@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutLeftContent() {
   return (
-    <div className='flex flex-col justify-center items-center gap-16'>
+    <div className='flex flex-col justify-center items-center gap-16 w-[300px] lg:w-[400px]'>
       <div className='flex flex-col justify-center items-start gap-4'>
         <div className='text-sm font-mono text-foreground font-bold'>
           My background in Computer Science
