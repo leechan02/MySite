@@ -3,7 +3,7 @@ import ProjectBox from "@/components/box/ProjectBox";
 export default async function Home() {
   return (
     <div className='flex-col justify-center items-center inline-flex gap-16'>
-      <div className='flex flex-col justify-center items-center gap-2'>
+      <div className='flex flex-col justify-center items-center gap-2 px-4 text-center'>
         <div className='font-mono text-foreground text-3xl font-extrabold'>
           I enjoy create something.
         </div>
