@@ -17,12 +17,12 @@ export default function AboutRightContent() {
         </div>
         <div className='text-xs font-mono text-foreground opacity-50'>
           I have a lot of curiosity and a strong desire to learn. The more I
-          study, the more I realize how much I don’t know. Since I've had less
+          study, the more I realize how much I don’t know. Since I&apos;ve had less
           time to study than others, I’ve worked even harder to catch up.
         </div>
         <div className='text-xs font-mono text-foreground opacity-50'>
-          Through this, I've learned that while things can be difficult, nothing
-          is impossible. I've solved problems, completed over 300 code reviews,
+          Through this, I&apos;ve learned that while things can be difficult, nothing
+          is impossible. I&apos;ve solved problems, completed over 300 code reviews,
           and written over 10,000 lines of code in a single project. This has
           made me unafraid of learning new technologies. Despite having no prior
           experience with frameworks like React or Next.js, I built a website

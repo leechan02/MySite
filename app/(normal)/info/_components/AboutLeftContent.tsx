@@ -35,7 +35,7 @@ export default function AboutLeftContent() {
         <div className='text-xs font-mono text-foreground opacity-50'>
           I appreciate beauty, which is why I prioritize writing clean,
           understandable, and simple code. While optimization is important, I
-          don't believe complex code is always better-performing.
+          don&apos;t believe complex code is always better-performing.
         </div>
         <div className='text-xs font-mono text-foreground opacity-50'>
           As a developer, I value communication skills, especially since

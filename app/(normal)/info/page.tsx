@@ -7,7 +7,7 @@ export default async function Info() {
     <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>
         <h1 className='text-xl sm:text-3xl font-bold font-mono text-foreground'>
-          Hello I'm Euichan Lee
+          Hello I&apos;m Euichan Lee
         </h1>
         <div className='flex justify-center items-center gap-10'>
           <Link href='mailto:lechan1317@gmail.com'>
