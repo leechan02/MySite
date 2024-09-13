@@ -24,8 +24,8 @@ export default function AboutLeftContent() {
         <Image
           src='/image/profile.jpg'
           alt='profile'
-          layout='fill'
-          objectFit='cover'
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
       <div className='flex flex-col justify-center items-start gap-4'>
@@ -47,10 +47,10 @@ export default function AboutLeftContent() {
       </div>
       <div className='relative w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
-          src='/image/profile.jpg'
+          src='/image/street.jpeg'
           alt='profile'
-          layout='fill'
-          objectFit='cover'
+          fill
+          style={{ objectFit: "cover" }}
         />
       </div>
     </div>
