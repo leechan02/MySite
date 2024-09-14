@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Etc() {
   return (
-    <div className='flex flex-col justify-center items-start sm:w-[640px] lg:w-[900px] gap-4'>
+    <div className='flex flex-col justify-center items-start sm:w-[640px] lg:w-[900px] gap-8'>
       <Chip label='ETC' />
       <div className='flex justify-center items-center gap-2 font-mono text-foreground'>
         <div className='text-sm font-bold'>OPIc AL</div>
