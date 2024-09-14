@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default async function Transcendence() {
   return (
     <div className='flex flex-col justify-center items-center'>
