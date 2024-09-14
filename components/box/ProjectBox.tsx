@@ -1,8 +1,9 @@
 "use client";
-
+import React, { useState, useEffect } from 'react';
 import MacButtons from "../button/MacButtons";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 
 interface ProjectBoxProps {
   title: string;
@@ -23,6 +24,22 @@ export default function ProjectBox({
   link,
   size,
 }: ProjectBoxProps) {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [ref, inView] = useInView({
+    threshold: 0.7,
+  });
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsSmallScreen(window.innerWidth < 640); // 640px is the 'sm' breakpoint in Tailwind
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   const sizeClasses = {
     small: {
       container: "w-[320px] xl:w-[400px] h-[600px]",
@@ -37,8 +54,9 @@ export default function ProjectBox({
 
   return (
     <motion.div
+      ref={ref}
       className={`${sizeClasses[size].container} rounded-[40px] shadow-md flex justify-center items-center ${bgColor} relative overflow-hidden`}
-      whileHover={{ y: -10 }}
+      whileHover={{ y: isSmallScreen ? 0 : -10 }}
       transition={{ duration: 0.3 }}
     >
       <div
@@ -61,6 +79,7 @@ export default function ProjectBox({
         <motion.div
           className='absolute inset-0 bg-primary bg-opacity-50 flex flex-col justify-center items-start text-white font-mono z-20'
           initial={{ opacity: 0 }}
+          animate={{ opacity: (isSmallScreen && inView) || (!isSmallScreen && false) ? 1 : 0 }}
           whileHover={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
