@@ -5,7 +5,7 @@ import Education from "./_components/Education";
 import Skills from "./_components/Skills";
 import Etc from "./_components/Etc";
 
-export default async function Info() {
+export default function Info() {
   return (
     <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>
