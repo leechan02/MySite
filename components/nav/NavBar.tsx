@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -6,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/lib/redux/store";
 import { setNavItem } from "@/lib/redux/navSlice";
+import { useLocale } from "next-intl";
 
 interface NavItemProps {
   text: string;
@@ -26,15 +28,19 @@ export default function NavBar() {
   const dispatch = useDispatch();
   const selected = useSelector((state: RootState) => state.nav.selectedItem);
   const pathname = usePathname();
+  const locale = useLocale();
 
   useEffect(() => {
+    // Extract the path without the language prefix
+    const path = pathname.replace(new RegExp(`^/(${locale})`), '');
+
     // Update selected item based on current path
-    if (pathname === "/") {
+    if (path === "" || path === "/") {
       dispatch(setNavItem("Work"));
-    } else if (pathname === "/info") {
+    } else if (path === "/info") {
       dispatch(setNavItem("Info"));
     }
-  }, [pathname, dispatch]);
+  }, [pathname, dispatch, locale]);
 
   return (
     <div className='p-1 bg-foreground/5 rounded-full shadow border-2 border-foreground/10 backdrop-blur-[15px] justify-start items-center gap-1 inline-flex relative'>
@@ -50,8 +56,8 @@ export default function NavBar() {
           damping: 30,
         }}
       />
-      <NavItem text='Work' link='/' />
-      <NavItem text='Info' link='/info' />
+      <NavItem text='Work' link={`/${locale}`} />
+      <NavItem text='Info' link={`/${locale}/info`} />
     </div>
   );
 }

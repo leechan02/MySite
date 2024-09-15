@@ -1,15 +1,25 @@
 "use client";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleLang } from "@/lib/redux/langSlice";
-import { RootState } from "@/lib/redux/store";
 import { motion } from "framer-motion";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function LangModeSwitch() {
-  const dispatch = useDispatch();
-  const isKorean = useSelector((state: RootState) => state.lang.isKorean);
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const isKorean = locale === "ko";
   
   const handleToggle = () => {
-    dispatch(toggleLang());
+    const nextLocale = locale === "en" ? "ko" : "en";
+    
+    // 현재 경로에서 첫 번째 부분(언어)을 제외한 나머지 경로를 가져옵니다.
+    const newPathname = pathname.split('/').slice(2).join('/');
+    
+    // 새로운 경로를 생성합니다. 새 언어 + 현재 경로
+    const newPath = `/${nextLocale}${newPathname ? `/${newPathname}` : ''}`;
+    
+    router.replace(newPath);
   };
 
   return (

@@ -1,0 +1,13 @@
+{
+  "title": "Euiclee",
+  "description": "Welcome to Euiclee's personal website!",
+  "header": {
+    "home": "Home",
+    "projects": "Projects",
+    "info": "Info"
+  },
+  "home": {
+    "mainTitle": "I enjoy create something.",
+    "subTitle": "Baeksu in Korea."
+  }
+}

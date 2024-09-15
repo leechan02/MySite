@@ -1,14 +1,18 @@
+"use client";
 import ProjectBox from "@/components/box/ProjectBox";
+import { useTranslations } from "next-intl";
 
 export default async function Home() {
+  const t = useTranslations('home');
+
   return (
     <div className='flex-col justify-center items-center inline-flex gap-16'>
       <div className='flex flex-col justify-center items-center gap-2 px-4 text-center'>
         <div className='font-mono text-foreground text-3xl font-extrabold'>
-          I enjoy create something.
+          {t('mainTitle')}
         </div>
         <div className='font-mono text-foreground opacity-30 text-sm font-bold'>
-          Baeksu in Korea.
+          {t('subTitle')}
         </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>

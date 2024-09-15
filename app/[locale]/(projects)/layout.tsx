@@ -5,28 +5,43 @@ import { ReduxProvider } from "@/lib/redux/provider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import ProjectHeader from "@/components/header/ProjectHeader";
+import { notFound } from "next/navigation";
 
 const geistSans = localFont({
-  src: "../fonts/GeistVF.woff",
+  src: "../../fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
-  src: "../fonts/GeistMonoVF.woff",
+  src: "../../fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+export function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "ko" }];
+}
 
 export const metadata: Metadata = {
   title: "Euiclee",
   description: "Welcome to Euiclee's personal website!",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  let messages;
+  try {
+    messages = (await import(`../../../messages/${locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
+
   return (
     <html lang='en'>
       <ReduxProvider>
