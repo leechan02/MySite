@@ -4,8 +4,10 @@ import About from "./_components/About";
 import Education from "./_components/Education";
 import Skills from "./_components/Skills";
 import Etc from "./_components/Etc";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Info() {
+export default function Info({ params: { locale } }: { params: { locale: string } }) {
+  unstable_setRequestLocale(locale);
   return (
     <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>

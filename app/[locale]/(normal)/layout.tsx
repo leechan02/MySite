@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/header/Header";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
 const geistSans = localFont({
   src: "../../fonts/GeistVF.woff",
@@ -35,6 +36,8 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: {locale: string};
 }>) {
+  unstable_setRequestLocale(locale);
+
   let messages;
   try {
     messages = (await import(`../../../messages/${locale}.json`)).default;
