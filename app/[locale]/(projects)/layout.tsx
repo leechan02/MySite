@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import ProjectHeader from "@/components/header/ProjectHeader";
 import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = localFont({
   src: "../../fonts/GeistVF.woff",
@@ -43,20 +44,22 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang='en'>
-      <ReduxProvider>
-        <ThemeProvider>
-          <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
-          >
-            <ProjectHeader />
-            <main className='flex-col justify-center items-center inline-flex flex-grow'>
-              {children}
-            </main>
-            <Footer />
-          </body>
-        </ThemeProvider>
-      </ReduxProvider>
+    <html lang={locale}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        <ReduxProvider>
+          <ThemeProvider>
+            <body
+              className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
+            >
+              <ProjectHeader />
+              <main className='flex-col justify-center items-center inline-flex flex-grow'>
+                {children}
+              </main>
+              <Footer />
+            </body>
+          </ThemeProvider>
+        </ReduxProvider>
+      </NextIntlClientProvider>
     </html>
   );
 }

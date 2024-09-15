@@ -2,7 +2,7 @@
 import ProjectBox from "@/components/box/ProjectBox";
 import { useTranslations } from "next-intl";
 
-export default async function Home() {
+export default function Home() {
   const t = useTranslations('home');
 
   return (
