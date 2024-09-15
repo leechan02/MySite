@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Education() {
   return (
-    <div className='flex flex-col justify-center items-start w-full max-w-[320px] sm:max-w-[640px] lg:max-w-[900px] gap-8 sm:gap-16'>
+    <div className='flex flex-col justify-center items-start w-[300px] sm:w-[640px] lg:w-[900px] gap-8 sm:gap-16'>
       <Chip label='EDUCATION' />
       <div className='flex flex-col gap-8 sm:gap-16 w-full'>
         <div className='flex flex-col sm:flex-row sm:justify-between items-start font-mono text-foreground w-full gap-4'>
