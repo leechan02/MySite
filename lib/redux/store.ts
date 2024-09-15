@@ -1,13 +1,11 @@
 // lib/redux/store.ts (update)
 import { configureStore } from '@reduxjs/toolkit';
 import themeReducer from './themeSlice';
-import langReducer from './langSlice';
 import navReducer from './navSlice';
 
 export const store = configureStore({
   reducer: {
     theme: themeReducer,
-    lang: langReducer,
     nav: navReducer,
   },
 });
