@@ -17,13 +17,13 @@ export default async function MySite({
         link='https://github.com/leechan02/MySite'
         image='/image/mysite.png'
         project='mysite.content'
-        brColor='border-color3'
+        brColor='border-color4'
       />
       <section id='overview'>
         <Overview project='mysite.overview' />
       </section>
       <section id='highlights'>
-        <Highlights project='mysite.highlights' bgColor='bg-color3' />
+        <Highlights project='mysite.highlights' bgColor='bg-color4' />
       </section>
       <TableOfContents sections={["Overview", "Highlights"]} />
     </div>

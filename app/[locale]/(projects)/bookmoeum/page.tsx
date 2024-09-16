@@ -17,14 +17,14 @@ export default async function Bookmoeum({
         link='https://github.com/leechan02/Bookmoeum'
         image='/image/bookmoeum.png'
         project='bookmoeum.content'
-        brColor='border-color4'
+        brColor='border-color3'
         deploy="https://www.bookmoeum.com/"
       />
       <section id='overview'>
         <Overview project='bookmoeum.overview' />
       </section>
       <section id='highlights'>
-        <Highlights project='bookmoeum.highlights' bgColor='bg-color4' />
+        <Highlights project='bookmoeum.highlights' bgColor='bg-color3' />
       </section>
       <TableOfContents sections={["Overview", "Highlights"]} />
     </div>
