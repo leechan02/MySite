@@ -5,6 +5,9 @@ import { ReduxProvider } from "@/lib/redux/provider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import Footer from "@/components/Footer";
 import ProjectHeader from "@/components/header/ProjectHeader";
+import { unstable_setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
 
 const geistSans = localFont({
   src: "../../fonts/GeistVF.woff",
@@ -18,6 +21,10 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
+export function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "ko" }];
+}
+
 export const metadata: Metadata = {
   title: "Euiclee",
   description: "Welcome to Euiclee's personal website!",
@@ -25,12 +32,23 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
+  unstable_setRequestLocale(locale);
+
+  let messages;
+  try {
+    messages = (await import(`../../../messages/${locale}.json`)).default;
+  } catch (error) {
+    notFound();
+  }
 
   return (
-    <html lang="en">
+    <html lang={locale}>
+      <NextIntlClientProvider locale={locale} messages={messages}>
         <ReduxProvider>
           <ThemeProvider>
             <body
@@ -44,6 +62,7 @@ export default async function RootLayout({
             </body>
           </ThemeProvider>
         </ReduxProvider>
+      </NextIntlClientProvider>
     </html>
   );
 }

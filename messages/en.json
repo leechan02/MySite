@@ -9,5 +9,11 @@
   "home": {
     "mainTitle": "I enjoy create something.",
     "subTitle": "Baeksu in Korea."
+  },
+  "webserv": {
+    "title": "Webserv",
+    "date": "42 Seoul July 2023",
+    "link": "https://github.com/Aprilistic/webserv",
+    "image": "/image/webserv.png"
   }
 }

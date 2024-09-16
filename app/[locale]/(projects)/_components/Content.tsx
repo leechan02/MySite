@@ -1,13 +1,23 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub } from "react-icons/fi";
 
-export default function Content() {
+import { useTranslations } from "next-intl";
+
+interface ContentProps {
+  locale: string;
+  project: string;
+}
+
+export default function Content({ locale, project }: ContentProps) {
+  const t = useTranslations(project);
+
   return (
     <div className="flex flex-col gap-10 w-full">
       <div className='flex flex-col text-center gap-4'>
-        <h1 className='text-5xl font-bold'>Webserv</h1>
-        <div className='font-bold opacity-50'>42 Seoul July 2023</div>
+        <h1 className='text-5xl font-bold'>{t('title')}</h1>
+        <div className='font-bold opacity-50'>{t('date')}</div>
         <div className='flex justify-center items-center gap-10'>
           <Link href='https://github.com/Aprilistic/webserv' target='_blank'>
             <FiGithub className='inline text-foreground' size={20} />
