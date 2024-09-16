@@ -22,7 +22,7 @@ export default function SkillPopup({
       onClick={onClose}
     >
       <motion.div
-        className='bg-foreground/5 shadow border-2 border-foreground/10 rounded-[40px] backdrop-blur-[15px] p-6 w-full max-w-md font-mono'
+        className='bg-foreground/5 shadow border-2 border-foreground/10 rounded-[40px] backdrop-blur-[15px] p-6 px-8 w-full max-w-md font-mono'
         onClick={(e) => e.stopPropagation()}
       >
         <div className='flex flex-col items-start gap-4'>

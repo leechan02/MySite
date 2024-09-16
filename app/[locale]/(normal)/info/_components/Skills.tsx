@@ -1,6 +1,6 @@
 "use client";
 import Chip from "@/components/chip/Chip";
-import { FiPlusCircle, FiXCircle } from "react-icons/fi";
+import { FiPlusCircle } from "react-icons/fi";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillPopup from "@/components/popup/SkillPopup"
@@ -13,32 +13,32 @@ export default function Skills() {
       title: "Language",
       skills: "C/C++, JavaScript, TypeScript",
       details: [
-        { skill: "C/C++", description: "C로 파싱 구현 가능" },
-        { skill: "JavaScript", description: "바닐라 SPA 페이지 구현 가능" },
-        { skill: "TypeScript", description: "타입 구현 가능" },
+        { skill: "C/C++", description: "Capable of implementing parsers in C" },
+        { skill: "JavaScript", description: "Can build vanilla SPA pages" },
+        { skill: "TypeScript", description: "Proficient in implementing types" },
       ],
     },
     {
       title: "Frontend",
       skills: "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion",
       details: [
-        { skill: "React", description: "컴포넌트 기반 개발 가능" },
-        { skill: "Next.js", description: "SSR 및 정적 사이트 생성 가능" },
-        { skill: "React Query", description: "서버 상태 관리 가능" },
-        { skill: "Redux", description: "전역 상태 관리 가능" },
-        { skill: "TailwindCSS", description: "반응형 디자인 구현 가능" },
-        { skill: "Framer Motion", description: "고급 애니메이션 구현 가능" },
+        { skill: "React", description: "Experienced in component-based development" },
+        { skill: "Next.js", description: "Capable of SSR and static site generation" },
+        { skill: "React Query", description: "Proficient in server state management" },
+        { skill: "Redux", description: "Skilled in global state management" },
+        { skill: "TailwindCSS", description: "Can implement responsive designs" },
+        { skill: "Framer Motion", description: "Able to create advanced animations" },
       ],
     },
     {
       title: "Tools",
       skills: "Git/GitHub, Figma, Slack, Notion, Visual Studio Code",
       details: [
-        { skill: "Git/GitHub", description: "버전 관리 및 협업 가능" },
-        { skill: "Figma", description: "UI/UX 디자인 작업 가능" },
-        { skill: "Slack", description: "팀 커뮤니케이션 도구 사용 가능" },
-        { skill: "Notion", description: "문서화 및 프로젝트 관리 가능" },
-        { skill: "Visual Studio Code", description: "효율적인 코드 편집 가능" },
+        { skill: "Git/GitHub", description: "Proficient in version control and collaboration" },
+        { skill: "Figma", description: "Capable of UI/UX design work" },
+        { skill: "Slack", description: "Experienced with team communication tools" },
+        { skill: "Notion", description: "Skilled in documentation and project management" },
+        { skill: "Visual Studio Code", description: "Efficient in code editing" },
       ],
     },
   ];
@@ -55,29 +55,12 @@ export default function Skills() {
               whileTap={{ scale: 0.9 }}
               onClick={() => setOpenPopup(openPopup === skill.title ? null : skill.title)}
             >
-              <AnimatePresence initial={false} mode="wait">
-                {openPopup === skill.title ? (
-                  <motion.div
-                    key="x"
-                    initial={{ rotate: 0 }}
-                    animate={{ rotate: 180 }}
-                    exit={{ rotate: 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FiXCircle className='text-foreground opacity-50' />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    key="plus"
-                    initial={{ rotate: 180 }}
-                    animate={{ rotate: 0 }}
-                    exit={{ rotate: 180 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    <FiPlusCircle className='text-foreground opacity-50' />
-                  </motion.div>
-                )}
-              </AnimatePresence>
+              <motion.div
+                animate={{ rotate: openPopup === skill.title ? 45 : 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <FiPlusCircle className='text-foreground opacity-50' />
+              </motion.div>
             </motion.div>
           </div>
           <div className='text-xs font-bold opacity-50'>
