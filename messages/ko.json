@@ -9,21 +9,5 @@
   "home": {
     "mainTitle": "무언가 만드는 것을 좋아합니다.",
     "subTitle": "한국 사는 백수."
-  },
-  "webserv": {
-    "title": "Webserv",
-    "date": "42 Seoul July 2023",
-    "link": "https://github.com/Aprilistic/webserv",
-    "image": "/image/webserv.png",
-    "myRoleTitle": "MyRole",
-    "myRole": "Architecture Design, HTTP Parsing",
-    "teamTitle": "Team",
-    "team": [
-      "Jinho Heo",
-      "Hyeonjun An",
-      "Yunseon Im"
-    ],
-    "timelineTitle": "Timeline",
-    "timeline": "4 Months, starts July 2023"
   }
 }
