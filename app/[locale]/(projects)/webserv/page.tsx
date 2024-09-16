@@ -13,7 +13,7 @@ export default async function Webserv() {
       <section id="highlights">
         <Highlights />
       </section>
-      <TableOfContents />
+      <TableOfContents sections={['Overview', 'Highlights']} />
     </div>
   );
 }

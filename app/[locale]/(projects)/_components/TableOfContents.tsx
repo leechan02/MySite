@@ -2,9 +2,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const TableOfContents = () => {
+interface TableOfContentsProps {
+  sections: string[];
+}
+
+export default function TableOfContents({ sections }: TableOfContentsProps) {
   const [activeSection, setActiveSection] = useState('');
-  const sections = ['Overview', 'Highlights'];
 
   useEffect(() => {
     const observerOptions = {
@@ -12,7 +15,6 @@ const TableOfContents = () => {
       rootMargin: '0px',
       threshold: 0.5,
     };
-
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -20,13 +22,10 @@ const TableOfContents = () => {
         }
       });
     };
-
     const observer = new IntersectionObserver(observerCallback, observerOptions);
-
     document.querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
     });
-
     return () => observer.disconnect();
   }, []);
 
@@ -71,5 +70,3 @@ const TableOfContents = () => {
     </AnimatePresence>
   );
 };
-
-export default TableOfContents;
