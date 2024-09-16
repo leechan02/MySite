@@ -20,7 +20,7 @@ export default function AboutLeftContent() {
       </div>
       <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
-          src='/image/mountain.jpg'
+          src='/image/mountain.jpeg'
           alt='profile'
           fill
           style={{ objectFit: "cover" }}

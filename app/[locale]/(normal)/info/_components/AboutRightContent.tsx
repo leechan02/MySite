@@ -7,7 +7,7 @@ export default function AboutRightContent() {
     <div className='flex flex-col justify-center items-center gap-16 w-[300px] lg:w-[400px]'>
       <div className='relative w-[300px] lg:w-[400px] h-[400px] border-10 border-color1 rounded-[40px] overflow-hidden'>
         <Image
-          src='/image/profile.jpeg'
+          src='/image/profile.jpg'
           alt='profile'
           fill
           style={{ objectFit: "cover" }}
