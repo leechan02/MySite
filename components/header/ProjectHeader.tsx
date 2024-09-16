@@ -4,7 +4,7 @@ import { FiArrowLeft } from "react-icons/fi";
 
 export default function ProjectHeader() {
   return (
-    <Link className='flex justify-start items-center p-12' href='/'>
+    <Link className='flex justify-start items-center p-8 sm:p-12' href='/'>
       <Button label='Back' icon={FiArrowLeft} />
     </Link>
   );
