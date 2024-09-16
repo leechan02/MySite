@@ -1,11 +1,10 @@
 import { useTranslations } from "next-intl";
 
 interface OverviewProps {
-  locale: string;
   project: string;
 }
 
-export default function Overview({ locale, project }: OverviewProps) {
+export default function Overview({ project }: OverviewProps) {
   const t = useTranslations(project);
 
   return (

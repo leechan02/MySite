@@ -5,11 +5,10 @@ import { FiGithub } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 interface ContentProps {
-  locale: string;
   project: string;
 }
 
-export default function Content({ locale, project }: ContentProps) {
+export default function Content({ project }: ContentProps) {
   const t = useTranslations(project);
 
   return (

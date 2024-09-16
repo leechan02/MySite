@@ -13,9 +13,9 @@ export default async function Webserv({
 
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <Content locale={locale} project="webserv" />
+      <Content project="webserv" />
       <section id='overview'>
-        <Overview locale={locale} project="webserv"/>
+        <Overview project="webserv"/>
       </section>
       <section id='highlights'>
         <Highlights />
