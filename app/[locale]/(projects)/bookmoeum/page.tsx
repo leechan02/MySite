@@ -18,6 +18,7 @@ export default async function Bookmoeum({
         image='/image/bookmoeum.png'
         project='bookmoeum.content'
         brColor='border-color4'
+        deploy="https://www.bookmoeum.com/"
       />
       <section id='overview'>
         <Overview project='bookmoeum.overview' />
