@@ -1,7 +1,7 @@
-import Overview from "./_components/Overview";
-import Highlights from "./_components/Highlights";
-import Content from "./_components/Content";
-import TableOfContents from "./_components/TableOfContents";
+import Overview from "../_components/Overview";
+import Highlights from "../_components/Highlights";
+import Content from "../_components/Content";
+import TableOfContents from "../_components/TableOfContents";
 
 export default async function Webserv() {
   return (
