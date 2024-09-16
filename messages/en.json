@@ -30,6 +30,10 @@
         "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
         "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
       ]
+    },
+    "highlights": {
+      "title": "HIGHLIGHTS",
+      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
     }
   }
 }

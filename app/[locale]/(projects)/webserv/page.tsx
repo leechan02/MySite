@@ -17,12 +17,13 @@ export default async function Webserv({
         link='https://github.com/Aprilistic/webserv'
         image='/image/webserv.png'
         project='webserv.content'
+        brColor='border-color2'
       />
       <section id='overview'>
         <Overview project='webserv.overview' />
       </section>
       <section id='highlights'>
-        <Highlights />
+        <Highlights project='webserv.highlights' bgColor='bg-color2' />
       </section>
       <TableOfContents sections={["Overview", "Highlights"]} />
     </div>

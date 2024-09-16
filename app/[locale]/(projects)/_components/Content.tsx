@@ -8,9 +8,10 @@ interface ContentProps {
   link: string;
   image: string;
   project: string;
+  brColor: string;
 }
 
-export default function Content({ link, image, project }: ContentProps) {
+export default function Content({ link, image, project, brColor }: ContentProps) {
   const t = useTranslations(project);
 
   return (
@@ -25,7 +26,7 @@ export default function Content({ link, image, project }: ContentProps) {
         </div>
       </div>
       <div className='relative w-full rounded-3xl overflow-hidden flex justify-center items-center p-8'>
-        <div className='absolute inset-0 border-8 border-color2 border-opacity-50 rounded-3xl pointer-events-none'></div>
+        <div className={`absolute inset-0 border-8 ${brColor} border-opacity-50 rounded-3xl pointer-events-none`}></div>
         <Image
           src={image}
           width={600}
