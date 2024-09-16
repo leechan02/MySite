@@ -34,6 +34,16 @@
         "I enjoy learning, taking on challenges, and documenting my journey.",
         "Out of curiosity, I read books to learn. I love challenges, so I dive in and try things—recently, I climbed the Himalayas. I believe that knowledge becomes truly mine when I write and speak about it, which is why I run a YouTube channel like a personal journal. While I’m not a huge fan of exercise, I do it because I need to stay healthy to keep doing what I love."
       ]
+    },
+    "education": {
+      "first": "42 Seoul",
+      "firstLocation": "Seoul, South Korea",
+      "firstDate": "July 2022 - July 2024",
+      "firstContent": "Experience in various toy projects",
+      "second": "Korea National Open University",
+      "secondLocation": "Seoul, South Korea",
+      "secondDate": "Sept 2023 - Present",
+      "secondContent": "B.A. degree expected in Computer Science in 2028"
     }
   },
   "webserv": {

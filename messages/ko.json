@@ -34,12 +34,22 @@
         "I enjoy learning, taking on challenges, and documenting my journey.",
         "Out of curiosity, I read books to learn. I love challenges, so I dive in and try things—recently, I climbed the Himalayas. I believe that knowledge becomes truly mine when I write and speak about it, which is why I run a YouTube channel like a personal journal. While I’m not a huge fan of exercise, I do it because I need to stay healthy to keep doing what I love."
       ]
+    },
+    "education": {
+      "first": "42서울",
+      "firstLocation": "한국, 서울",
+      "firstDate": "2022년 7월 - 2024년 7월",
+      "firstContent": "다양한 토이 프로젝트를 통한 컴퓨터공학 지식 학습",
+      "second": "한국방송통신대학교",
+      "secondLocation": "한국, 서울",
+      "secondDate": "2023년 9월 - 현재",
+      "secondContent": "2028년 졸업 예정, 컴퓨터공학 학사"
     }
   },
   "webserv": {
     "content": {
       "title": "Webserv",
-      "date": "42 서울 2023년 7월"
+      "date": "42서울 2023년 7월"
     },
     "overview": {
       "myRoleTitle": "내 역할",
@@ -65,7 +75,7 @@
   "transcendence": {
     "content": {
       "title": "ft_transcendence",
-      "date": "42 서울 2023년 12월"
+      "date": "42서울 2023년 12월"
     },
     "overview": {
       "myRoleTitle": "내 역할",
