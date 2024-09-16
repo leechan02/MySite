@@ -1,24 +1,31 @@
-export default function Overview() {
+import { useTranslations } from "next-intl";
+
+interface OverviewProps {
+  locale: string;
+  project: string;
+}
+
+export default function Overview({ locale, project }: OverviewProps) {
+  const t = useTranslations(project);
+
   return (
     <div className='flex flex-col sm:flex-row justify-between items-start gap-8 sm:gap-16'>
       <div className='flex flex-col justify-start items-start gap-8 w-full sm:w-1/2'>
         <div className='flex flex-col gap-2 w-full'>
-          <div className='text-sm font-bold'>MyRole</div>
-          <div className='text-xs opacity-50'>
-            Architecture Design, HTTP Parsing
-          </div>
+          <div className='text-sm font-bold'>{t("myRoleTitle")}</div>
+          <div className='text-xs opacity-50'>{t("myRole")}</div>
         </div>
         <div className='flex flex-col gap-2 w-full'>
-          <div className='text-sm font-bold'>Team</div>
+          <div className='text-sm font-bold'>{t("teamTitle")}</div>
           <div className='text-xs opacity-50 flex flex-col gap-2'>
-            <div>Jinho Heo</div>
-            <div>Hyeonjun An</div>
-            <div>Yunseon Im</div>
+            {t.raw("team").map((member: string, index: number) => (
+              <div key={index}>{member}</div>
+            ))}
           </div>
         </div>
         <div className='flex flex-col gap-2 w-full'>
-          <div className='text-sm font-bold'>Timeline</div>
-          <div className='text-xs opacity-50'>4 Months, starts July 2023</div>
+          <div className='text-sm font-bold'>{t("timelineTitle")}</div>
+          <div className='text-xs opacity-50'>{t("timeline")}</div>
         </div>
         <div className='flex flex-col gap-2 w-full'>
           <div className='text-sm font-bold'>Tech Keywords</div>

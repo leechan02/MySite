@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiGithub } from "react-icons/fi";
-
 import { useTranslations } from "next-intl";
 
 interface ContentProps {

@@ -14,6 +14,16 @@
     "title": "Webserv",
     "date": "42 Seoul July 2023",
     "link": "https://github.com/Aprilistic/webserv",
-    "image": "/image/webserv.png"
+    "image": "/image/webserv.png",
+    "myRoleTitle": "MyRole",
+    "myRole": "Architecture Design, HTTP Parsing",
+    "teamTitle": "Team",
+    "team": [
+      "Jinho Heo",
+      "Hyeonjun An",
+      "Yunseon Im"
+    ],
+    "timelineTitle": "Timeline",
+    "timeline": "4 Months, starts July 2023"
   }
 }
