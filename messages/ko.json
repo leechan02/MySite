@@ -35,5 +35,31 @@
       "title": "HIGHLIGHTS",
       "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
     }
+  },
+  "transcendence": {
+    "content": {
+      "title": "ft_transcendence",
+      "date": "42 서울 2023년 12월"
+    },
+    "overview": {
+      "myRoleTitle": "내 역할",
+      "myRole": "Design Lead, Frontend Lead",
+      "teamTitle": "팀",
+      "team": ["박태양", "안현준", "임윤선"],
+      "timelineTitle": "타임라인",
+      "timeline": "4 Months, starts December 2023",
+      "techTitle": "사용 기술",
+      "techKeywords": "Vanilla JS, Figma, HTML, CSS, Tailwindcss, Docker, Git",
+      "overviewTitle": "개요",
+      "overview": [
+        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
+        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
+        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+      ]
+    },
+    "highlights": {
+      "title": "HIGHLIGHTS",
+      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+    }
   }
 }
