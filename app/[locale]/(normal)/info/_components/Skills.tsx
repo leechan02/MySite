@@ -1,48 +1,43 @@
 "use client";
 import Chip from "@/components/chip/Chip";
 import { FiPlusCircle } from "react-icons/fi";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SkillPopup from "@/components/popup/SkillPopup"
+import { useTranslations } from "next-intl";
 
 export default function Skills() {
+  const t = useTranslations("info.skills");
   const [openPopup, setOpenPopup] = useState<string | null>(null);
 
-  const skillsData = [
-    {
-      title: "Language",
-      skills: "C/C++, JavaScript, TypeScript",
-      details: [
-        { skill: "C/C++", description: "Capable of implementing parsers in C" },
-        { skill: "JavaScript", description: "Can build vanilla SPA pages" },
-        { skill: "TypeScript", description: "Proficient in implementing types" },
-      ],
-    },
-    {
-      title: "Frontend",
-      skills: "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion",
-      details: [
-        { skill: "React", description: "Experienced in component-based development" },
-        { skill: "Next.js", description: "Capable of SSR and static site generation" },
-        { skill: "React Query", description: "Proficient in server state management" },
-        { skill: "Redux", description: "Skilled in global state management" },
-        { skill: "TailwindCSS", description: "Can implement responsive designs" },
-        { skill: "Framer Motion", description: "Able to create advanced animations" },
-      ],
-    },
-    {
-      title: "Tools",
-      skills: "Git/GitHub, Figma, Slack, Notion, Visual Studio Code",
-      details: [
-        { skill: "Git/GitHub", description: "Proficient in version control and collaboration" },
-        { skill: "Figma", description: "Capable of UI/UX design work" },
-        { skill: "Slack", description: "Experienced with team communication tools" },
-        { skill: "Notion", description: "Skilled in documentation and project management" },
-        { skill: "Visual Studio Code", description: "Efficient in code editing" },
-      ],
-    },
-  ];
-
+  const skillsData = useMemo(() => {
+    return [
+      {
+        title: t('language.title'),
+        skills: t('language.skills'),
+        details: t.raw('language.details').map((detail: any) => ({
+          skill: detail.skill,
+          description: detail.description
+        })),
+      },
+      {
+        title: t('frontend.title'),
+        skills: t('frontend.skills'),
+        details: t.raw('frontend.details').map((detail: any) => ({
+          skill: detail.skill,
+          description: detail.description
+        })),
+      },
+      {
+        title: t('tools.title'),
+        skills: t('tools.skills'),
+        details: t.raw('tools.details').map((detail: any) => ({
+          skill: detail.skill,
+          description: detail.description
+        })),
+      },
+    ];
+  }, [t]);
   return (
     <div className='flex flex-col justify-center items-start w-full max-w-[300px] sm:max-w-[640px] lg:max-w-[900px] gap-8 sm:gap-16'>
       <Chip label='SKILLS' />

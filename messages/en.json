@@ -48,6 +48,42 @@
     "etc": {
       "first": "OPIc AL",
       "second": "Craftsman Information Processing"
+    },
+    "skills": {
+      "title": "SKILLS",
+      "language": {
+        "title": "Language",
+        "skills": "C/C++, JavaScript, TypeScript, English",
+        "details": [
+          { "skill": "C/C++", "description": "Capable of implementing parsers in C" },
+          { "skill": "JavaScript", "description": "Can build vanilla SPA pages" },
+          { "skill": "TypeScript", "description": "Proficient in implementing types" },
+          { "skill": "English", "description": "Speaking Test OPIc Highest Score" }
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion",
+        "details": [
+          { "skill": "React", "description": "Experienced in component-based development" },
+          { "skill": "Next.js", "description": "Capable of SSR and static site generation" },
+          { "skill": "React Query", "description": "Proficient in server state management" },
+          { "skill": "Redux", "description": "Skilled in global state management" },
+          { "skill": "TailwindCSS", "description": "Can implement responsive designs" },
+          { "skill": "Framer Motion", "description": "Able to create advanced animations" }
+        ]
+      },
+      "tools": {
+        "title": "Etc",
+        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code",
+        "details": [
+          { "skill": "Git/GitHub", "description": "Proficient in version control and collaboration" },
+          { "skill": "Figma", "description": "Capable of UI/UX design work" },
+          { "skill": "Slack", "description": "Experienced with team communication tools" },
+          { "skill": "Notion", "description": "Skilled in documentation and project management" },
+          { "skill": "Visual Studio Code", "description": "Efficient in code editing" }
+        ]
+      }
     }
   },
   "webserv": {
