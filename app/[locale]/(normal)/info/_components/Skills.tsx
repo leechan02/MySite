@@ -6,6 +6,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import SkillPopup from "@/components/popup/SkillPopup"
 import { useTranslations } from "next-intl";
 
+interface SkillDetail {
+  skill: string;
+  description: string;
+}
+
+interface SkillCategory {
+  title: string;
+  skills: string;
+  details: SkillDetail[];
+}
+
 export default function Skills() {
   const t = useTranslations("info.skills");
   const [openPopup, setOpenPopup] = useState<string | null>(null);
@@ -15,7 +26,7 @@ export default function Skills() {
       {
         title: t('language.title'),
         skills: t('language.skills'),
-        details: t.raw('language.details').map((detail: any) => ({
+        details: (t.raw('language.details') as SkillDetail[]).map((detail) => ({
           skill: detail.skill,
           description: detail.description
         })),
@@ -23,7 +34,7 @@ export default function Skills() {
       {
         title: t('frontend.title'),
         skills: t('frontend.skills'),
-        details: t.raw('frontend.details').map((detail: any) => ({
+        details: (t.raw('frontend.details') as SkillDetail[]).map((detail) => ({
           skill: detail.skill,
           description: detail.description
         })),
@@ -31,13 +42,14 @@ export default function Skills() {
       {
         title: t('tools.title'),
         skills: t('tools.skills'),
-        details: t.raw('tools.details').map((detail: any) => ({
+        details: (t.raw('tools.details') as SkillDetail[]).map((detail) => ({
           skill: detail.skill,
           description: detail.description
         })),
       },
-    ];
+    ] as SkillCategory[];
   }, [t]);
+
   return (
     <div className='flex flex-col justify-center items-start w-full max-w-[300px] sm:max-w-[640px] lg:max-w-[900px] gap-8 sm:gap-16'>
       <Chip label='SKILLS' />
