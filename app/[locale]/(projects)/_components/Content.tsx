@@ -19,7 +19,7 @@ export default function Content({ locale, project }: ContentProps) {
         <h1 className='text-5xl font-bold'>{t('title')}</h1>
         <div className='font-bold opacity-50'>{t('date')}</div>
         <div className='flex justify-center items-center gap-10'>
-          <Link href='https://github.com/Aprilistic/webserv' target='_blank'>
+          <Link href={t('link')} target='_blank'>
             <FiGithub className='inline text-foreground' size={20} />
           </Link>
         </div>
@@ -27,7 +27,7 @@ export default function Content({ locale, project }: ContentProps) {
       <div className='relative w-full rounded-3xl overflow-hidden flex justify-center items-center p-8'>
         <div className='absolute inset-0 border-8 border-color2 border-opacity-50 rounded-3xl pointer-events-none'></div>
         <Image
-          src='/image/webserv.png'
+          src={t('image')}
           width={600}
           height={400}
           alt='webserv'
