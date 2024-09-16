@@ -44,6 +44,10 @@
       "secondLocation": "한국, 서울",
       "secondDate": "2023년 9월 - 현재",
       "secondContent": "2028년 졸업 예정, 컴퓨터공학 학사"
+    },
+    "etc": {
+      "first": "오픽 AL",
+      "second": "정보처리기능사"
     }
   },
   "webserv": {
