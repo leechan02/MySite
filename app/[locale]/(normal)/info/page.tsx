@@ -5,14 +5,21 @@ import Education from "./_components/Education";
 import Skills from "./_components/Skills";
 import Etc from "./_components/Etc";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export default function Info({ params: { locale } }: { params: { locale: string } }) {
+export default function Info({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   unstable_setRequestLocale(locale);
+  const t = useTranslations("info");
+
   return (
     <div className='flex flex-col justify-center items-center gap-16'>
       <div className='flex flex-col justify-center items-center gap-4'>
         <h1 className='text-xl sm:text-3xl font-bold font-mono text-foreground'>
-          Hello I&apos;m Euichan Lee
+          {t("mainTitle")}
         </h1>
         <div className='flex justify-center items-center gap-10'>
           <Link href='mailto:lechan1317@gmail.com'>
@@ -27,8 +34,7 @@ export default function Info({ params: { locale } }: { params: { locale: string 
         </div>
       </div>
       <h1 className='w-[320px] sm:w-[640px] lg:w-[900px] text-xl sm:text-3xl font-black font-mono text-foreground text-center px-2'>
-        I enjoy defining problems and finding solutions to make the world a bit
-        more convenient.
+        {t("subTitle")}
       </h1>
       <About />
       <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
