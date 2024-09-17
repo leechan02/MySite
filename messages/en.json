@@ -36,33 +36,41 @@
     "about": {
       "leftFirstTitle": "My background in Computer Science",
       "leftFirstContent": [
-        "In 2022, I started my journey into development without knowing how to code or use a terminal. As I grew more curious about the world, I recognized many inefficiencies around me and realized the importance of problem-solving.",
-        "This led me to 42 Seoul, where I immersed myself in computer science fundamentals such as operating systems, data structures, and networks. Currently, I am focusing on frontend development to address real-world challenges."
+        "I wasn't initially interested in development. Just two years ago, I didn’t even know what coding was, but as I became more interested in the world, I realized how many inconveniences existed.",
+        "Through this process, I realized the importance of problem-defining skills and became interested in the technologies that could solve these issues.",
+        "s a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning.",
+        "After completing two years of study there, I'm now pursuing a career as a developer with a focus on front-end development."
       ],
       "leftSecondTitle": "Coding style",
       "leftSecondContent": [
-        "I appreciate beauty, which is why I prioritize writing clean, understandable, and simple code. While optimization is important, I don&apos;t believe complex code is always better-performing.",
-        "As a developer, I value communication skills, especially since development is rarely a solo effort. Starting from scratch has taught me how to explain concepts clearly and in a way that others can easily understand."
+        "I appreciate beauty, which is why I always consider whether my code is understandable to someone seeing it for the first time and whether its structure is overly complex.",
+        "While optimization is another matter, I don't believe that more complex code necessarily equates to better performance.",
+        "I think that teamwork surpasses individual effort, which is why I consider communication skills essential for developers.",
+        "Having started from scratch, I enjoy and excel at explaining concepts in a way that anyone can understand."
       ],
       "rightFirstTitle": "But I want more",
       "rightFirstContent": [
-        "I have a lot of curiosity and a strong desire to learn. The more I study, the more I realize how much I don’t know. Since I&apos;ve had less time to study than others, I’ve worked even harder to catch up.",
-        "Through this, I&apos;ve learned that while things can be difficult, nothing is impossible. I&apos;ve solved problems, completed over 300 code reviews, and written over 10,000 lines of code in a single project. This has made me unafraid of learning new technologies. Despite having no prior experience with frameworks like React or Next.js, I built a website using Next.js in just two weeks."
+        "I'm curious about many things and eager to learn more. As I go through life, I realize there's always more that I don't know than what I do know.",
+        "This awareness keeps me humble, acknowledging that I can always be wrong, and motivates me to continually strive for growth.",
+        "I believe that while things can be difficult, nothing is impossible. Having started in a completely new field two years ago, I had no choice but to work harder than others.",
+        "I tackled each problem as it arose, gaining experience through over 300 code reviews and writing more than 10,000 lines of code for a single project.",
+        "As a result, I've become fearless in acquiring new knowledge and skills and facing challenges."
       ],
       "rightSecondTitle": "In my spare time,",
       "rightSecondContent": [
-        "I enjoy learning, taking on challenges, and documenting my journey.",
-        "Out of curiosity, I read books to learn. I love challenges, so I dive in and try things—recently, I climbed the Himalayas. I believe that knowledge becomes truly mine when I write and speak about it, which is why I run a YouTube channel like a personal journal. While I’m not a huge fan of exercise, I do it because I need to stay healthy to keep doing what I love."
+        "I believe that knowledge broadens our perspective, and our perspective shapes our dreams. That's why I love learning, challenging myself, and documenting my experiences.",
+        "I read books because I want to know and see more. I enjoy challenges, so I often just dive in and try things. Recently, I went on a trek in the Himalayas.",
+        "I believe that what we learn becomes truly ours when we record and share it. That's why I run a small YouTube channel, like a growing diary where I jot down my thoughts and experiences."
       ]
     },
     "education": {
       "first": "42 Seoul",
-      "firstLocation": "Seoul, South Korea",
-      "firstDate": "July 2022 - July 2024",
+      "firstLocation": "Seoul, Korea",
+      "firstDate": "Jul 2022 - Jul 2024",
       "firstContent": "Experience in various toy projects",
       "second": "Korea National Open University",
-      "secondLocation": "Seoul, South Korea",
-      "secondDate": "Sept 2023 - Present",
+      "secondLocation": "Seoul, Korea",
+      "secondDate": "Sep 2023 - Present",
       "secondContent": "B.A. degree expected in Computer Science in 2028"
     },
     "etc": {
@@ -73,35 +81,39 @@
       "title": "SKILLS",
       "language": {
         "title": "Language",
-        "skills": "C/C++, JavaScript, TypeScript, English",
+        "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
         "details": [
-          { "skill": "C/C++ ⭐️⭐️⭐️", "description": "Capable of implementing parsers in C" },
-          { "skill": "JavaScript ⭐️⭐⭐️️", "description": "Can build vanilla SPA pages" },
-          { "skill": "TypeScript ⭐️", "description": "Proficient in implementing types" },
-          { "skill": "English ⭐️⭐️⭐️", "description": "Speaking Test OPIc Highest Score" }
+          { "skill": "C/C++ ⭐️⭐️", "description": "Multi-process, multi-threading, OOP, experience with memory management in various toy projects." },
+          { "skill": "JavaScript ️⭐⭐️️", "description": "Experience developing SPAs with Vanilla JavaScript." },
+          { "skill": "TypeScript ⭐️", "description": "Experience using interfaces for type settings in React." },
+          { "skill": "HTML ⭐⭐️️", "description": "Able to build pages using HTML." },
+          { "skill": "CSS ⭐⭐️️", "description": "Able to design layouts using CSS." },
+          { "skill": "English ⭐️⭐️⭐️", "description": "OPIc AL, able to communicate fluently with native speakers, and comfortable reading English documentation." }
         ]
       },
       "frontend": {
         "title": "Frontend",
-        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion",
+        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
         "details": [
-          { "skill": "React ⭐️⭐️", "description": "Experienced in component-based development" },
-          { "skill": "Next.js ⭐️⭐️", "description": "Capable of SSR and static site generation" },
-          { "skill": "React Query ⭐️", "description": "Proficient in server state management" },
-          { "skill": "Redux ⭐️", "description": "Skilled in global state management" },
-          { "skill": "TailwindCSS ⭐️⭐️⭐️", "description": "Can implement responsive designs" },
-          { "skill": "Framer Motion ⭐️", "description": "Able to create advanced animations" }
+          { "skill": "React ⭐️⭐️", "description": "Capable of developing routes and components using React-dom." },
+          { "skill": "Next.js ⭐️⭐️", "description": "Experience developing routes using dynamic routing and middleware." },
+          { "skill": "React Query ⭐️", "description": "Experience in API caching and implementing infinite scroll." },
+          { "skill": "Redux ⭐️", "description": "Experience managing global state for dark mode and book information." },
+          { "skill": "TailwindCSS ⭐️⭐️", "description": "Capable of designing and customizing components with Tailwind CSS." },
+          { "skill": "Framer Motion ⭐️", "description": "Able to implement simple animation effects." },
+          { "skill": "i18n ⭐️⭐️", "description": "Experience implementing bilingual (Korean/English) features using i18n." }
         ]
       },
       "tools": {
         "title": "Etc",
-        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code",
+        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
         "details": [
-          { "skill": "Git/GitHub ⭐️⭐️⭐️", "description": "Proficient in version control and collaboration" },
-          { "skill": "Figma ⭐️⭐️⭐️", "description": "Capable of UI/UX design work" },
-          { "skill": "Slack ⭐️⭐️⭐️", "description": "Experienced with team communication tools" },
-          { "skill": "Notion ⭐️⭐️⭐️", "description": "Skilled in documentation and project management" },
-          { "skill": "Visual Studio Code ⭐️⭐️⭐️", "description": "Efficient in code editing" }
+          { "skill": "Git/GitHub ⭐️⭐", "description": "Familiar with issue tracking and branch strategy in Git, and capable of team collaboration." },
+          { "skill": "Figma ⭐️⭐️⭐️", "description": "Skilled in building design systems and creating prototypes." },
+          { "skill": "Slack ⭐️⭐️⭐️", "description": "Excellent communication in team settings, always available." },
+          { "skill": "Notion ⭐️⭐️⭐️", "description": "Highly proficient in organizing information and managing team workspaces with Notion." },
+          { "skill": "Visual Studio Code ⭐️⭐️️", "description": "Uses Vim plugins within Visual Studio Code." },
+          { "skill": "Docker ⭐️", "description": "Able to build Docker images and set up Docker environments." }
         ]
       }
     }

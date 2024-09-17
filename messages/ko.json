@@ -72,36 +72,40 @@
     "skills": {
       "title": "SKILLS",
       "language": {
-        "title": "언어",
-        "skills": "C/C++, JavaScript, TypeScript, English",
+        "title": "Language",
+        "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
         "details": [
-          { "skill": "C/C++", "description": "Capable of implementing parsers in C" },
-          { "skill": "JavaScript", "description": "Can build vanilla SPA pages" },
-          { "skill": "TypeScript", "description": "Proficient in implementing types" },
-          { "skill": "English", "description": "원어민이랑 대화 문제없음, 영어 공식문서 읽는데에 두려움 없음." }
+          { "skill": "C/C++ ⭐️⭐️", "description": "멀티 프로세스, 멀티 스레드, 객체지향 프로그래밍, 메모리 관리를 생각한 여러 토이 프로젝트 구현 경험." },
+          { "skill": "JavaScript ️⭐⭐️️", "description": "Vanilla JavaScript만으로 SPA 구현 경험." },
+          { "skill": "TypeScript ⭐️", "description": "React 사용하면서 interface를 활용한 타입 설정." },
+          { "skill": "HTML ⭐⭐️️", "description": "html로 페이지 만들기 가능." },
+          { "skill": "CSS ⭐⭐️️", "description": "CSS로 디자인 가능." },
+          { "skill": "English ⭐️⭐️⭐️", "description": "오픽 AL, 원어민과 무리없이 의사소통 가능. 영어문서 읽는데에 문제 없음." }
         ]
       },
       "frontend": {
-        "title": "프론트엔드",
-        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion",
+        "title": "Frontend",
+        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
         "details": [
-          { "skill": "React", "description": "Experienced in component-based development" },
-          { "skill": "Next.js", "description": "Capable of SSR and static site generation" },
-          { "skill": "React Query", "description": "Proficient in server state management" },
-          { "skill": "Redux", "description": "Skilled in global state management" },
-          { "skill": "TailwindCSS", "description": "Can implement responsive designs" },
-          { "skill": "Framer Motion", "description": "Able to create advanced animations" }
+          { "skill": "React ⭐️⭐️", "description": "React-dom을 사용한 route 및 컴포넌트 개발 가능." },
+          { "skill": "Next.js ⭐️⭐️", "description": "동적라우팅 및 middleware를 사용한 라우팅 개발 경험." },
+          { "skill": "React Query ⭐️", "description": "query 사용한 api 캐시 관리 및 무한 스크롤 구현 경험." },
+          { "skill": "Redux ⭐️", "description": "다크모드 및 책정보 전역상태로 관리 경험." },
+          { "skill": "TailwindCSS ⭐️⭐️", "description": "웬만한 디자인은 tailwindcss로 구현 가능. 개발 디자인 커스텀 가능." },
+          { "skill": "Framer Motion ⭐️", "description": "간단한 애니메이션 효과 구현 가능." },
+          { "skill": "i18n ⭐️⭐️", "description": "i18n 라이브러리를 활용한 한영전환 기능 구현 경험." }
         ]
       },
       "tools": {
-        "title": "기타",
-        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code",
+        "title": "Etc",
+        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
         "details": [
-          { "skill": "Git/GitHub", "description": "Proficient in version control and collaboration" },
-          { "skill": "Figma", "description": "디자인 시스템 구축 가능." },
-          { "skill": "Slack", "description": "Experienced with team communication tools" },
-          { "skill": "Notion", "description": "Skilled in documentation and project management" },
-          { "skill": "Visual Studio Code", "description": "Efficient in code editing" }
+          { "skill": "Git/GitHub ⭐️⭐", "description": "Git Issue 관리 및 브랜치 전략 적용, 팀 협업 가능." },
+          { "skill": "Figma ⭐️⭐️⭐️", "description": "디자인 시스템 구축 및 프로토타입 제작 가능." },
+          { "skill": "Slack ⭐️⭐️⭐️", "description": "상시대기 팀원과 원활한 소통가능." },
+          { "skill": "Notion ⭐️⭐️⭐️", "description": "웬만한 정보는 노션으로 정리, 팀스페이스 노션 정리 담당." },
+          { "skill": "Visual Studio Code ⭐️⭐️️", "description": "비쥬얼스튜디오에서 vim 플러그인 사용하는 혼종유저." },
+          { "skill": "Docker ⭐️", "description": "도커 이미지 빌드 및 세팅 가능." }
         ]
       }
     }
