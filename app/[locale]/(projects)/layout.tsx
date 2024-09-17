@@ -8,6 +8,8 @@ import ProjectHeader from "@/components/header/ProjectHeader";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const geistSans = localFont({
   src: "../../fonts/GeistVF.woff",
@@ -56,7 +58,7 @@ export default async function RootLayout({
             >
               <ProjectHeader />
               <main className='flex-col justify-center items-center inline-flex flex-grow'>
-                {children}
+                <Suspense fallback={<Loading />}>{children}</Suspense>
               </main>
               <Footer />
             </body>

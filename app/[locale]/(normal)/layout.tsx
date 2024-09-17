@@ -8,6 +8,8 @@ import Header from "@/components/header/Header";
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const geistSans = localFont({
   src: "../../fonts/GeistVF.woff",
@@ -31,10 +33,10 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: string };
 }>) {
   unstable_setRequestLocale(locale);
 
@@ -53,11 +55,11 @@ export default async function RootLayout({
             <body
               className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
             >
-              <div className="sticky top-0 z-50">
+              <div className='sticky top-0 z-50'>
                 <Header />
               </div>
               <main className='flex-col justify-center items-center inline-flex py-10 flex-grow'>
-                {children}
+                <Suspense fallback={<Loading />}>{children}</Suspense>
               </main>
               <Footer />
             </body>
