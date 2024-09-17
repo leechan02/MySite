@@ -156,23 +156,24 @@
     },
     "overview": {
       "myRoleTitle": "MyRole",
-      "myRole": "Design Lead, Frontend Lead",
+      "myRole": "Design Lead, Frontend Lead, Project Lead",
       "teamTitle": "Team",
       "team": ["Taeyang Park", "Hyeonjun An", "Yunseon Im"],
       "timelineTitle": "Timeline",
       "timeline": "4 Months, starts December 2023",
       "techTitle": "Tech Keywords",
-      "techKeywords": "Vanilla JS, Figma, HTML, CSS, Tailwindcss, Docker, Git",
+      "techKeywords": "Vanilla JavaScript, Figma, HTML, CSS, Tailwindcss, Docker, Git/GitHub",
       "overviewTitle": "Overview",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "Transcendence is a Pong game website project. From the design stage, I planned a componentized structure using Figma and applied consistent styles using Tailwind CSS.",
+        "The frontend was built using vanilla JavaScript. Modularized components were considered for code reusability, improving maintainability and scalability.",
+        "A SPA architecture with a custom router was applied for a smooth user experience without page refreshes.",
+        "A custom state management system was implemented using a Store pattern similar to Redux or Vuex."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "Transcendence is a website project reinterpreting the classic Pong game."
     }
   },
   "mysite": {
@@ -188,17 +189,16 @@
       "timelineTitle": "Timeline",
       "timeline": "1 Week, starts September 2024",
       "techTitle": "Tech Keywords",
-      "techKeywords": "Next.js, Figma, HTML, CSS, Tailwindcss, Git, Redux, TypeScript, i18n",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, middleware, i18n, Framer",
       "overviewTitle": "Overview",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "My Site is a portfolio website. It was implemented using Next.js, with all designs implemented in Tailwindcss and designed with responsiveness in mind. Component movements were implemented using Framer Motion.",
+        "Redux is used to globally manage the dark mode state. Korean-English switching functionality was implemented using the i18n library along with dynamic routing through middleware."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "A personal portfolio website providing project descriptions and a personal resume."
     }
   },
   "bookmoeum": {
@@ -214,17 +214,18 @@
       "timelineTitle": "Timeline",
       "timeline": "3 Weeks, starts August 2024",
       "techTitle": "Tech Keywords",
-      "techKeywords": "Next.js, Figma, HTML, CSS, Tailwindcss, Git, Redux, TypeScript, i18n, react-query",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer",
       "overviewTitle": "Overview",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "Book Collection is a book search service where users can find where to read books in one place, eliminating the need to search multiple sites.",
+        "I implemented a design system including typography, colors, spacing, and UI components using Figma before proceeding with the design work. The design was created with responsiveness in mind.",
+        "It's a web page based on Next.js, with TypeScript used for type specifications. For book information, I used the Naver API for searches to provide as much book information as possible, and the Aladin API for more detailed information on the book detail page.",
+        "Login was implemented using Firebase, and book information checks and displays book availability from Kyobo Book Centre, Yes24, Aladin, Ridibooks, and the user's selected library. I used APIs for Aladin and libraries, and web crawling for the other bookstores."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "Provides information on where to read books in one place using OPEN APIs from bookstores and libraries, as well as web crawling."
     }
   }
 }

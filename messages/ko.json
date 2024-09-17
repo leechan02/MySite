@@ -145,7 +145,7 @@
   },
   "transcendence": {
     "content": {
-      "title": "ft_transcendence",
+      "title": "트랜센던스",
       "date": "42서울 2023년 12월"
     },
     "overview": {
@@ -156,22 +156,23 @@
       "timelineTitle": "타임라인",
       "timeline": "4 Months, starts December 2023",
       "techTitle": "사용 기술",
-      "techKeywords": "Vanilla JS, Figma, HTML, CSS, Tailwindcss, Docker, Git",
+      "techKeywords": "Vanilla JavaScript, Figma, HTML, CSS, Tailwindcss, Docker, Git/GitHub",
       "overviewTitle": "개요",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "트랜센던스는 Pong game 웹 사이트 프로젝트입니다. 디자인 단계부터 Figma를 활용해 컴포넌트화된 구조를 기획했으며, Tailwind CSS를 사용해 일관된 스타일을 적용했습니다.",
+        "프론트엔드는 바닐라 JavaScript를 사용하여 구축되었습니다. 모듈화된 컴포넌트를 통해 코드 재사용성을 고려하였고 유지보수성과 확장성을 높였습니다.",
+        "페이지 새로고침이 없는 원활한 사용자 경험을 위해 커스텀 라우터를 구현한 SPA 아키텍처를 적용했습니다.",
+        "Redux 또는 Vuex와 유사한 Store 패턴을 사용하여 커스텀 상태 관리 시스템을 구현했습니다."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "트랜센던스는 클래식 Pong game을 재해석한 웹사이트 프로젝트입니다."
     }
   },
   "mysite": {
     "content": {
-      "title": "MyStie",
+      "title": "마이사이트",
       "date": "2024년 9월"
     },
     "overview": {
@@ -182,17 +183,16 @@
       "timelineTitle": "타임라인",
       "timeline": "1주일, 2024년 9월 시작",
       "techTitle": "사용 기술",
-      "techKeywords": "Next.js, Figma, HTML, CSS, Tailwindcss, Git, Redux, TypeScript, i18n",
-      "overviewTitle": "Overview",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, middleware, i18n, Framer",
+      "overviewTitle": "개요",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "마이사이트는 포트폴리오 웹사이트입니다. Next.js를 통해서 구현하였고, 모든 디자인을 Tailwindcss로 구현하였고 반응형을 고려하여 디자인되었습니다. 컴포넌트 움직임들을 Framer Motion을 사용해서 구현하였습니다.",
+        "Redux를 활용해 다크모드 상태를 전역으로 관리합니다. middleware를 통한 동적 라우팅과 함께 i18n 라이브러리를 활용해 한영 전환 기능을 구현하였습니다."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "개인 포트폴리오 웹사이트로 프로젝트의 설명과 개인 이력서를 제공합니다."
     }
   },
   "bookmoeum": {
@@ -208,17 +208,18 @@
       "timelineTitle": "타임라인",
       "timeline": "3주, 2024년 8월 시작",
       "techTitle": "사용 기술",
-      "techKeywords": "Next.js, Figma, HTML, CSS, Tailwindcss, Git, Redux, TypeScript, i18n, react-query",
-      "overviewTitle": "Overview",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer",
+      "overviewTitle": "개요",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "책모음 서비스는 여러 사이트를 돌아다니면서 책을 찾을 필요없이, 한 곳에서 책을 어디서 볼 수 있는지 찾아볼 수 있는 책 검색 사이트입니다.",
+        "피그마를 활용하여 타이포그래피, 색상, 간격 UI 컴포넌트 등 디자인 시스템을 구현 한뒤에 디자인 작업을 진행했습니다. 반응형을 고려하여 디자인 되었습니다.",
+        "Next.js를 기반으로 작성된 웹페이지이며 TypeScript를 사용해 타입을 명시하였습니다. 책 정보는 검색에서는 최대한 많은 책 정보를 제공하는 Naver API를 사용했고, 책 디테일 페이지에 들어갔을 때는 더 디테일한 정보를 제공하는 알라딘 API를 활용하였습니다.",
+        "로그인은 Firebase를 사용하여 구현하였고, 책 정보는 교보문고, Yes24, 알라딘, 리디북스 내가 선택한 도서관에서 책보유 유무를 검사해 표시합니다. 알라딘과 도서관은 API를 사용하였고, 나머지 서점들을 크롤링을 통해 값들을 가져왔습니다."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "서점과 도서관의 OPEN APIs와 크롤링을 사용하여 어디서 책을 읽을 수 있는지 한곳에서 정보를 제공합니다."
     }
   }
 }
