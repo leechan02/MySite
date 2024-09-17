@@ -6,6 +6,9 @@
     "projects": "프로젝트",
     "info": "정보"
   },
+  "resume" : {
+    "resume": "/resume/Resume(ko).pdf"
+  },
   "work": {
     "mainTitle": "만드는 걸 좋아합니다.",
     "subTitle": "한국 사는 백수.",

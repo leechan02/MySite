@@ -6,6 +6,9 @@
     "projects": "Projects",
     "info": "Info"
   },
+  "resume" : {
+    "resume": "/resume/Resume(en).pdf"
+  },
   "work": {
     "mainTitle": "I enjoy create something.",
     "subTitle": "Baeksu in Korea.",
