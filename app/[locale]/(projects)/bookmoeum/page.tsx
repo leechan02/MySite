@@ -11,6 +11,33 @@ export default async function Bookmoeum({
 }) {
   unstable_setRequestLocale(locale);
 
+  const highlightMediaItems = [
+    {
+      type: "video" as const,
+      src: "/video/bookmoeum.mp4",
+    },
+    {
+      type: "image" as const,
+      src: "/image/bookmoeum/bookmoeum.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/bookmoeum/bookSearch.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/bookmoeum/bookDetail.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/bookmoeum/bookMobileDetail.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/bookmoeum/bookDesign.png",
+    }
+  ];
+
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
@@ -24,7 +51,11 @@ export default async function Bookmoeum({
         <Overview project='bookmoeum.overview' />
       </section>
       <section id='highlights'>
-        <Highlights project='bookmoeum.highlights' bgColor='bg-color3' />
+        <Highlights
+          project='bookmoeum.highlights'
+          bgColor='bg-color3'
+          mediaItems={highlightMediaItems}
+        />
       </section>
       <TableOfContents sections={["Overview", "Highlights"]} />
     </div>
