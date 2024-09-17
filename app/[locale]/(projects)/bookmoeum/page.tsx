@@ -15,7 +15,7 @@ export default async function Bookmoeum({
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
         link='https://github.com/leechan02/Bookmoeum'
-        image='/image/bookmoeum.png'
+        image='/image/bookmoeum/bookmoeum.png'
         project='bookmoeum.content'
         brColor='border-color3'
         deploy="https://www.bookmoeum.com/"

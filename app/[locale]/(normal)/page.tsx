@@ -41,7 +41,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           title='webserv'
           description='Build webserver with c++98.'
           date='42 Seoul Jul.2023-Nov.2023'
-          video='/video/webserv.mp4'
+          video='/video/webserv_console.mp4'
           bgColor='bg-color2'
           link='/webserv'
           size="small"
@@ -50,7 +50,7 @@ export default function Home({ params: { locale } }: { params: { locale: string 
           title='transcendence'
           description='SPA Ping Pong Web site.'
           date='42 Seoul Nov.2023-April.2024'
-          video='/video/transcendence.mp4'
+          video='/video/pong.mp4'
           bgColor='bg-color1'
           link='/transcendence'
           size="big"

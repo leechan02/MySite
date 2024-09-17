@@ -4,15 +4,15 @@ import AboutContent from "./AboutContent";
 export default function About() {
   const leftSections = [
     { title: "leftFirstTitle", content: "leftFirstContent", image: "" },
-    { title: "", content: "", image: "/image/mountain.jpeg" },
+    { title: "", content: "", image: "/image/info/mountain.jpg" },
     { title: "leftSecondTitle", content: "leftSecondContent", image: "" },
-    { title: "", content: "", image: "/image/street.jpeg" },
+    { title: "", content: "", image: "/image/info/street.jpg" },
   ];
 
   const rightSections = [
-    { title: "", content: "", image: "/image/profile.jpg" },
+    { title: "", content: "", image: "/image/info/profile.jpg" },
     { title: "rightFirstTitle", content: "rightFirstContent", image: "" },
-    { title: "", content: "", image: "/image/himalaya.jpeg" },
+    { title: "", content: "", image: "/image/info/himalaya.jpg" },
     { title: "rightSecondTitle", content: "rightSecondContent", image: "" },
   ];
 

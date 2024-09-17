@@ -2,8 +2,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "@/lib/redux/themeSlice";
 import { RootState } from "@/lib/redux/store";
-import moon from "@/public/image/moon.svg";
-import sun from "@/public/image/sun.svg";
+import moon from "@/public/image/icon/moon.svg";
+import sun from "@/public/image/icon/sun.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

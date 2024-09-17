@@ -15,7 +15,7 @@ export default async function Transcendence({
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
         link='https://github.com/42Nuts/Transcendence'
-        image='/image/transcendence.png'
+        image='/image/pong/pong.png'
         project='transcendence.content'
         brColor='border-color1'
       />

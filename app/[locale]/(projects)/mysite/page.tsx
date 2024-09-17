@@ -15,7 +15,7 @@ export default async function MySite({
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
         link='https://github.com/leechan02/MySite'
-        image='/image/mysite.png'
+        image='/image/mysite/mysite.png'
         project='mysite.content'
         brColor='border-color4'
       />

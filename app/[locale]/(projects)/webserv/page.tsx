@@ -15,7 +15,7 @@ export default async function Webserv({
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
         link='https://github.com/Aprilistic/webserv'
-        image='/image/webserv.png'
+        image='/image/webserv/webserv.png'
         project='webserv.content'
         brColor='border-color2'
       />

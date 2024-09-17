@@ -29,7 +29,7 @@ export default function Highlights({ project, bgColor }: HighlightsProps) {
             playsInline
             preload='auto'
           >
-            <source src='/video/webserv.mp4' type='video/mp4' />
+            <source src='/video/webserv_page.mp4' type='video/mp4' />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -38,7 +38,7 @@ export default function Highlights({ project, bgColor }: HighlightsProps) {
         className={`w-full rounded-2xl sm:rounded-[40px] ${bgColor} bg-opacity-20 overflow-hidden`}
       >
         <Image
-          src='/image/webserv.png'
+          src='/image/webserv/webserv.png'
           width={600}
           height={400}
           alt='webserv'
