@@ -11,6 +11,33 @@ export default async function Transcendence({
 }) {
   unstable_setRequestLocale(locale);
 
+  const highlightMediaItems = [
+    {
+      type: "video" as const,
+      src: "/video/pong.mp4",
+    },
+    {
+      type: "image" as const,
+      src: "/image/pong/pong.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/pong/pongHome.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/pong/pongSetting.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/pong/pongDark.png",
+    },
+    {
+      type: "image" as const,
+      src: "/image/pong/pongDesign.png",
+    }
+  ];
+
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <Content
@@ -23,7 +50,11 @@ export default async function Transcendence({
         <Overview project='transcendence.overview' />
       </section>
       <section id='highlights'>
-        <Highlights project='transcendence.highlights' bgColor='bg-color1' />
+        <Highlights
+          project='transcendence.highlights'
+          bgColor='bg-color1'
+          mediaItems={highlightMediaItems}
+        />
       </section>
       <TableOfContents sections={["Overview", "Highlights"]} />
     </div>

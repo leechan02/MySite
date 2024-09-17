@@ -12,8 +12,16 @@ export default async function Webserv({
   unstable_setRequestLocale(locale);
 
   const highlightMediaItems = [
-    { type: 'video' as const, src: '/video/webserv_page.mp4', alt: "Webserv page example" },
-    { type: 'video' as const, src: '/video/webserv_console.mp4', alt: "Webserv consolcommonClassese example" }
+    {
+      type: "video" as const,
+      src: "/video/webserv_page.mp4",
+      alt: "Webserv page example",
+    },
+    {
+      type: "video" as const,
+      src: "/video/webserv_console.mp4",
+      alt: "Webserv consolcommonClassese example",
+    },
   ];
 
   return (
@@ -28,8 +36,8 @@ export default async function Webserv({
         <Overview project='webserv.overview' />
       </section>
       <section id='highlights'>
-      <Highlights 
-          project='webserv.highlights' 
+        <Highlights
+          project='webserv.highlights'
           bgColor='bg-color2'
           mediaItems={highlightMediaItems}
         />
