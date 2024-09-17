@@ -4,7 +4,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function Home({ params: { locale } }: { params: { locale: string } }) {
   unstable_setRequestLocale(locale);
-  const t = useTranslations('home');
+  const t = useTranslations('work');
 
   return (
     <div className='flex-col justify-center items-center inline-flex gap-16'>
@@ -18,18 +18,18 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
         <ProjectBox
-          title='bookmoeum'
-          description='Book Search Web site.'
-          date='Seoul Aug.2024'
+          title={t('bookmoeum.title')}
+          description={t('bookmoeum.description')}
+          date={t('bookmoeum.date')}
           video='/video/bookmoeum.mp4'
           bgColor='bg-color3'
           link='/bookmoeum'
           size="big"
         />
         <ProjectBox
-          title='MySite'
-          description='Portfolio Web site.'
-          date='Seoul Sep.2024'
+          title={t('mysite.title')}
+          description={t('mysite.description')}
+          date={t('mysite.date')}
           video='/video/mysite.mp4'
           bgColor='bg-color4'
           link='/mysite'
@@ -38,18 +38,18 @@ export default function Home({ params: { locale } }: { params: { locale: string 
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-16'>
         <ProjectBox
-          title='webserv'
-          description='Build webserver with c++98.'
-          date='42 Seoul Jul.2023-Nov.2023'
+          title={t('webserv.title')}
+          description={t('webserv.description')}
+          date={t('webserv.date')}
           video='/video/webserv_console.mp4'
           bgColor='bg-color2'
           link='/webserv'
           size="small"
         />
         <ProjectBox
-          title='transcendence'
-          description='SPA Ping Pong Web site.'
-          date='42 Seoul Nov.2023-April.2024'
+          title={t('transcendence.title')}
+          description={t('transcendence.description')}
+          date={t('transcendence.date')}
           video='/video/pong.mp4'
           bgColor='bg-color1'
           link='/transcendence'

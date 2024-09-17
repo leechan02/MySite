@@ -6,9 +6,29 @@
     "projects": "Projects",
     "info": "Info"
   },
-  "home": {
+  "work": {
     "mainTitle": "I enjoy create something.",
-    "subTitle": "Baeksu in Korea."
+    "subTitle": "Baeksu in Korea.",
+    "bookmoeum": {
+      "title": "Bookmoeum",
+      "date": "Seoul Aug 2024",
+      "description": "Book search web service."
+    },
+    "mysite": {
+      "title": "MySite",
+      "date": "Seoul Sep 2024",
+      "description": "Portfolio website."
+    },
+    "webserv": {
+      "title": "Webserv",
+      "date": "42 Seoul Jul 2023 - Nov 2023",
+      "description": "Build Web Server with C++98."
+    },
+    "transcendence": {
+      "title": "Transcendence",
+      "date": "42 Seoul Dec 2023 - Mar 2024",
+      "description": "SPA ping pong game website."
+    }
   },
   "info": {
     "mainTitle": "Hello I'm Euichan Lee",

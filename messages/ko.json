@@ -6,9 +6,29 @@
     "projects": "프로젝트",
     "info": "정보"
   },
-  "home": {
-    "mainTitle": "만드는 것을 좋아합니다.",
-    "subTitle": "한국 사는 백수."
+  "work": {
+    "mainTitle": "만드는 걸 좋아합니다.",
+    "subTitle": "한국 사는 백수.",
+    "bookmoeum": {
+      "title": "책모음",
+      "date": "서울 2024년 8월",
+      "description": "책 검색 웹서비스."
+    },
+    "mysite": {
+      "title": "홈페이지",
+      "date": "서울 2024년 9월",
+      "description": "포트폴리오 웹사이트."
+    },
+    "webserv": {
+      "title": "웹서브",
+      "date": "42서울 2023년 7월-2023년 11월",
+      "description": "c++98로 만든 웹서버."
+    },
+    "transcendence": {
+      "title": "트랜센던스",
+      "date": "42서울 2023년 12월-2024년 3월",
+      "description": "SPA 핑퐁게임 웹사이트."
+    }
   },
   "info": {
     "mainTitle": "안녕하세유, 이의찬입니다.",
