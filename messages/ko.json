@@ -124,23 +124,23 @@
     },
     "overview": {
       "myRoleTitle": "내 역할",
-      "myRole": "Architecture Design, HTTP Parsing",
+      "myRole": "구조 설계, HTTP 파싱, 디버깅 로그 작성, 코드 리펙토링, 동작 확인 페이지 구현",
       "teamTitle": "팀",
       "team": ["허진호", "안현준", "임윤선"],
       "timelineTitle": "타임라인",
       "timeline": "4달, 2023년 7월 시작",
       "techTitle": "사용 기술",
-      "techKeywords": "C++98, Makefile, HTML, CSS, OOP, Non-block I/O, I/O Multiplexing (kqueue), HTTP/1.1",
+      "techKeywords": "C++98, Makefile, HTML, CSS, Object Oriented Programming, Non-block I/O, I/O Multiplexing (kqueue), HTTP/1.1",
       "overviewTitle": "개요",
       "overview": [
-        "Webserv is an ambitious project undertaken as part of the School 42 curriculum, challenging students to develop a robust HTTP/1.1 compatible web server in C++ 98.",
-        "This project pushes the boundaries of low-level network programming, requiring the implementation of non-blocking I/O operations and efficient request handling.",
-        "Key features include the use of I/O multiplexing with `poll()` (or equivalent), ensuring the server never blocks or hangs indefinitely, and the ability to serve static websites while supporting multiple HTTP methods.By implementing these advanced concepts, Webserv not only serves as a practical learning tool for understanding web server architecture but also demonstrates the power and flexibility of C++ in creating high-performance network applications. The successful completion of this project showcases a deep understanding of network protocols, system-level programming, and efficient resource management in a challenging, real-world scenario."
+        "웹서브는 42서울 프로젝트 중 하나로 C++98로 구현된 HTTP/1.1 호환 웹 서버를 구현하는 프로젝트입니다. 이 프로젝트는 저수준 네트워크 프로그래밍에 대한 숙련도와 HTTP 프로토콜에 대한 이해, 그리고 논블로킹 I/O 작업과 효율적인 요청 처리의 구현을 요구합니다.",
+        "주요 기능으로는 kqeue() (또는 이와 동등한 기능)를 사용한 I/O 멀티플렉싱이 있어, 서버가 절대 블로킹되거나 무한정 멈추지 않도록 보장합니다. 또한 GET, POST, DELETE 등 여러 HTTP 메서드를 지원하면서 정적 웹사이트를 제공 해야합니다.",
+        "이러한 고급 개념들을 구현함으로써, 웹서브는 웹 서버 아키텍처를 이해하기 위한 실용적인 학습 도구로서의 역할뿐만 아니라, 고성능 네트워크 애플리케이션을 만드는 데 있어 개체지향 프로그래밍 언어인 C++의 강력함과 유연성을 보여줍니다."
       ]
     },
     "highlights": {
-      "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "title": "하이라이트",
+      "highlights": "C++98로 구현된 HTTP/1.1 서버로, 논블로킹 I/O와 요청 처리 기능을 갖추어 효율적인 웹 서비스를 제공합니다."
     }
   },
   "transcendence": {
