@@ -47,7 +47,21 @@ export default async function Transcendence({
         type: "image" as const,
         src: "/image/pong/pongUI.png",
       },
-    }
+    },
+  ];
+
+  const componentContentItems = [
+    {
+      title: "first",
+      content: "firstContent",
+      media: {
+        type: "code" as const,
+        code: `const hello = 'world';
+console.log(hello);`,
+        language: "javascript",
+        explanation: "firstCodeExplanation",
+      },
+    },
   ];
 
   return (
@@ -75,7 +89,16 @@ export default async function Transcendence({
           contentItems={designContentItems}
         />
       </section>
-      <TableOfContents sections={["Overview", "Highlights", "Design"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <section id='component' className='w-full'>
+        <Contents
+          project='transcendence.component'
+          contentItems={componentContentItems}
+        />
+      </section>
+      <TableOfContents
+        sections={["Overview", "Highlights", "Design", "Component"]}
+      />
     </div>
   );
 }
