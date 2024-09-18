@@ -39,6 +39,17 @@ export default async function Transcendence({
     },
   ];
 
+  const designContentItems = [
+    {
+      title: "first",
+      content: "firstContent",
+      media: {
+        type: "image" as const,
+        src: "/image/pong/pongUI.png",
+      },
+    }
+  ];
+
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <section id='overview'>
@@ -59,7 +70,10 @@ export default async function Transcendence({
       </section>
       <div className='w-full border border-foreground opacity-10' />
       <section id='design' className='w-full'>
-        <Contents project='transcendence.design' />
+        <Contents
+          project='transcendence.design'
+          contentItems={designContentItems}
+        />
       </section>
       <TableOfContents sections={["Overview", "Highlights", "Design"]} />
     </div>

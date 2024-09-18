@@ -2,11 +2,24 @@ import Chip from "@/components/chip/Chip";
 import Content from "@/components/content/Content";
 import { useTranslations } from "next-intl";
 
-interface ContentsProps {
-  project: string;
+interface ContentItem {
+  title: string;
+  content: string;
+  media: {
+    type: 'image' | 'code';
+    src?: string;
+    code?: string;
+    language?: string;
+    explanation?: string;
+  };
 }
 
-export default function Contents({ project }: ContentsProps) {
+interface ContentsProps {
+  project: string;
+  contentItems: ContentItem[];
+}
+
+export default function Contents({ project, contentItems }: ContentsProps) {
   const t = useTranslations(project);
 
   return (
@@ -15,12 +28,15 @@ export default function Contents({ project }: ContentsProps) {
         <Chip label={t("title")} />
         <div className='text-2xl sm:text-3xl font-bold'>{t("subTitle")}</div>
       </div>
-      <Content
-        project={project}
-        title='first'
-        content='firstContent'
-        imageSrc='/image/pong/pongUI.png'
-      />
+      {contentItems.map((item, index) => (
+        <Content
+          key={index}
+          project={project}
+          title={item.title}
+          content={item.content}
+          media={item.media}
+        />
+      ))}
     </div>
   );
 }

@@ -1,13 +1,20 @@
 "use client";
+import React, { Suspense } from "react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { Suspense } from "react";
+import Code from "./Code";  // Code 컴포넌트 import
 
 interface ContentProps {
   project: string;
   title: string;
   content: string;
-  imageSrc: string;
+  media: {
+    type: 'image' | 'code';
+    src?: string;
+    code?: string;
+    language?: string;
+    explanation?: string;
+  };
 }
 
 const ImageSkeleton = () => (
@@ -19,8 +26,8 @@ const ImageComponent = ({ src, alt }: { src: string; alt: string }) => (
     <Image
       src={src}
       alt={alt}
-      width={1200}  // 이미지의 원본 너비
-      height={800}  // 이미지의 원본 높이
+      width={1200}
+      height={800}
       style={{
         width: '100%',
         height: 'auto',
@@ -34,9 +41,10 @@ export default function Content({
   project,
   title,
   content,
-  imageSrc,
+  media,
 }: ContentProps) {
   const t = useTranslations(project);
+
   return (
     <div className='flex flex-col justify-center items-center gap-6 sm:gap-16 w-full'>
       <div className='flex flex-col sm:flex-row justify-between items-start sm:items-start font-mono text-foreground w-full'>
@@ -49,10 +57,21 @@ export default function Content({
           ))}
         </div>
       </div>
-      <div className='bg-foreground/5 shadow border-2 border-foreground/10 rounded-2xl sm:rounded-[40px] backdrop-blur-[15px] w-full overflow-hidden'>
-        <Suspense fallback={<ImageSkeleton />}>
-          <ImageComponent src={imageSrc} alt={t(title)} />
-        </Suspense>
+      <div className='w-full'>
+        {media.type === 'image' ? (
+          <div className='bg-foreground/5 shadow border-2 border-foreground/10 rounded-2xl sm:rounded-[40px] backdrop-blur-[15px] w-full overflow-hidden'>
+            <Suspense fallback={<ImageSkeleton />}>
+              <ImageComponent src={media.src || ''} alt={t(title)} />
+            </Suspense>
+          </div>
+        ) : (
+          <Code
+            code={media.code || ''}
+            language={media.language || 'javascript'}
+            explanation={media.explanation || ''}
+            project={project}
+          />
+        )}
       </div>
     </div>
   );
