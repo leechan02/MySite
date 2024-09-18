@@ -1,8 +1,8 @@
 import Overview from "../_components/Overview";
 import Highlights from "../_components/Highlights";
-import Content from "../_components/Content";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
+import Title from "../_components/Title";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -35,17 +35,17 @@ export default async function Bookmoeum({
     {
       type: "image" as const,
       src: "/image/bookmoeum/bookDesign.png",
-    }
+    },
   ];
 
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <Content
+      <Title
         link='https://github.com/leechan02/Bookmoeum'
         image='/image/bookmoeum/bookmoeum.png'
         project='bookmoeum.content'
         brColor='border-color3'
-        deploy="https://www.bookmoeum.com/"
+        deploy='https://www.bookmoeum.com/'
       />
       <section id='overview'>
         <Overview project='bookmoeum.overview' />
