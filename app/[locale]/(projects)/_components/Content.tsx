@@ -20,7 +20,7 @@ const ImageSkeleton = () => (
 const ImageComponent = ({ src, alt, brColor }: { src: string; alt: string; brColor: string }) => (
   <div className='relative w-full rounded-3xl overflow-hidden flex justify-center items-center p-8'>
     <div
-      className={`absolute inset-0 border-8 ${brColor} border-opacity-50 rounded-3xl pointer-events-none`}
+      className={`absolute inset-0 border-4 sm:border-8 ${brColor} border-opacity-50 rounded-3xl pointer-events-none`}
     ></div>
     <Image src={src} width={600} height={400} alt={alt} />
     <div className='absolute inset-x-0 bottom-0 h-60 bg-gradient-to-t from-background from-10% to-transparent' />
