@@ -12,9 +12,10 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
-      threshold: 0.1,
+      rootMargin: '-20% 0px -20% 0px',
+      threshold: 0.1
     };
+
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -22,12 +23,44 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
         }
       });
     };
+
     const observer = new IntersectionObserver(observerCallback, observerOptions);
+
     document.querySelectorAll('section[id]').forEach((section) => {
       observer.observe(section);
     });
-    return () => observer.disconnect();
-  }, []);
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      document.querySelectorAll('section[id]').forEach((section) => {
+        const sectionTop = (section as HTMLElement).offsetTop;
+        const sectionHeight = (section as HTMLElement).offsetHeight;
+
+        if (
+          scrollPosition >= sectionTop - windowHeight / 2 &&
+          scrollPosition < sectionTop + sectionHeight - windowHeight / 2
+        ) {
+          setActiveSection(section.id);
+        }
+      });
+
+      // Check if we're at the bottom of the page
+      if (scrollPosition + windowHeight >= documentHeight - 50) {
+        const lastSection = sections[sections.length - 1].toLowerCase();
+        setActiveSection(lastSection);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [sections]);
 
   const handleClick = (section: string) => {
     const element = document.getElementById(section.toLowerCase());
@@ -69,4 +102,4 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
       </motion.nav>
     </AnimatePresence>
   );
-};
+}

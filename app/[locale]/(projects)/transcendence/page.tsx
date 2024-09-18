@@ -41,16 +41,16 @@ export default async function Transcendence({
 
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <Title
-        link='https://github.com/42Nuts/Transcendence'
-        image='/image/pong/pong.png'
-        project='transcendence.content'
-        brColor='border-color1'
-      />
       <section id='overview'>
+        <Title
+          link='https://github.com/42Nuts/Transcendence'
+          image='/image/pong/pong.png'
+          project='transcendence.content'
+          brColor='border-color1'
+        />
         <Overview project='transcendence.overview' />
       </section>
-      <section id='highlights' className="w-full">
+      <section id='highlights' className='w-full'>
         <Highlights
           project='transcendence.highlights'
           bgColor='bg-color1'
@@ -58,7 +58,7 @@ export default async function Transcendence({
         />
       </section>
       <div className='w-full border border-foreground opacity-10' />
-      <section id="design" className="w-full">
+      <section id='design' className='w-full'>
         <Contents project='transcendence.design' />
       </section>
       <TableOfContents sections={["Overview", "Highlights", "Design"]} />
