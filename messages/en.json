@@ -6,7 +6,7 @@
     "projects": "Projects",
     "info": "Info"
   },
-  "resume" : {
+  "resume": {
     "resume": "/resume/Resume(en).pdf"
   },
   "work": {
@@ -86,37 +86,94 @@
         "title": "Language",
         "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
         "details": [
-          { "skill": "C/C++ ⭐️⭐️", "description": "Multi-process, multi-threading, OOP, experience with memory management in various toy projects." },
-          { "skill": "JavaScript ️⭐⭐️️", "description": "Experience developing SPAs with Vanilla JavaScript." },
-          { "skill": "TypeScript ⭐️", "description": "Experience using interfaces for type settings in React." },
-          { "skill": "HTML ⭐⭐️️", "description": "Able to build pages using HTML." },
-          { "skill": "CSS ⭐⭐️️", "description": "Able to design layouts using CSS." },
-          { "skill": "English ⭐️⭐️⭐️", "description": "OPIc AL, able to communicate fluently with native speakers, and comfortable reading English documentation." }
+          {
+            "skill": "C/C++ ⭐️⭐️",
+            "description": "Multi-process, multi-threading, OOP, experience with memory management in various toy projects."
+          },
+          {
+            "skill": "JavaScript ️⭐⭐️️",
+            "description": "Experience developing SPAs with Vanilla JavaScript."
+          },
+          {
+            "skill": "TypeScript ⭐️",
+            "description": "Experience using interfaces for type settings in React."
+          },
+          {
+            "skill": "HTML ⭐⭐️️",
+            "description": "Able to build pages using HTML."
+          },
+          {
+            "skill": "CSS ⭐⭐️️",
+            "description": "Able to design layouts using CSS."
+          },
+          {
+            "skill": "English ⭐️⭐️⭐️",
+            "description": "OPIc AL, able to communicate fluently with native speakers, and comfortable reading English documentation."
+          }
         ]
       },
       "frontend": {
         "title": "Frontend",
         "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
         "details": [
-          { "skill": "React ⭐️⭐️", "description": "Capable of developing routes and components using React-dom." },
-          { "skill": "Next.js ⭐️⭐️", "description": "Experience developing routes using dynamic routing and middleware." },
-          { "skill": "React Query ⭐️", "description": "Experience in API caching and implementing infinite scroll." },
-          { "skill": "Redux ⭐️", "description": "Experience managing global state for dark mode and book information." },
-          { "skill": "TailwindCSS ⭐️⭐️", "description": "Capable of designing and customizing components with Tailwind CSS." },
-          { "skill": "Framer Motion ⭐️", "description": "Able to implement simple animation effects." },
-          { "skill": "i18n ⭐️⭐️", "description": "Experience implementing bilingual (Korean/English) features using i18n." }
+          {
+            "skill": "React ⭐️⭐️",
+            "description": "Capable of developing routes and components using React-dom."
+          },
+          {
+            "skill": "Next.js ⭐️⭐️",
+            "description": "Experience developing routes using dynamic routing and middleware."
+          },
+          {
+            "skill": "React Query ⭐️",
+            "description": "Experience in API caching and implementing infinite scroll."
+          },
+          {
+            "skill": "Redux ⭐️",
+            "description": "Experience managing global state for dark mode and book information."
+          },
+          {
+            "skill": "TailwindCSS ⭐️⭐️",
+            "description": "Capable of designing and customizing components with Tailwind CSS."
+          },
+          {
+            "skill": "Framer Motion ⭐️",
+            "description": "Able to implement simple animation effects."
+          },
+          {
+            "skill": "i18n ⭐️⭐️",
+            "description": "Experience implementing bilingual (Korean/English) features using i18n."
+          }
         ]
       },
       "tools": {
         "title": "Etc",
         "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
         "details": [
-          { "skill": "Git/GitHub ⭐️⭐", "description": "Familiar with issue tracking and branch strategy in Git, and capable of team collaboration." },
-          { "skill": "Figma ⭐️⭐️⭐️", "description": "Skilled in building design systems and creating prototypes." },
-          { "skill": "Slack ⭐️⭐️⭐️", "description": "Excellent communication in team settings, always available." },
-          { "skill": "Notion ⭐️⭐️⭐️", "description": "Highly proficient in organizing information and managing team workspaces with Notion." },
-          { "skill": "Visual Studio Code ⭐️⭐️️", "description": "Uses Vim plugins within Visual Studio Code." },
-          { "skill": "Docker ⭐️", "description": "Able to build Docker images and set up Docker environments." }
+          {
+            "skill": "Git/GitHub ⭐️⭐",
+            "description": "Familiar with issue tracking and branch strategy in Git, and capable of team collaboration."
+          },
+          {
+            "skill": "Figma ⭐️⭐️⭐️",
+            "description": "Skilled in building design systems and creating prototypes."
+          },
+          {
+            "skill": "Slack ⭐️⭐️⭐️",
+            "description": "Excellent communication in team settings, always available."
+          },
+          {
+            "skill": "Notion ⭐️⭐️⭐️",
+            "description": "Highly proficient in organizing information and managing team workspaces with Notion."
+          },
+          {
+            "skill": "Visual Studio Code ⭐️⭐️️",
+            "description": "Uses Vim plugins within Visual Studio Code."
+          },
+          {
+            "skill": "Docker ⭐️",
+            "description": "Able to build Docker images and set up Docker environments."
+          }
         ]
       }
     }
@@ -174,6 +231,52 @@
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "Transcendence is a website project reinterpreting the classic Pong game."
+    },
+    "design": {
+      "title": "DESIGN",
+      "subTitle": "How should we approach design?",
+      "first": "Design Componentization",
+      "firstContent": [
+        "Initially, I started designing without considering components and development. However, I realized this might lead to difficulties during development. Thinking it would be better to reuse designs when possible, I began a redesign process over three days.",
+        "I created components with reusability in mind and designed pages using these components. As a result, during development, I was able to reduce unnecessary time spent thinking about which components to create and where to place them when writing code."
+      ]
+    },
+    "component": {
+      "title": "COMPONENT",
+      "subTitle": "What should we do to implement SPA?",
+      "first": "Code Component Modularization",
+      "firstContent": [
+        "I referred to React components. To componentize, I created a component class, and all functional classes inherit from this component, rendering through the render() method."
+      ]
+    },
+    "route": {
+      "title": "APP ROUTE",
+      "subTitle": "How can we switch pages without refreshing?",
+      "first": "Custom Router Implementation",
+      "firstContent": [
+        "The Router class returns the appropriate page based on the URL. Using JavaScript's History API-related functions, it detects URLs, manages history, finds the root id, and returns the page component."
+      ]
+    },
+    "pubsub": {
+      "title": "PUB/SUB",
+      "subTitle": "How should we manage dark mode, profile status, and game mode states?",
+      "first": "Pub/Sub Pattern",
+      "firstContent": [
+        "Referring to Redux's store, I used the Publisher/Subscriber pattern where changes in one place are detected and reacted to by other parts subscribing to those changes."
+      ]
+    },
+    "collaboration": {
+      "title": "COLLABORATION",
+      "subTitle": "Efforts for collaboration",
+      "first": "GitHub flow",
+      "firstContent": [
+        "I proposed systematic development and managed branches through a Git collaboration scenario based on the GitHub flow branch strategy.",
+        "We collaborated using GitHub Issue labels, Issue Templates, PR Templates, and Git Commit Convention rules."
+      ],
+      "second": "Notion",
+      "secondContent": [
+        "I used Notion to bridge information gaps between team members."
+      ]
     }
   },
   "mysite": {
