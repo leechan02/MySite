@@ -50,7 +50,7 @@ export default async function Transcendence({
       <section id='overview'>
         <Overview project='transcendence.overview' />
       </section>
-      <section id='highlights'>
+      <section id='highlights' className="w-full">
         <Highlights
           project='transcendence.highlights'
           bgColor='bg-color1'
