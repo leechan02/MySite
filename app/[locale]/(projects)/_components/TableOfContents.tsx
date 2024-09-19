@@ -75,7 +75,7 @@ export default function TableOfContents({ sections }: TableOfContentsProps) {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         exit={{ opacity: 0, x: 100 }}
-        className="hidden md:block fixed top-1/2 right-10 transform -translate-y-1/2"
+        className="hidden md:block fixed top-1/3 right-10 transform -translate-y-1/2"
       >
         <ul className="space-y-4">
           {sections.map((section) => (

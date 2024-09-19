@@ -56,7 +56,9 @@ export default async function RootLayout({
             <body
               className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
             >
-              <ProjectHeader />
+              <div className='sticky top-0 z-50'>
+                <ProjectHeader />
+              </div>
               <main className='flex-col justify-center items-center inline-flex flex-grow'>
                 <Suspense fallback={<Loading />}>{children}</Suspense>
               </main>
