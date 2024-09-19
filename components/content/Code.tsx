@@ -35,7 +35,7 @@ export default function Code({
           {code}
         </SyntaxHighlighter>
       </div>
-      <div className='w-full flex flex-col text-xs text-opacity-50 gap-4'>
+      <div className='w-full flex flex-col text-xs text-opacity-50 gap-1'>
         {t.raw(codeEx).map((item: string, index: number) => (
           <div key={index} className="bg-primary rounded-2xl p-4 text-white">{item}</div>
         ))}

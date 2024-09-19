@@ -260,7 +260,7 @@
       ]
     },
     "route": {
-      "title": "APP ROUTE",
+      "title": "ROUTER",
       "subTitle": "How can we switch pages without refreshing?",
       "first": "Custom Router Implementation",
       "firstContent": [

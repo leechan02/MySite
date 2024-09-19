@@ -199,7 +199,7 @@
       ]
     },
     "route": {
-      "title": "APP ROUTE",
+      "title": "ROUTER",
       "subTitle": "새로고침을 하지 않고 페이지 전환을 어떻게 할까?",
       "first": "커스텀 라우터 구현",
       "firstContent": [

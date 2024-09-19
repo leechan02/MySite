@@ -5,6 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import Design from "./_components/Design";
 import ProjectTitle from "../_components/ProjectTitle";
 import Component from "./_components/Component";
+import AppRoute from "./_components/AppRoute";
 
 export default async function Transcendence({
   params: { locale },
@@ -62,7 +63,9 @@ export default async function Transcendence({
       <Design />
       <div className='w-full border border-foreground opacity-10' />
       <Component />
-      <TableOfContents sections={["Overview", "Highlights", "Design", "Component"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <AppRoute />
+      <TableOfContents sections={["Overview", "Highlights", "Design", "Component", "Router"]} />
     </div>
   );
 }
