@@ -6,6 +6,8 @@ import Design from "./_components/Design";
 import ProjectTitle from "../_components/ProjectTitle";
 import Component from "./_components/Component";
 import AppRoute from "./_components/AppRoute";
+import PubSub from "./_components/PubSub";
+import Collaboration from "./_components/Collaboration";
 
 export default async function Transcendence({
   params: { locale },
@@ -65,7 +67,21 @@ export default async function Transcendence({
       <Component />
       <div className='w-full border border-foreground opacity-10' />
       <AppRoute />
-      <TableOfContents sections={["Overview", "Highlights", "Design", "Component", "Router"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <PubSub />
+      <div className='w-full border border-foreground opacity-10' />
+      <Collaboration />
+      <TableOfContents
+        sections={[
+          "Overview",
+          "Highlights",
+          "Design",
+          "Component",
+          "Router",
+          "PubSub",
+          "Collaboration",
+        ]}
+      />
     </div>
   );
 }

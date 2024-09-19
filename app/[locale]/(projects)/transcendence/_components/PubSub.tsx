@@ -5,7 +5,6 @@ import Content from "@/components/content/Content";
 import Title from "@/components/content/Title";
 import { FiFile } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
-import VideoBox from "@/components/content/VideoBox";
 
 interface CodeItem {
   code: string;
@@ -14,59 +13,69 @@ interface CodeItem {
   label: string;
 }
 
-export default function Component() {
+export default function PubSub() {
   const codeItems: CodeItem[] = [
     {
-      code: `class Component {
-  //...
-  render() {}
-  initialize() {
-    //...
+      code: `class PubSub {
+  constructor() {
+    this.events = {};
   }
-}
-export default Component;`,
-      language: 'javascript',
-      codeEx: 'firstCodeEx',
-      label: 'Component.js'
-    },
-    {
-      code: `import { Component } from "../../core/index.js";
-class FriendsButton extends Component {
-  render() {
-    //...
+
+  subscribe(event, callback) {
+	  //..
   }
-}
-export default FriendsButton;`,
-      language: 'javascript',
-      codeEx: 'secondCodeEx',
-      label: 'FriendsButton.js'
-    },
-    {
-      code: `const createComponent = (Component, props) => {
-  const component = new Component(props);
-  return component.initialize();
-};
-export default createComponent;`,
-      language: 'javascript',
-      codeEx: 'thirdCodeEx',
-      label: 'createComponent.js'
-    },
-    {
-      code: `let activeComponent;
-switch (this.state.activeOption) {
-   case "Game":
-     activeComponent = createComponent(GameOption, {});
-     break;
-   case "Account":
-     activeComponent = createComponent(AccountOption, {});
-     break;
-   case "Credits":
-     activeComponent = createComponent(CreditsOption, {});
-     break;
+
+  publish(event, data = {}) {
+	  //..
+  }
 }`,
       language: 'javascript',
+      codeEx: 'firstCodeEx',
+      label: 'pubsub.js'
+    },
+    {
+      code: `class Store {
+  constructor(params) {
+	  //...
+    self.state = new Proxy(params.state || {}, {
+      set: function (state, key, value) {
+        state[key] = value;
+
+        self.events.publish(key + "Change", self.state);
+
+        self.status = "resting";
+
+        return true;
+      },
+    });
+  }`,
+      language: 'javascript',
+      codeEx: 'secondCodeEx',
+      label: 'store.js'
+    },
+    {
+      code: `export default {
+  updateNickname(state, payload) {
+    state.nickname = payload;
+    return state;
+  },
+  toggleDarkMode(state) {
+    state.darkMode = !state.darkMode;
+    return state;
+  },
+  // ...
+};`,
+      language: 'javascript',
+      codeEx: 'thirdCodeEx',
+      label: 'mutation.js'
+    },
+    {
+      code: `Store.events.subscribe("darkModeChange", (newState) => {
+  console.log("dark mode change:", newState.darkMode);
+});`,
+      language: 'javascript',
       codeEx: 'fourthCodeEx',
-      label: 'ComponentSwitch.js'
+      label: 'using example'
     }
   ];
 
@@ -74,12 +83,12 @@ switch (this.state.activeOption) {
 
   return (
     <section
-      id='component'
+      id='pubsub'
       className='w-full flex flex-col justify-start items-start gap-6 sm:gap-16 font-mono text-foreground'
     >
-      <Title project='transcendence.component' />
+      <Title project='transcendence.pubsub' />
       <Content
-        project='transcendence.component'
+        project='transcendence.pubsub'
         title='first'
         content='firstContent'
       />
@@ -94,7 +103,7 @@ switch (this.state.activeOption) {
             className="w-full sm:w-1/2"
           >
             <Code
-              project='transcendence.component'
+              project='transcendence.pubsub'
               code={codeItems[activeCodeIndex].code}
               language={codeItems[activeCodeIndex].language}
               codeEx={codeItems[activeCodeIndex].codeEx}
@@ -132,7 +141,6 @@ switch (this.state.activeOption) {
           </div>
         </div>
       </div>
-      <VideoBox src='/video/pong_com.mp4' />
     </section>
   );
 }
