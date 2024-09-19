@@ -5,6 +5,7 @@ import Content from "@/components/content/Content";
 import Title from "@/components/content/Title";
 import { FiFile } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
+import VideoBox from "@/components/content/VideoBox";
 
 interface CodeItem {
   code: string;
@@ -131,6 +132,7 @@ switch (this.state.activeOption) {
           </div>
         </div>
       </div>
+      <VideoBox src='/video/pong_com.mp4' />
     </section>
   );
 }
