@@ -23,10 +23,6 @@ export default async function Transcendence({
     },
     {
       type: "image" as const,
-      src: "/image/pong/pong.png",
-    },
-    {
-      type: "image" as const,
       src: "/image/pong/pongHome.png",
     },
     {
