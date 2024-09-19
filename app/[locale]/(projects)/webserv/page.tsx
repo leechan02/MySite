@@ -3,6 +3,7 @@ import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
+import Problem from "./_components/Problem";
 
 export default async function Webserv({
   params: { locale },
@@ -42,7 +43,9 @@ export default async function Webserv({
           mediaItems={highlightMediaItems}
         />
       </section>
-      <TableOfContents sections={["Overview", "Highlights"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <Problem />
+      <TableOfContents sections={["Overview", "Highlights", "Problem"]} />
     </div>
   );
 }
