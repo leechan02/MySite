@@ -204,6 +204,15 @@
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+    },
+    "problem": {
+      "title": "THE PROBLEM",
+      "subTitle": "Couldn't we just refer to Nginx to build it?",
+      "first": "Nginx Structure",
+      "firstContent": [
+        "Initially, I wrote code thinking of a multi-process, multi-threaded structure referring to the Nginx structure, where a master process creates worker processes, and worker processes register signals and send responses according to each thread.",
+        "However, when I had almost finished writing the structure, I discovered a user requirement that only one process should be used. Eventually, I had to be satisfied with only referring to Nginx for parsing the configuration file."
+      ]
     }
   },
   "transcendence": {
