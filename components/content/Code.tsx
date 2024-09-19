@@ -19,8 +19,8 @@ export default function Code({
 }: CodeProps) {
   const t = useTranslations(project);
   return (
-    <div className='flex flex-col sm:flex-row justify-between items-start font-mono text-foreground w-full gap-8'>
-      <div className='bg-primary sm:w-1/2 shadow border-2 border-foreground/10 rounded-2xl backdrop-blur-[15px] w-full overflow-hidden flex flex-col justify-start items-start gap-1 p-4'>
+    <div className='flex flex-col justify-center items-center font-mono text-foreground w-full gap-4'>
+      <div className='bg-primary shadow border-2 border-foreground/10 rounded-2xl backdrop-blur-[15px] w-full overflow-auto flex flex-col justify-start items-start gap-1 p-4'>
         <MacButtons />
         <SyntaxHighlighter
           language={language}
@@ -35,9 +35,9 @@ export default function Code({
           {code}
         </SyntaxHighlighter>
       </div>
-      <div className='w-full sm:w-1/2 flex flex-col text-xs opacity-50 gap-4'>
+      <div className='w-full flex flex-col text-xs text-opacity-50 gap-4'>
         {t.raw(codeEx).map((item: string, index: number) => (
-          <div key={index}>{item}</div>
+          <div key={index} className="bg-primary rounded-2xl p-4 text-white">{item}</div>
         ))}
       </div>
     </div>
