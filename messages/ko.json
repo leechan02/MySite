@@ -251,6 +251,15 @@
         "GitHub flow 브랜치 전략을 기반으로 한 Git 협업 시나리오를 통해 체계적인 개발을 제안, 브랜치를 관리했습니다.",
         "GitHub Issue 라벨, Issue Template, PR Template, Git Commit Convention 규칙들을 생성 하여 협업을 진행했습니다."
       ],
+      "gitflow": [
+        "작업 이슈 등록",
+        "브랜치 생성",
+        "작업",
+        "PR 생성",
+        "리뷰",
+        "테스트",
+        "병합"
+      ],
       "second": "노션",
       "secondContent": [
         "노션을 사용해 팀원들과의 정보격차를 해소 할 수 있도록 노력했습니다."

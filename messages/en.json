@@ -312,6 +312,15 @@
         "I proposed systematic development and managed branches through a Git collaboration scenario based on the GitHub flow branch strategy.",
         "We collaborated using GitHub Issue labels, Issue Templates, PR Templates, and Git Commit Convention rules."
       ],
+      "gitflow": [
+        "Issue Create",
+        "Branch Add",
+        "Work",
+        "PR Create",
+        "Review",
+        "Test",
+        "Merge"
+      ],
       "second": "Notion",
       "secondContent": [
         "I used Notion to bridge information gaps between team members."
