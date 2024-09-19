@@ -265,6 +265,22 @@
       "first": "Custom Router Implementation",
       "firstContent": [
         "The Router class returns the appropriate page based on the URL. Using JavaScript's History API-related functions, it detects URLs, manages history, finds the root id, and returns the page component."
+      ],
+      "firstCodeEx": [
+        "The App class serves as the starting point of the application, creating a Router object that defines the rules for matching URLs with their corresponding pages."
+      ],
+      "secondCodeEx": [
+        "When the Router class is created, an init function is called. It reads the current URL when first accessed and displays the appropriate page (by calling the routing function).",
+        "It then handles the URL when the user navigates to different pages (e.g., when clicking different links)."
+      ],
+      "thirdCodeEx": [
+        "When a user clicks a link within the page, it prevents the default link behavior (browser refreshing and loading the page) (e.preventDefault()), and a function called routePush is called.",
+        "routePush changes the browser's URL (window.history.pushState), and because the URL has changed, it calls a function called routing to display the new page on the screen.",
+        "The routing function finds the page component that matches the current URL (e.g., /home/, /profile/) and renders it on the screen."
+      ],
+      "fourthCodeEx": [
+        "Once the routing function finds the page component, it renders that component on the screen through the render function.",
+        "The render function finds a specific HTML element (in this case, rootElement) and inserts the newly created page into it."
       ]
     },
     "pubsub": {
@@ -273,6 +289,19 @@
       "first": "Pub/Sub Pattern",
       "firstContent": [
         "Referring to Redux's store, I used the Publisher/Subscriber pattern where changes in one place are detected and reacted to by other parts subscribing to those changes."
+      ],
+      "firstCodeEx": [
+        "The PubSub class implements a mechanism for publishing and subscribing to events."
+      ],
+      "secondCodeEx": [
+        "The Store class manages global state and triggers events when the state changes. The key here is wrapping the state in a Proxy, which automatically publishes events when the state changes."
+      ],
+      "thirdCodeEx": [
+        "To change the state, actions and mutations are used. Instead of modifying the state directly, it's safely changed through mutations.",
+        "For example, toggleDarkMode functions to turn the dark mode on and off. When the state changes, the Proxy detects the set operation and publishes a state change event."
+      ],
+      "fourthCodeEx": [
+        "When the state changes, an event is automatically published, and components that have subscribed to that event detect the change and update the UI or perform other actions."
       ]
     },
     "collaboration": {

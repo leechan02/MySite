@@ -204,6 +204,22 @@
       "first": "커스텀 라우터 구현",
       "firstContent": [
         "Router 클래스를 통해 URL에 맞는 page를 반환합니다. JavaScript의 History API와 관련된 기능들을 사용하여 URL을 감지하고 기록을 관리하고 root id를 찾아 페이지 컴포넌트를 반환합니다."
+      ],
+      "firstCodeEx": [
+        "App 클래스는 애플리케이션의 시작점으로 Router라는 객체를 만들어서 URL과 해당 페이지가 매칭되는 규칙을 정해줍니다."
+      ],
+      "secondCodeEx": [
+        "Router 클래스가 생성되면, init이라는 함수가 호출되고, 처음 접속했을 때 현재 URL을 읽어서 그에 맞는 페이지를 찾아 보여줍니다. (routing 함수 호출)",
+        "앞으로 사용자가 다른 페이지로 이동할 때(예: 다른 링크를 클릭할 때) 그 URL을 처리합니다."
+      ],
+      "thirdCodeEx": [
+        "사용자가 페이지 내에서 링크를 클릭하면, 기본적인 링크의 동작(브라우저가 새로고침 되며 페이지를 불러오는 것)을 막고(e.preventDefault()), routePush라는 함수가 호출됩니다.",
+        "routePush는 브라우저의 URL을 바꾸고 (window.history.pushState), URL이 바뀌었으니 새로운 페이지를 화면에 보여주기 위해 routing이라는 함수를 호출합니다.",
+        "routing 함수는 현재의 URL(예: /home/, /profile/)에 맞는 페이지 컴포넌트를 찾아서 화면에 그립니다."
+      ],
+      "fourthCodeEx": [
+        "routing 함수에서 페이지 컴포넌트를 찾아내면, 그 컴포넌트를 render 함수를 통해 화면에 그립니다.",
+        "render 함수는 특정한 HTML 요소(이 경우 rootElement)를 찾아서 그 안에 새로 생성한 페이지를 넣습니다."
       ]
     },
     "pubsub": {
@@ -212,6 +228,19 @@
       "first": "Pub/Sub 패턴",
       "firstContent": [
         "Redux의 store를 참조해, 한 곳에서 상태가 변경되면 그 변경을 구독하고 있던 다른 부분에서 변화를 감지해 반응하는 패턴인 Publisher/Subscriber 패턴을 사용했습니다."
+      ],
+      "firstCodeEx": [
+        "PubSub 클래스는 이벤트를 발행하고 구독하는 메커니즘을 구현합니다."
+      ],
+      "secondCodeEx": [
+        "Store 클래스는 전역 상태를 관리하고, 상태가 변경될 때 이벤트를 발생시킵니다. 여기서 핵심은 상태를 Proxy로 감싸서, 상태가 변경될 때 이벤트를 자동으로 발행하도록 만든 것입니다."
+      ],
+      "thirdCodeEx": [
+        "상태를 변경하려면 actions와 mutations를 사용하며, 직접 상태를 수정하는 대신 mutations를 통해 상태를 안전하게 변경합니다.",
+        "예를 들어 toggleDarkMode는 다크 모드를 켜고 끄는 기능을 합니다. 상태가 변경되면 Proxy가 set을 감지하고, 상태 변경 이벤트를 발행합니다."
+      ],
+      "fourthCodeEx": [
+        "상태가 변경되면 자동으로 이벤트가 발행되고, 해당 이벤트를 구독한 컴포넌트는 그 변화를 감지하여 UI를 업데이트하거나 다른 동작을 수행합니다."
       ]
     },
     "collaboration": {
