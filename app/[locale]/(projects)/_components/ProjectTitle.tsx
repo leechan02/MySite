@@ -5,7 +5,7 @@ import { FiCompass, FiGithub } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 import { Suspense } from 'react';
 
-interface TitleProps {
+interface ProjectTitleProps {
   link: string;
   deploy?: string;
   image: string;
@@ -27,13 +27,13 @@ const ImageComponent = ({ src, alt, brColor }: { src: string; alt: string; brCol
   </div>
 );
 
-export default function Title({
+export default function ProjectTitle({
   link,
   image,
   project,
   brColor,
   deploy,
-}: TitleProps) {
+}: ProjectTitleProps) {
   const t = useTranslations(project);
 
   return (

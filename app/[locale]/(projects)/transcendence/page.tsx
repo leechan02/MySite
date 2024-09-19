@@ -2,8 +2,8 @@ import Overview from "../_components/Overview";
 import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
-import Title from "../_components/Title";
-import Contents from "../_components/Contents";
+import Design from "./_components/Design";
+import ProjectTitle from "../_components/ProjectTitle";
 
 export default async function Transcendence({
   params: { locale },
@@ -39,35 +39,10 @@ export default async function Transcendence({
     },
   ];
 
-  const designContentItems = [
-    {
-      title: "first",
-      content: "firstContent",
-      media: {
-        type: "image" as const,
-        src: "/image/pong/pongUI.png",
-      },
-    },
-  ];
-
-  const componentContentItems = [
-    {
-      title: "first",
-      content: "firstContent",
-      media: {
-        type: "code" as const,
-        code: `const hello = 'world';
-console.log(hello);`,
-        language: "javascript",
-        explanation: "firstCodeExplanation",
-      },
-    },
-  ];
-
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
       <section id='overview'>
-        <Title
+        <ProjectTitle
           link='https://github.com/42Nuts/Transcendence'
           image='/image/pong/pong.png'
           project='transcendence.content'
@@ -83,22 +58,8 @@ console.log(hello);`,
         />
       </section>
       <div className='w-full border border-foreground opacity-10' />
-      <section id='design' className='w-full'>
-        <Contents
-          project='transcendence.design'
-          contentItems={designContentItems}
-        />
-      </section>
-      <div className='w-full border border-foreground opacity-10' />
-      <section id='component' className='w-full'>
-        <Contents
-          project='transcendence.component'
-          contentItems={componentContentItems}
-        />
-      </section>
-      <TableOfContents
-        sections={["Overview", "Highlights", "Design", "Component"]}
-      />
+      <Design />
+      <TableOfContents sections={["Overview", "Highlights", "Design"]} />
     </div>
   );
 }

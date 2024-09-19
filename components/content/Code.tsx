@@ -7,14 +7,14 @@ import { useTranslations } from "next-intl";
 interface CodeProps {
   code: string;
   language: string;
-  explanation: string;
+  codeEx: string;
   project: string;
 }
 
 export default function Code({
   code,
   language,
-  explanation,
+  codeEx,
   project,
 }: CodeProps) {
   const t = useTranslations(project);
@@ -36,7 +36,7 @@ export default function Code({
         </SyntaxHighlighter>
       </div>
       <div className='w-full sm:w-1/2 flex flex-col text-xs opacity-50 gap-4'>
-        {t.raw(explanation).map((item: string, index: number) => (
+        {t.raw(codeEx).map((item: string, index: number) => (
           <div key={index}>{item}</div>
         ))}
       </div>

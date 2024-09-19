@@ -2,7 +2,7 @@ import Overview from "../_components/Overview";
 import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
-import Title from "../_components/Title";
+import ProjectTitle from "../_components/ProjectTitle";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -40,7 +40,7 @@ export default async function Bookmoeum({
 
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <Title
+      <ProjectTitle
         link='https://github.com/leechan02/Bookmoeum'
         image='/image/bookmoeum/bookmoeum.png'
         project='bookmoeum.content'

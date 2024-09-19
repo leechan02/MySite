@@ -2,7 +2,7 @@ import Overview from "../_components/Overview";
 import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
-import Title from "../_components/Title";
+import ProjectTitle from "../_components/ProjectTitle";
 
 export default async function Webserv({
   params: { locale },
@@ -26,7 +26,7 @@ export default async function Webserv({
 
   return (
     <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <Title
+      <ProjectTitle
         link='https://github.com/Aprilistic/webserv'
         image='/image/webserv/webserv.png'
         project='webserv.content'
