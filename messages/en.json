@@ -247,8 +247,16 @@
       "first": "Code Component Modularization",
       "firstContent": [
         "I referred to React components. To componentize, I created a component class, and all functional classes inherit from this component, rendering through the render() method."
-      ], "firstCodeExplanation": [
-        "코드 설명 예시입니다. 예시입니다. 예시입니다. 하하하하하하하하하하하하하핳. 코드 설명 예시입니다. 예시입니다. 예시입니다. 하하하하하하하하하하하하하핳."
+      ],
+      "firstCodeEx": ["The Component class has a render() method."],
+      "secondCodeEx": [
+        "All functional classes inherit from the Component class and render through the render() method."
+      ],
+      "thirdCodeEx": [
+        "Components are created using the createComponent function."
+      ],
+      "fourthCodeEx": [
+        "Through componentization, we can change only the component instead of reloading the entire page depending on the situation."
       ]
     },
     "route": {
