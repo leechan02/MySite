@@ -89,7 +89,7 @@ private:
 		server_name jinheo.com
 		
 		location / {
-			alias /var/ww/html;
+			alias /var/www/html;
 		}
 	}
 	
@@ -169,6 +169,7 @@ private:
           </div>
         </div>
       </div>
+      <ImageBox src='/image/webserv/webservConfigTree.png' alt='Webserv config tree' />
     </section>
   );
 }
