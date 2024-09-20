@@ -1,11 +1,20 @@
-import Code from "@/components/content/Code";
+import CodeSection from "@/components/content/CodeSection";
 import Content from "@/components/content/Content";
 import ImageBox from "@/components/content/ImageBox";
 import Title from "@/components/content/Title";
+import { useState } from "react";
+
+interface CodeItem {
+  code: string;
+  language: string;
+  codeEx?: string;
+  label: string;
+}
 
 export default function Http() {
-  const codeItems = {
-    code: `class Http {
+  const codeItems: CodeItem[] = [
+    {
+      code: `class Http {
 public:
   Http(int socket, int port, std::string &sendBuffer, bool &keepAlive,
        int &remainingRequest);
@@ -24,11 +33,11 @@ private:
   std::string &mSendBufferRef;
   std::vector<SharedPtr<CGI> > mCGIList;
 };`,
-    language: "cpp",
-  };
-
-  const codeItems2 = {
-    code: `class GetHandler : public IRequestHandler {
+      language: "cpp",
+      label: "Http.hpp",
+    },
+    {
+      code: `class GetHandler : public IRequestHandler {
 public:
   virtual void Handle(Http &http);
 	//...
@@ -43,8 +52,11 @@ class DeleteHandler : public IRequestHandler {
 public:
   virtual void Handle(Http &http);
 };`,
-    language: "cpp",
-  };
+      language: "cpp",
+      label: "Http.cpp",
+    }
+  ];
+
 
   return (
     <section
@@ -53,16 +65,10 @@ public:
     >
       <Title project='webserv.http' />
       <Content project='webserv.http' title='first' content='firstContent' />
-      <Code
-        code={codeItems.code}
-        language={codeItems.language}
-        project='webserv.http'
-      />
       <Content project='webserv.http' title='second' content='secondContent' />
-      <Code
-        code={codeItems2.code}
-        language={codeItems2.language}
+      <CodeSection
         project='webserv.http'
+        codeItems={codeItems}
       />
       <Content project='webserv.http' title='third' content='thirdContent' />
       <ImageBox
