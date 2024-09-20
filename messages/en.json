@@ -24,7 +24,7 @@
     },
     "webserv": {
       "title": "Webserv",
-      "date": "42 Seoul Jul 2023 - Nov 2023",
+      "date": "42 Seoul Aug 2023 - Nov 2023",
       "description": "Build Web Server with C++98."
     },
     "transcendence": {
@@ -46,10 +46,9 @@
       ],
       "leftSecondTitle": "Coding style",
       "leftSecondContent": [
-        "I appreciate beauty, which is why I always consider whether my code is understandable to someone seeing it for the first time and whether its structure is overly complex.",
-        "While optimization is another matter, I don't believe that more complex code necessarily equates to better performance.",
-        "I think that teamwork surpasses individual effort, which is why I consider communication skills essential for developers.",
-        "Having started from scratch, I enjoy and excel at explaining concepts in a way that anyone can understand."
+        "I appreciate beauty. That's why when writing code, I consider whether someone seeing it for the first time can understand it, whether the structure isn't too complex, and I always think about code reusability for optimization.",
+        "Because I believe that working together is better than working alone, I think communication skills are essential for developers. Having started from scratch, I enjoy and excel at explaining things in a way that anyone can understand easily.",
+        "I save time by utilizing AI. I tend to use it to improve code quality or as an alternative to searching, and if something seems off, I refer to Google and official documentation to refine the code."
       ],
       "rightFirstTitle": "But I want more",
       "rightFirstContent": [
@@ -83,32 +82,32 @@
     "skills": {
       "title": "SKILLS",
       "language": {
-        "title": "Language",
+        "title": "Languages",
         "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
         "details": [
           {
             "skill": "C/C++ ⭐️⭐️",
-            "description": "Multi-process, multi-threading, OOP, experience with memory management in various toy projects."
+            "description": "I have experience implementing various toy projects considering multi-process, multi-threading, object-oriented programming, and memory management."
           },
           {
             "skill": "JavaScript ️⭐⭐️️",
-            "description": "Experience developing SPAs with Vanilla JavaScript."
+            "description": "I understand the difference between const, let, and var, and have experience creating SPA sites using component modularization with Vanilla JavaScript, similar to React."
           },
           {
             "skill": "TypeScript ⭐️",
-            "description": "Experience using interfaces for type settings in React."
+            "description": "I can use TypeScript with React, setting up types using interfaces."
           },
           {
             "skill": "HTML ⭐⭐️️",
-            "description": "Able to build pages using HTML."
+            "description": "I can create pages using HTML."
           },
           {
             "skill": "CSS ⭐⭐️️",
-            "description": "Able to design layouts using CSS."
+            "description": "I understand the concept of flex and can implement desired designs using CSS."
           },
           {
             "skill": "English ⭐️⭐️⭐️",
-            "description": "OPIc AL, able to communicate fluently with native speakers, and comfortable reading English documentation."
+            "description": "OPIc AL, can communicate with native speakers without difficulty. I have no problem reading English technical documents when I have questions about technologies I'm using."
           }
         ]
       },
@@ -118,61 +117,61 @@
         "details": [
           {
             "skill": "React ⭐️⭐️",
-            "description": "Capable of developing routes and components using React-dom."
+            "description": "I understand React component structure from experience implementing component modularization with JavaScript alone, and can use React-dom for routing and components."
           },
           {
             "skill": "Next.js ⭐️⭐️",
-            "description": "Experience developing routes using dynamic routing and middleware."
+            "description": "I know the difference between SSR and CSR, and have experience deploying services using dynamic routing and middleware-based routing."
           },
           {
             "skill": "React Query ⭐️",
-            "description": "Experience in API caching and implementing infinite scroll."
+            "description": "I have experience managing API caches and implementing infinite scrolling using queries."
           },
           {
             "skill": "Redux ⭐️",
-            "description": "Experience managing global state for dark mode and book information."
+            "description": "I understand the structure from implementing a pub/sub pattern similar to Redux in JavaScript, and can perform basic state management using Redux."
           },
           {
             "skill": "TailwindCSS ⭐️⭐️",
-            "description": "Capable of designing and customizing components with Tailwind CSS."
+            "description": "I can implement most designs with TailwindCSS and customize development designs."
           },
           {
             "skill": "Framer Motion ⭐️",
-            "description": "Able to implement simple animation effects."
+            "description": "I can implement simple animation effects."
           },
           {
             "skill": "i18n ⭐️⭐️",
-            "description": "Experience implementing bilingual (Korean/English) features using i18n."
+            "description": "I have experience implementing Korean-English switching functionality using the i18n library."
           }
         ]
       },
       "tools": {
-        "title": "Etc",
+        "title": "Others",
         "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
         "details": [
           {
             "skill": "Git/GitHub ⭐️⭐",
-            "description": "Familiar with issue tracking and branch strategy in Git, and capable of team collaboration."
+            "description": "I can manage Git Issues, apply branch strategies, and collaborate in teams."
           },
           {
             "skill": "Figma ⭐️⭐️⭐️",
-            "description": "Skilled in building design systems and creating prototypes."
+            "description": "I can build design systems and create prototypes."
           },
           {
             "skill": "Slack ⭐️⭐️⭐️",
-            "description": "Excellent communication in team settings, always available."
+            "description": "Always available, can communicate smoothly with team members."
           },
           {
             "skill": "Notion ⭐️⭐️⭐️",
-            "description": "Highly proficient in organizing information and managing team workspaces with Notion."
+            "description": "I organize most information in Notion, and was always in charge of organizing the team space Notion during team projects."
           },
           {
             "skill": "Visual Studio Code ⭐️⭐️️",
-            "description": "Uses Vim plugins within Visual Studio Code."
+            "description": "I'm a hybrid user using the vim plugin in Visual Studio."
           },
           {
             "skill": "Docker ⭐️",
-            "description": "Able to build Docker images and set up Docker environments."
+            "description": "I understand the basic concepts of Docker and can build and set up Docker images."
           }
         ]
       }
@@ -181,15 +180,15 @@
   "webserv": {
     "content": {
       "title": "Webserv",
-      "date": "42 Seoul July 2023"
+      "date": "42 Seoul August 2023"
     },
     "overview": {
       "myRoleTitle": "MyRole",
-      "myRole": "Architecture Design, HTTP Parsing, debugging log implementation, code refactoring, functional verification page development",
+      "myRole": "Architecture Design, Config Parsing, HTTP Parsing, debugging log implementation, code refactoring, functional verification page development",
       "teamTitle": "Team",
       "team": ["Jinho Heo", "Hyeonjun An", "Yunseon Im"],
       "timelineTitle": "Timeline",
-      "timeline": "4 Months, starts July 2023",
+      "timeline": "4 Months, starts August 2023",
       "techTitle": "Tech Keywords",
       "techKeywords": "C++98, Makefile, HTML, CSS, Object Oriented Programming, Non-block I/O, I/O Multiplexing (kqueue), HTTP/1.1",
       "overviewTitle": "Overview",
@@ -314,9 +313,9 @@
     },
     "overview": {
       "myRoleTitle": "MyRole",
-      "myRole": "Design Lead, Frontend Lead, Project Lead",
+      "myRole": "Design, Frontend, Project Lead",
       "teamTitle": "Team",
-      "team": ["Taeyang Park", "Hyeonjun An", "Yunseon Im"],
+      "team": ["Taeyang Park Backend", "Hyeonjun An Backend", "Yunseon Im Game"],
       "timelineTitle": "Timeline",
       "timeline": "4 Months, starts December 2023",
       "techTitle": "Tech Keywords",

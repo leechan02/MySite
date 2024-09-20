@@ -6,7 +6,7 @@
     "projects": "프로젝트",
     "info": "정보"
   },
-  "resume" : {
+  "resume": {
     "resume": "/resume/Resume(ko).pdf"
   },
   "work": {
@@ -24,7 +24,7 @@
     },
     "webserv": {
       "title": "웹서브",
-      "date": "42서울 2023년 7월-2023년 11월",
+      "date": "42서울 2023년 8월-2023년 11월",
       "description": "c++98로 만든 웹서버."
     },
     "transcendence": {
@@ -34,7 +34,7 @@
     }
   },
   "info": {
-    "mainTitle": "안녕하세유, 이의찬입니다.",
+    "mainTitle": "안녕하세요, 이의찬입니다.",
     "subTitle": "문제를 정의하고 해결해 세상을 조금 더 편리하게 만드는 것을 좋아합니다.",
     "about": {
       "leftFirstTitle": "컴퓨터공학을 선택한 배경",
@@ -45,8 +45,9 @@
       ],
       "leftSecondTitle": "코딩 스타일",
       "leftSecondContent": [
-        "아름다운 것을 좋아합니다. 그렇기 때문에 코드를 작성할 때 처음 보는 사람도 이해할 수 있는지, 구조가 복잡하지는 않은지 고민합니다. 최적화는 또 다른 문제라고도 할 수 있겠지만 복잡한 코드가 더 성능이 좋은 코드라고 생각하지는 않습니다.",
-        "혼자보다는 여러명이 더 낫다고 생각하기 때문에 개발자에게 커뮤니케이션 능력은 필수라고 생각합니다. 노베이스에서 시작했기 때문에 누구나 알아듣기 쉽도록 설명하는 것을 좋아하고 잘합니다."
+        "아름다운 것을 좋아합니다. 그렇기 때문에 코드를 작성할 때 처음 보는 사람도 이해할 수 있는지, 구조가 복잡하지는 않은지 고민하며, 최적화를 위해 늘 코드 재사용성을 생각합니다.",
+        "혼자보다는 여러명이 더 낫다고 생각하기 때문에 개발자에게 커뮤니케이션 능력은 필수라고 생각합니다. 노베이스에서 시작했기 때문에 누구나 알아듣기 쉽도록 설명하는 것을 좋아하고 잘합니다.",
+        "AI를 활용해 시간을 아낍니다. 코드의 퀄리티를 높일 수 있는 방법이나 검색 대신 사용하는 편이고, 이상하다 싶으면 구글링과 공식문서를 보고 코드를 보안해나갑니다."
       ],
       "rightFirstTitle": "궁금한 것이 많습니다",
       "rightFirstContent": [
@@ -82,37 +83,94 @@
         "title": "언어",
         "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
         "details": [
-          { "skill": "C/C++ ⭐️⭐️", "description": "멀티 프로세스, 멀티 스레드, 객체지향 프로그래밍, 메모리 관리를 생각한 여러 토이 프로젝트 구현 경험." },
-          { "skill": "JavaScript ️⭐⭐️️", "description": "Vanilla JavaScript만으로 SPA 구현 경험." },
-          { "skill": "TypeScript ⭐️", "description": "React 사용하면서 interface를 활용한 타입 설정." },
-          { "skill": "HTML ⭐⭐️️", "description": "html로 페이지 만들기 가능." },
-          { "skill": "CSS ⭐⭐️️", "description": "CSS로 디자인 가능." },
-          { "skill": "English ⭐️⭐️⭐️", "description": "오픽 AL, 원어민과 무리없이 의사소통 가능. 영어문서 읽는데에 문제 없음." }
+          {
+            "skill": "C/C++ ⭐️⭐️",
+            "description": "멀티 프로세스, 멀티 스레드, 객체지향 프로그래밍, 메모리 관리를 고려한 여러 토이 프로젝트 구현본 경험이 있습니다."
+          },
+          {
+            "skill": "JavaScript ️⭐⭐️️",
+            "description": "const, let과 var의 차이를 알고 있으며, Vanilla JavaScript만으로 react 처럼 component 모듈화를 활용한 SPA 사이트를 만든 경험이 있습니다."
+          },
+          {
+            "skill": "TypeScript ⭐️",
+            "description": "React 사용하면서 interface를 활용한 타입을 설정하여 사용할 줄 압니다."
+          },
+          {
+            "skill": "HTML ⭐⭐️️",
+            "description": "html로 페이지 만들기 가능합니다."
+          },
+          {
+            "skill": "CSS ⭐⭐️️",
+            "description": "flex 개념에 대해 이해하고 있으며, CSS로 만들고 싶은 디자인을 구현할 수 있습니다."
+          },
+          {
+            "skill": "English ⭐️⭐️⭐️",
+            "description": "오픽 AL, 원어민과 무리없이 의사소통 가능합니다. 사용하던 기술에 궁금한 것이 있을 때 영어기술문서를 읽는데에 문제없습니다."
+          }
         ]
       },
       "frontend": {
         "title": "프론트엔드",
         "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
         "details": [
-          { "skill": "React ⭐️⭐️", "description": "React-dom을 사용한 route 및 컴포넌트 개발 가능." },
-          { "skill": "Next.js ⭐️⭐️", "description": "동적라우팅 및 middleware를 사용한 라우팅 개발 경험." },
-          { "skill": "React Query ⭐️", "description": "query 사용한 api 캐시 관리 및 무한 스크롤 구현 경험." },
-          { "skill": "Redux ⭐️", "description": "다크모드 및 책정보 전역상태로 관리 경험." },
-          { "skill": "TailwindCSS ⭐️⭐️", "description": "웬만한 디자인은 tailwindcss로 구현 가능. 개발 디자인 커스텀 가능." },
-          { "skill": "Framer Motion ⭐️", "description": "간단한 애니메이션 효과 구현 가능." },
-          { "skill": "i18n ⭐️⭐️", "description": "i18n 라이브러리를 활용한 한영전환 기능 구현 경험." }
+          {
+            "skill": "React ⭐️⭐️",
+            "description": "React를 참고해 JavaScript만으로 컴포넌트 모듈화를 구현한 경험으로 React 컴포넌트 구조에 대해 이해하고 있으며 React-dom을 사용한 route 및 컴포넌트를 활용할 수 있습니다."
+          },
+          {
+            "skill": "Next.js ⭐️⭐️",
+            "description": "SSR과 CSR의 차이에 대해 알고 있으며, 동적라우팅 및 middleware를 사용한 라우팅을 활용해 서비스를 배포해본 경험이 있습니다."
+          },
+          {
+            "skill": "React Query ⭐️",
+            "description": "query 사용한 api 캐시 관리 및 무한 스크롤 구현 경험이 있습니다."
+          },
+          {
+            "skill": "Redux ⭐️",
+            "description": "Redux와 비슷한 pub/sub 패턴을 javascript로 구현해 본 경험으로 구조에 대해 이해하고 있으며 Redux를 활용한 기본적인 상태관리를 할 수 있습니다."
+          },
+          {
+            "skill": "TailwindCSS ⭐️⭐️",
+            "description": "웬만한 디자인은 tailwindcss로 구현 가능하며 개발 디자인 커스텀이 가능합니다."
+          },
+          {
+            "skill": "Framer Motion ⭐️",
+            "description": "간단한 애니메이션 효과 구현 가능합니다."
+          },
+          {
+            "skill": "i18n ⭐️⭐️",
+            "description": "i18n 라이브러리를 활용한 한영전환 기능을 구현해본 경험이 있습니다."
+          }
         ]
       },
       "tools": {
         "title": "기타",
         "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
         "details": [
-          { "skill": "Git/GitHub ⭐️⭐", "description": "Git Issue 관리 및 브랜치 전략 적용, 팀 협업 가능." },
-          { "skill": "Figma ⭐️⭐️⭐️", "description": "디자인 시스템 구축 및 프로토타입 제작 가능." },
-          { "skill": "Slack ⭐️⭐️⭐️", "description": "상시대기 팀원과 원활한 소통가능." },
-          { "skill": "Notion ⭐️⭐️⭐️", "description": "웬만한 정보는 노션으로 정리, 팀스페이스 노션 정리 담당." },
-          { "skill": "Visual Studio Code ⭐️⭐️️", "description": "비쥬얼스튜디오에서 vim 플러그인 사용하는 혼종유저." },
-          { "skill": "Docker ⭐️", "description": "도커 이미지 빌드 및 세팅 가능." }
+          {
+            "skill": "Git/GitHub ⭐️⭐",
+            "description": "Git Issue 관리 및 브랜치 전략 적용, 팀 협업이 가능합니다."
+          },
+          {
+            "skill": "Figma ⭐️⭐️⭐️",
+            "description": "디자인 시스템 구축 및 프로토타입 제작 가능합니다."
+          },
+          {
+            "skill": "Slack ⭐️⭐️⭐️",
+            "description": "상시대기, 팀원과 원활한 소통가능합니다."
+          },
+          {
+            "skill": "Notion ⭐️⭐️⭐️",
+            "description": "웬만한 정보는 노션으로 정리, 팀 프로젝트 당시 항상 팀스페이스 노션 정리 담당이었습니다."
+          },
+          {
+            "skill": "Visual Studio Code ⭐️⭐️️",
+            "description": "비쥬얼스튜디오에서 vim 플러그인 사용하는 혼종유저입니다."
+          },
+          {
+            "skill": "Docker ⭐️",
+            "description": "도커의 기본 개념을 알고 있고 도커 이미지 빌드 및 세팅 가능합니다."
+          }
         ]
       }
     }
@@ -120,15 +178,15 @@
   "webserv": {
     "content": {
       "title": "웹서브",
-      "date": "42서울 2023년 7월"
+      "date": "42서울 2023년 8월"
     },
     "overview": {
       "myRoleTitle": "내 역할",
-      "myRole": "구조 설계, HTTP 파싱, 디버깅 로그 작성, 코드 리펙토링, 동작 확인 페이지 구현",
+      "myRole": "구조 설계, Config 파싱, HTTP 파싱, 디버깅 로그 작성, 코드 리펙토링, 동작 확인 페이지 구현",
       "teamTitle": "팀",
       "team": ["허진호", "안현준", "임윤선"],
       "timelineTitle": "타임라인",
-      "timeline": "4달, 2023년 7월 시작",
+      "timeline": "4달, 2023년 8월 시작",
       "techTitle": "사용 기술",
       "techKeywords": "C++98, Makefile, HTML, CSS, Object Oriented Programming, Non-block I/O, I/O Multiplexing (kqueue), HTTP/1.1",
       "overviewTitle": "개요",
@@ -169,9 +227,7 @@
         "설정 파일은 {}, ;를 기준으로 블럭 형식으로 되어있고, 감싸고 있는 괄호를 부모라고 한다면 자식요소는 부모 요소의 설정을 반영합니다.",
         "그렇기 때문에 {}와 ;를 기준으로 트리를 구성한다면 location 블럭이 수 없이 들어가도 부모 요소의 모든 설정을 다 반영할 수 있습니다."
       ],
-      "firstCodeEx": [
-        "트리와 Map은 Common 클래스에서 전역으로 관리됩니다."
-      ],
+      "firstCodeEx": ["트리와 Map은 Common 클래스에서 전역으로 관리됩니다."],
       "secondCodeEx": [
         "WebServer가 생성되면 생성됨과 동시에 생성자에서 config 파일을 넘겨줘서 파싱을 완료합니다."
       ],
@@ -228,12 +284,8 @@
       "secondCodeEx": [
         "state를 통해 현재 파싱하고 있는 값이 무엇인지 검사합니다."
       ],
-      "thirdCodeEx": [
-        "HTTP/1.1 규격에 맞춰서 들어온 요청 문법을 검사합니다. "
-      ],
-      "fourthCodeEx": [
-        "실행한 결과를 응답 규격에 맞춰서 작성합니다."
-      ]
+      "thirdCodeEx": ["HTTP/1.1 규격에 맞춰서 들어온 요청 문법을 검사합니다. "],
+      "fourthCodeEx": ["실행한 결과를 응답 규격에 맞춰서 작성합니다."]
     },
     "test": {
       "title": "TEST",
@@ -251,9 +303,9 @@
     },
     "overview": {
       "myRoleTitle": "내 역할",
-      "myRole": "디자인 다함, 프론트엔드 다함, 프로젝트 리드",
+      "myRole": "디자인, 프론트엔드, 프로젝트 리드",
       "teamTitle": "팀",
-      "team": ["박태양", "안현준", "임윤선"],
+      "team": ["박태양 백엔드", "안현준 벡엔드", "임윤선 게임"],
       "timelineTitle": "타임라인",
       "timeline": "4 Months, starts December 2023",
       "techTitle": "사용 기술",
@@ -286,15 +338,11 @@
       "firstContent": [
         "React 컴포넌트를 참고 했습니다. 컴포넌트화를 하기 위해서 컴포넌트 클래스를 만들었고, 모든 함수형 클래스들은 컴포넌트를 상속하여 render()를 통해 컴포넌트를 렌더링하게 됩니다."
       ],
-      "firstCodeEx": [
-        "Component 클래스는 render() 메소드를 가지고 있습니다."
-      ],
+      "firstCodeEx": ["Component 클래스는 render() 메소드를 가지고 있습니다."],
       "secondCodeEx": [
         "모든 함수형 클래스들은 Component 클래스를 상속하여 render()를 통해 렌더링하게 됩니다."
       ],
-      "thirdCodeEx": [
-        "createComponent 함수를 통해 컴포넌트를 생성합니다."
-      ],
+      "thirdCodeEx": ["createComponent 함수를 통해 컴포넌트를 생성합니다."],
       "fourthCodeEx": [
         "컴포넌트화를 통해 상황에 따라 페이지 전체를 리로드하는게 아니라 컴포넌트만 바꾸어 줄 수 있습니다."
       ]
