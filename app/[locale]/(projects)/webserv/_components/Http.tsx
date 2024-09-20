@@ -27,6 +27,25 @@ private:
     language: "cpp",
   };
 
+  const codeItems2 = {
+    code: `class GetHandler : public IRequestHandler {
+public:
+  virtual void Handle(Http &http);
+	//...
+};
+
+class PostHandler : public IRequestHandler {
+public:
+  virtual void Handle(Http &http);
+};
+
+class DeleteHandler : public IRequestHandler {
+public:
+  virtual void Handle(Http &http);
+};`,
+    language: "cpp",
+  };
+
   return (
     <section
       id='request response'
@@ -40,6 +59,11 @@ private:
         project='webserv.http'
       />
       <Content project='webserv.http' title='second' content='secondContent' />
+      <Code
+        code={codeItems2.code}
+        language={codeItems2.language}
+        project='webserv.http'
+      />
       <Content project='webserv.http' title='third' content='thirdContent' />
       <ImageBox
         src='/image/webserv/webservHttp.png'
