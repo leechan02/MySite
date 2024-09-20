@@ -223,6 +223,28 @@
         "Based on the configuration file, ports are verified and connected. Events are managed by kqueue and processed separately as Read, Write, CGI, etc., according to inherited classes.",
         "When a response comes in, it is parsed according to the HTTP format, the corresponding request is processed, and a response is sent out."
       ]
+    },
+    "config": {
+      "title": "CONFIG",
+      "subTitle": "Nginx-like configuration file parsing structure",
+      "first": "Config Tree",
+      "firstContent": [
+        "The configuration file is in block format based on {}, ;, and if we consider the enclosing brackets as parents, the child elements reflect the settings of the parent elements.",
+        "Therefore, if we construct a tree based on {} and ;, even if there are countless location blocks, we can reflect all the settings of the parent elements."
+      ],
+      "firstCodeEx": [
+        "The tree and Map are globally managed in the Common class."
+      ],
+      "secondCodeEx": [
+        "When WebServer is created, it simultaneously completes parsing by passing the config file in the constructor."
+      ],
+      "thirdCodeEx": [
+        "The tree is managed by Nodes and is divided into http, server, and location block levels. Each node has tokens that should be held at each level, parent elements, and child nodes."
+      ],
+      "second": "Config Map",
+      "secondContent": [
+        "Once the tree is created based on tokens, we create a Map based on locations. This is because if we remember where the location is in the tree, we don't need to search the entire tree to find the incoming location. We can just check the settings by going up from the location position through the parent elements."
+      ]
     }
   },
   "transcendence": {

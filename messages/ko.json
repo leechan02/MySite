@@ -160,6 +160,28 @@
         "설정파일을 토대로 포트를 확인하고 연결합니다. 이벤트는 kqueue에서 관리되고 상속된 클래스에 따라 Read, Write, CGI 등으로 나누어져서 처리가 됩니다.",
         "응답이 들어오면 HTTP 형식에 맞춰서 파싱이 되며 그에 맞는 요청을 처리하고 응답을 내보냅니다."
       ]
+    },
+    "config": {
+      "title": "CONFIG",
+      "subTitle": "Nignx와 유사한 설정 파일 파싱 구조",
+      "first": "Config Tree",
+      "firstContent": [
+        "설정 파일은 {}, ;를 기준으로 블럭 형식으로 되어있고, 감싸고 있는 괄호를 부모라고 한다면 자식요소는 부모 요소의 설정을 반영합니다.",
+        "그렇기 때문에 {}와 ;를 기준으로 트리를 구성한다면 location 블럭이 수 없이 들어가도 부모 요소의 모든 설정을 다 반영할 수 있습니다."
+      ],
+      "firstCodeEx": [
+        "트리와 Map은 Common 클래스에서 전역으로 관리됩니다."
+      ],
+      "secondCodeEx": [
+        "WebServer가 생성되면 생성됨과 동시에 생성자에서 config 파일을 넘겨줘서 파싱을 완료합니다."
+      ],
+      "thirdCodeEx": [
+        "트리는 Node로 관리하고, http, server, location 블럭 레벨로 나누어져 관리됩니다. 각 노드는 각각 레벨에서 보유해야 할 토큰과 부모 요소 그리고 자식 노드들 가지고 있습니다."
+      ],
+      "second": "Config Map",
+      "secondContent": [
+        "토큰을 기준으로 트리가 생성되었다면, location을 기준으로 Map을 생성해줍니다. tree에서 location이 어디에 위치해있는지 기억하기만 한다면 들어온 location을 찾으려고 tree를 다 검색할 필요없이 location 위치에서 부모요소를 타고 올라가면서 설정들을 확인만 하면 되기 때문입니다."
+      ]
     }
   },
   "transcendence": {
