@@ -6,6 +6,7 @@ import ProjectTitle from "../_components/ProjectTitle";
 import Problem from "./_components/Problem";
 import Architecture from "./_components/Architecture";
 import Config from "./_components/Config";
+import Http from "./_components/Http";
 
 export default async function Webserv({
   params: { locale },
@@ -51,7 +52,9 @@ export default async function Webserv({
       <Architecture />
       <div className='w-full border border-foreground opacity-10' />
       <Config />
-      <TableOfContents sections={["Overview", "Highlights", "Problem", "Architecture", "Config"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <Http />
+      <TableOfContents sections={["Overview", "Highlights", "Problem", "Architecture", "Config", "Request Response"]} />
     </div>
   );
 }
