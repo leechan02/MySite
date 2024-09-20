@@ -258,6 +258,24 @@
       "seventhCodeEx": [
         "If you know the port and host URI, you can retrieve the location node, and based on that node, you can get the configured settings through FindValue."
       ]
+    },
+    "request": {
+      "title": "REQUEST&&RESPONSE",
+      "subTitle": "The process of receiving requests and sending responses on the server",
+      "first": "Receiving Requests",
+      "firstContent": [
+        "The server receives data from clients through the recv() function and passes this data to the Http object owned by each Connection object to begin parsing the HTTP request."
+      ],
+      "second": "Response",
+      "secondContent": [
+        "If the parsed request is an HTTP request, the server calls the appropriate handler for the HTTP method (GET, POST, DELETE) through the Router.",
+        "Each method processes the appropriate business logic according to the rules of the HTTP/1.1 protocol, then generates an appropriate Response message and responds to the client."
+      ],
+      "third": "Handling CGI Requests",
+      "thirdContent": [
+        "In the case of CGI requests, the server's main process creates a child process through the fork() system call, and the child process executes the CGI script through execve().",
+        "This method is an asynchronous processing approach designed to prevent CGI requests from affecting the performance of the main process."
+      ]
     }
   },
   "transcendence": {

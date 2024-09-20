@@ -195,6 +195,24 @@
       "seventhCodeEx": [
         "port와 host uri를 알기만하면 location node를 가져올 수 있고, 그 node를 기준으로 설정된 세팅값이 뭔지 FindValue를 통해 가져올 수 있습니다."
       ]
+    },
+    "request": {
+      "title": "REQUEST&&RESPONSE",
+      "subTitle": "서버에서 요청을 받고 응답을 하는 과정",
+      "first": "요청 수신",
+      "firstContent": [
+        "서버는 recv() 함수를 통해 클라이언트로부터 데이터를 수신하고, 이 데이터를 각각의 Connection 객체가 소유한 Http 객체로 전달하여 HTTP 요청 파싱을 시작합니다."
+      ],
+      "second": "응답",
+      "secondContent": [
+        "파싱된 요청이 HTTP 요청인 경우, 서버는 Router를 통해 HTTP 메서드(GET, POST, DELETE)에 맞는 핸들러를 호출합니다.",
+        "각 메서드는 HTTP/1.1 프로토콜을 준수하여 규칙에 맞는 적합한 비즈니스 로직을 처리한 후 적절한 Response 메시지를 생성하여 클라이언트에 응답합니다."
+      ],
+      "third": "CGI 요청 처리",
+      "thirdContent": [
+        "CGI 요청인 경우, 서버의 메인 프로세스는 fork() 시스템 호출을 통해 자식 프로세스를 생성하고, 자식 프로세스는 execve()를 통해 CGI 스크립트를 실행합니다.",
+        "위와같은 방식은 CGI 요청이 메인 프로세스의 성능에 영향을 주지 않도록 설계된 비동기 처리 방식입니다."
+      ]
     }
   },
   "transcendence": {
