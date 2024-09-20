@@ -244,6 +244,19 @@
       "second": "Config Map",
       "secondContent": [
         "Once the tree is created based on tokens, we create a Map based on locations. This is because if we remember where the location is in the tree, we don't need to search the entire tree to find the incoming location. We can just check the settings by going up from the location position through the parent elements."
+      ],
+      "fourthCodeEx": [
+        "We create a Map based on port, server_name, and location. By using MultiMap, we reduced the access time from O(N) to O(logN) because we don't need to traverse the entire tree to find location nodes.",
+        "We could have further reduced it to O(1) by using std::unordered_map (hashmap), but this STL is not provided in C++98, so we couldn't use it."
+      ],
+      "fifthCodeEx": [
+        "While Nginx supports the PCRE library for checking, this project is implemented to support only '~', '', and '$' syntax."
+      ],
+      "sixthCodeEx": [
+        "When searching for location blocks in the Map, PCRE checking is partially supported ('~', '', '$')."
+      ],
+      "seventhCodeEx": [
+        "If you know the port and host URI, you can retrieve the location node, and based on that node, you can get the configured settings through FindValue."
       ]
     }
   },

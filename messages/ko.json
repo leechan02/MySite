@@ -180,7 +180,20 @@
       ],
       "second": "Config Map",
       "secondContent": [
-        "토큰을 기준으로 트리가 생성되었다면, location을 기준으로 Map을 생성해줍니다. tree에서 location이 어디에 위치해있는지 기억하기만 한다면 들어온 location을 찾으려고 tree를 다 검색할 필요없이 location 위치에서 부모요소를 타고 올라가면서 설정들을 확인만 하면 되기 때문입니다."
+        "토큰을 기준으로 트리가 생성되었다면, location을 기준으로 Map을 생성해줍니다. 트리에서 location이 어디에 위치해있는지 기억하기만 한다면 들어온 location을 찾으려고 트리를 다 검색할 필요없이 location 위치에서 부모요소를 타고 올라가면서 설정들을 확인만 하면 되기 때문입니다."
+      ],
+      "fourthCodeEx": [
+        "port, server_name, location을 기준으로 Map을 생성합니다. MultiMap을 사용함으로서. 트리를 다 순회하면서 location 노드를 찾을 필요없기때문에 접근시간을 O(N)에서 O(logN)으로 줄였습니다.",
+        "std::unordered_map(hashmap)을 사용하면 O(1)로 더 줄일 수 있었지만, c++98에서는 해당 STL을 제공하지 않아 사용할 수 없었습니다."
+      ],
+      "fifthCodeEx": [
+        "Nginx에서는 PCRE 라이브러리를 지원해 검사하지만, 이 프로젝트에서는 '~' '*' '$' 문법만 지원하도록 구현되어있습니다."
+      ],
+      "sixthCodeEx": [
+        "Map에서 location 블럭을 검색할 때 PCRE 검사를 부분적('~', '*', '$')으로 지원합니다."
+      ],
+      "seventhCodeEx": [
+        "port와 host uri를 알기만하면 location node를 가져올 수 있고, 그 node를 기준으로 설정된 세팅값이 뭔지 FindValue를 통해 가져올 수 있습니다."
       ]
     }
   },
