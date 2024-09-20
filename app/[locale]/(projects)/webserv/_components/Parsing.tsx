@@ -13,66 +13,122 @@ interface CodeItem {
 export default function Parsing() {
   const codeItems: CodeItem[] = [
     {
-      code: `class Http {
-public:
-  Http(int socket, int port, std::string &sendBuffer, bool &keepAlive,
-       int &remainingRequest);
-//...
-private:
-  std::string mBuffer;
-  Request mRequest;
-  Response mResponse;
-  RequestParser mRequestParser;
-  ResponseParser mResponseParser;
+      code: `void Http::SetRequest(eStatusCode state, std::vector<char> &RecvBuffer) {
+	//...
+  while (true) {
+    eStatusCode ParseState = mRequestParser.Parse(
+        mRequest, mBuffer.c_str(), mBuffer.c_str() + mBuffer.size());
 
-  int mPort;
-  int mSocket;
-  bool &mKeepAlive;
-  int &mRemainingRequest;
-  std::string &mSendBufferRef;
-  std::vector<SharedPtr<CGI> > mCGIList;
-};`,
+    if (ParseState == PARSING_INCOMPLETED) {
+	    //...
+    } else if (ParseState == PARSING_COMPLETED) {
+	    //...
+    } else {
+	    //...
+    }
+  }
+}`,
       language: "cpp",
+      codeEx: "firstCodeEx",
       label: "Http.hpp",
     },
     {
-      code: `class GetHandler : public IRequestHandler {
-public:
-  virtual void Handle(Http &http);
-	//...
-};
-
-class PostHandler : public IRequestHandler {
-public:
-  virtual void Handle(Http &http);
-};
-
-class DeleteHandler : public IRequestHandler {
-public:
-  virtual void Handle(Http &http);
+      code: `enum eState {
+  RequestMethodStart,
+  RequestMethod,
+  RequestUriStart,
+  RequestUri,
+  RequestHttpVersion_h,
+  RequestHttpVersion_ht,
+  RequestHttpVersion_htt,
+  RequestHttpVersion_http,
+  RequestHttpVersion_slash,
+  RequestHttpVersion_majorStart,
+  RequestHttpVersion_major,
+  RequestHttpVersion_minorStart,
+  RequestHttpVersion_minor,
+  //...
 };`,
       language: "cpp",
-      label: "Http.cpp",
+      codeEx: "secondCodeEx",
+      label: "Enum.hpp",
+    },
+    {
+      code: `eStatusCode RequestParser::consume(Request &req, const char *begin,
+                                   const char *end) {
+  while (begin != end) {
+    char input = *begin++;
+
+    if (input == '\\0') {
+      return PARSING_INCOMPLETED;
+    }
+
+    switch (mState) {
+    case RequestMethodStart:
+      if (!isChar(input) || isControl(input) || isSpecial(input)) {
+        return CLIENT_ERROR_BAD_REQUEST;
+      } else {
+        mState = RequestMethod;
+        req.PushBackMethod(input);
+      }
+      break;
+    case RequestMethod:
+      //...
+    }
+  }
+
+  return PARSING_INCOMPLETED;
+}`,
+      language: "cpp",
+      codeEx: "thirdCodeEx",
+      label: "RequestParser.cpp",
+    },
+    {
+      code: `class ResponseParser {
+public:
+  ResponseParser();
+  ~ResponseParser();
+
+  std::string MakeResponseMessage(Http &http, eStatusCode state);
+
+  std::string const &GetMessage() const;
+  std::vector<char> GetMessageToVector();
+
+private:
+  // set mandatory response message
+  void setResponse(Http &http, eStatusCode state);
+  void setStatusLine(Http &http, eStatusCode state);
+  void setMandatoryHeaderFields(Http &http);
+  void setCookie(Http &http);
+  std::string getStatusMessage(eStatusCode errorStatus);
+  std::string getFileType(Http &http);
+
+  // set response message to std::string
+  void setMessage(Response &resp);
+  void setStatusLine(Response &resp);
+  void setHeaderFields(Response &resp);
+  void setBody(Response &resp);
+
+private:
+  std::string mMessage;
+};`,
+      language: "cpp",
+      codeEx: "fourthCodeEx",
+      label: "ResponseParser.hpp",
     }
   ];
 
 
   return (
     <section
-      id='request response'
+      id='http parser'
       className='w-full flex flex-col justify-start items-start gap-6 sm:gap-16 font-mono text-foreground'
     >
-      <Title project='webserv.http' />
-      <Content project='webserv.http' title='first' content='firstContent' />
-      <Content project='webserv.http' title='second' content='secondContent' />
+      <Title project='webserv.parsing' />
+      <Content project='webserv.parsing' title='first' content='firstContent' />
       <CodeSection
-        project='webserv.http'
+        project='webserv.parsing'
         codeItems={codeItems}
-      />
-      <Content project='webserv.http' title='third' content='thirdContent' />
-      <ImageBox
-        src='/image/webserv/webservHttp.png'
-        alt='Webserv request response flow'
       />
     </section>
   );
