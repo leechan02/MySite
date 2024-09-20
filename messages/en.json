@@ -259,7 +259,7 @@
         "If you know the port and host URI, you can retrieve the location node, and based on that node, you can get the configured settings through FindValue."
       ]
     },
-    "request": {
+    "http": {
       "title": "REQUEST&&RESPONSE",
       "subTitle": "The process of receiving requests and sending responses on the server",
       "first": "Receiving Requests",
