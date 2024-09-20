@@ -1,6 +1,5 @@
 import CodeSection from "@/components/content/CodeSection";
 import Content from "@/components/content/Content";
-import ImageBox from "@/components/content/ImageBox";
 import Title from "@/components/content/Title";
 
 interface CodeItem {
