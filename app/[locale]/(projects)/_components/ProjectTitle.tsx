@@ -39,7 +39,7 @@ export default function ProjectTitle({
   return (
     <div className='flex flex-col gap-10 w-full'>
       <div className='flex flex-col text-center gap-4'>
-        <h1 className='text-5xl font-bold'>{t("title")}</h1>
+        <h1 className='text-4xl sm:text-5xl font-bold'>{t("title")}</h1>
         <div className='font-bold opacity-50'>{t("date")}</div>
         <div className='flex justify-center items-center gap-10'>
           <Link href={link} target='_blank'>

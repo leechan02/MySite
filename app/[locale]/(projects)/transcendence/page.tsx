@@ -42,7 +42,7 @@ export default async function Transcendence({
   return (
     <div className='relative flex justify-center w-full'>
       <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px]'>
-        <section id='overview'>
+        <section id='overview' className="w-full">
           <ProjectTitle
             link='https://github.com/42Nuts/Transcendence'
             image='/image/pong/pong.png'
