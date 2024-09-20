@@ -297,6 +297,14 @@
       "fourthCodeEx": [
         "We write the execution results according to the response specifications."
       ]
+    },
+    "test": {
+      "title": "TEST",
+      "subTitle": "Does the built web server function properly?",
+      "first": "Testing Methods",
+      "firstContent": [
+        "We verify whether redirects to various locations work correctly, if the server continues to function well even after thousands of requests without shutting down, if it doesn't terminate when sent requests exceeding the maximum size, if sockets close properly when clients disconnect, and if it properly sends out errors when receiving invalid requests, among other things."
+      ]
     }
   },
   "transcendence": {
