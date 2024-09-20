@@ -5,6 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
 import Problem from "./_components/Problem";
 import Architecture from "./_components/Architecture";
+import Config from "./_components/Config";
 
 export default async function Webserv({
   params: { locale },
@@ -48,7 +49,9 @@ export default async function Webserv({
       <Problem />
       <div className='w-full border border-foreground opacity-10' />
       <Architecture />
-      <TableOfContents sections={["Overview", "Highlights", "Problem", "Architecture"]} />
+      <div className='w-full border border-foreground opacity-10' />
+      <Config />
+      <TableOfContents sections={["Overview", "Highlights", "Problem", "Architecture", "Config"]} />
     </div>
   );
 }
