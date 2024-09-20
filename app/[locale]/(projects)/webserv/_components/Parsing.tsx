@@ -10,7 +10,7 @@ interface CodeItem {
   label: string;
 }
 
-export default function Http() {
+export default function Parsing() {
   const codeItems: CodeItem[] = [
     {
       code: `class Http {

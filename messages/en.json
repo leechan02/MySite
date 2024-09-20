@@ -226,7 +226,7 @@
     },
     "config": {
       "title": "CONFIG",
-      "subTitle": "Nginx-like configuration file parsing structure",
+      "subTitle": "Nginx-like configuration file parsing structure.",
       "first": "Config Tree",
       "firstContent": [
         "The configuration file is in block format based on {}, ;, and if we consider the enclosing brackets as parents, the child elements reflect the settings of the parent elements.",
@@ -261,7 +261,7 @@
     },
     "http": {
       "title": "REQUEST&&RESPONSE",
-      "subTitle": "The process of receiving requests and sending responses on the server",
+      "subTitle": "The process of receiving requests and sending responses on the server.",
       "first": "Receiving Requests",
       "firstContent": [
         "The server receives data from clients through the recv() function and passes this data to the Http object owned by each Connection object to begin parsing the HTTP request."
@@ -275,6 +275,27 @@
       "thirdContent": [
         "In the case of CGI requests, the server's main process creates a child process through the fork() system call, and the child process executes the CGI script through execve().",
         "This method is an asynchronous processing approach designed to prevent CGI requests from affecting the performance of the main process."
+      ]
+    },
+    "parsing": {
+      "title": "HTTP PARSER",
+      "subTitle": "Method for parsing HTTP requests.",
+      "first": "HTTP Request Processing",
+      "firstContent": [
+        "After validating the request during the parsing process, we only proceed to the next step if the request is valid. Requests are analyzed meticulously character by character and processed according to their state.",
+        "The Response message is also generated in compliance with the HTTP/1.1 protocol, composing the message with content such as status codes, headers, and body."
+      ],
+      "firstCodeEx": [
+        "Since requests don't come in all at once but can be split or overlapped, we parse the values in mBuffer while running a loop."
+      ],
+      "secondCodeEx": [
+        "We check what value is currently being parsed through the state."
+      ],
+      "thirdCodeEx": [
+        "We examine the incoming request syntax according to HTTP/1.1 specifications."
+      ],
+      "fourthCodeEx": [
+        "We write the execution results according to the response specifications."
       ]
     }
   },
