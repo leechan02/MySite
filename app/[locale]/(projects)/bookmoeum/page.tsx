@@ -39,25 +39,29 @@ export default async function Bookmoeum({
   ];
 
   return (
-    <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px] '>
-      <ProjectTitle
-        link='https://github.com/leechan02/Bookmoeum'
-        image='/image/bookmoeum/bookmoeum.png'
-        project='bookmoeum.content'
-        brColor='border-color3'
-        deploy='https://www.bookmoeum.com/'
-      />
-      <section id='overview'>
-        <Overview project='bookmoeum.overview' />
-      </section>
-      <section id='highlights'>
-        <Highlights
-          project='bookmoeum.highlights'
-          bgColor='bg-color3'
-          mediaItems={highlightMediaItems}
+    <div className='relative flex justify-center w-full'>
+      <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px]'>
+        <ProjectTitle
+          link='https://github.com/leechan02/Bookmoeum'
+          image='/image/bookmoeum/bookmoeum.png'
+          project='bookmoeum.content'
+          brColor='border-color3'
+          deploy='https://www.bookmoeum.com/'
         />
-      </section>
-      <TableOfContents sections={["Overview", "Highlights"]} />
+        <section id='overview'>
+          <Overview project='bookmoeum.overview' />
+        </section>
+        <section id='highlights'>
+          <Highlights
+            project='bookmoeum.highlights'
+            bgColor='bg-color3'
+            mediaItems={highlightMediaItems}
+          />
+        </section>
+      </div>
+      <div className='hidden md:block'>
+        <TableOfContents sections={["Overview", "Highlights"]} />
+      </div>
     </div>
   );
 }
