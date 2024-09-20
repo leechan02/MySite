@@ -203,7 +203,7 @@
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "A high-performance HTTP/1.1 server implementation in C++98, featuring non-blocking I/O and advanced request handling capabilities for efficient web serving."
+      "highlights": "A HTTP/1.1 server implementation in C++98."
     },
     "problem": {
       "title": "THE PROBLEM",

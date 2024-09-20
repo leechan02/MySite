@@ -140,7 +140,7 @@
     },
     "highlights": {
       "title": "하이라이트",
-      "highlights": "C++98로 구현된 HTTP/1.1 서버로, 논블로킹 I/O와 요청 처리 기능을 갖추어 효율적인 웹 서비스를 제공합니다."
+      "highlights": "C++98로 구현된 HTTP/1.1 호환 웹서버입니다."
     },
     "problem": {
       "title": "THE PROBLEM",
