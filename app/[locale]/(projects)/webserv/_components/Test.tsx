@@ -1,6 +1,6 @@
 import Content from "@/components/content/Content";
-import ImageBox from "@/components/content/ImageBox";
 import Title from "@/components/content/Title";
+import VideoBox from "@/components/content/VideoBox";
 
 export default function Test() {
   return (
@@ -8,12 +8,13 @@ export default function Test() {
       id='test'
       className='w-full flex flex-col justify-start items-start gap-6 sm:gap-16 font-mono text-foreground'
     >
-      <Title project='webserv.architecture' />
+      <Title project='webserv.test' />
       <Content
-        project='webserv.architecture'
+        project='webserv.test'
         title='first'
         content='firstContent'
       />
+      <VideoBox src='/video/webserv_test.mp4' />
     </section>
   );
 }
