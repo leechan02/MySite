@@ -8,6 +8,7 @@ import OpenAPI from "./_components/OpenAPI";
 import State from "./_components/State";
 import Login from "./_components/Login";
 import Data from "./_components/Data";
+import Animation from "./_components/Animation";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -65,6 +66,8 @@ export default async function Bookmoeum({
         <Login />
         <div className='w-full border border-foreground opacity-10' />
         <Data />
+        <div className='w-full border border-foreground opacity-10' />
+        <Animation />
       </div>
       <div className='hidden md:block'>
         <TableOfContents
@@ -75,7 +78,8 @@ export default async function Bookmoeum({
             "Open APIs",
             "State",
             "Login",
-            "Database"
+            "Database",
+            "Animation"
           ]}
         />
       </div>
