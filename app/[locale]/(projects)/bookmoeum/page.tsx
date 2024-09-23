@@ -3,6 +3,7 @@ import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
+import Design from "./_components/Design";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -18,10 +19,6 @@ export default async function Bookmoeum({
     },
     {
       type: "image" as const,
-      src: "/image/bookmoeum/bookmoeum.png",
-    },
-    {
-      type: "image" as const,
       src: "/image/bookmoeum/bookSearch.png",
     },
     {
@@ -31,11 +28,7 @@ export default async function Bookmoeum({
     {
       type: "image" as const,
       src: "/image/bookmoeum/bookMobileDetail.png",
-    },
-    {
-      type: "image" as const,
-      src: "/image/bookmoeum/bookDesign.png",
-    },
+    }
   ];
 
   return (
@@ -58,9 +51,11 @@ export default async function Bookmoeum({
             mediaItems={highlightMediaItems}
           />
         </section>
+        <div className='w-full border border-foreground opacity-10' />
+        <Design />
       </div>
       <div className='hidden md:block'>
-        <TableOfContents sections={["Overview", "Highlights"]} />
+        <TableOfContents sections={["Overview", "Highlights", "Design System"]} />
       </div>
     </div>
   );
