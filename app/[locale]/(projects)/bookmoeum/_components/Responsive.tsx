@@ -1,4 +1,5 @@
 import Content from "@/components/content/Content";
+import ImageBox from "@/components/content/ImageBox";
 import Title from "@/components/content/Title";
 import VideoBox from "@/components/content/VideoBox";
 
@@ -11,7 +12,8 @@ export default function Responsive() {
     >
       <Title project='bookmoeum.responsive' />
       <Content project='bookmoeum.responsive' title='first' content='firstContent' />
-      <VideoBox src="/video/bookmoeum_animation.mp4" />
+      <ImageBox src="/image/bookmoeum/bookMobile.png" alt="responsive mobile" />
+      <ImageBox src="/image/bookmoeum/bookMobileDetail.png" alt="responsive mobile book detail" />
     </section>
   );
 }
