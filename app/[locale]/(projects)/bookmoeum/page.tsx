@@ -6,6 +6,7 @@ import ProjectTitle from "../_components/ProjectTitle";
 import Design from "./_components/Design";
 import OpenAPI from "./_components/OpenAPI";
 import State from "./_components/State";
+import Login from "./_components/Login";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -59,6 +60,8 @@ export default async function Bookmoeum({
         <OpenAPI />
         <div className='w-full border border-foreground opacity-10' />
         <State />
+        <div className='w-full border border-foreground opacity-10' />
+        <Login />
       </div>
       <div className='hidden md:block'>
         <TableOfContents
@@ -68,6 +71,7 @@ export default async function Bookmoeum({
             "Design System",
             "Open APIs",
             "State",
+            "Login"
           ]}
         />
       </div>
