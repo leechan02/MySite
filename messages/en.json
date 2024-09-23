@@ -574,6 +574,15 @@
       "secondContent": [
         "The book list display on the homepage and the bookstore list display were implemented using CSS and Framer respectively."
       ]
+    },
+    "responsive": {
+      "title": "RESPONSIVE DESIGN",
+      "subTitle": "Which devices do users use more frequently?",
+      "first": "Responsive Design",
+      "firstContent": [
+        "While I personally use a laptop more often, a survey of book-loving people around me showed that the frequency of mobile phone use is higher. We considered responsive design during both the design and development phases.",
+        "We considered user experience for each device through design changes such as the footer disappearing or the header dropping down depending on the screen size."
+      ]
     }
   }
 }
