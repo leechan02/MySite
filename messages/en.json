@@ -468,18 +468,112 @@
       "timelineTitle": "Timeline",
       "timeline": "3 Weeks, starts August 2024",
       "techTitle": "Tech Keywords",
-      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer, Phase",
       "overviewTitle": "Overview",
       "overview": [
         "Book Collection is a book search service where users can find where to read books in one place, eliminating the need to search multiple sites.",
         "I implemented a design system including typography, colors, spacing, and UI components using Figma before proceeding with the design work. The design was created with responsiveness in mind.",
         "It's a web page based on Next.js, with TypeScript used for type specifications. For book information, I used the Naver API for searches to provide as much book information as possible, and the Aladin API for more detailed information on the book detail page.",
-        "Login was implemented using Firebase, and book information checks and displays book availability from Kyobo Book Centre, Yes24, Aladin, Ridibooks, and the user's selected library. I used APIs for Aladin and libraries, and web crawling for the other bookstores."
+        "Login ans DB was implemented using Firebase, and book information checks and displays book availability from Kyobo Book Centre, Yes24, Aladin, Ridibooks, and the user's selected library. I used APIs for Aladin and libraries, and web crawling for the other bookstores."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "Provides information on where to read books in one place using OPEN APIs from bookstores and libraries, as well as web crawling."
+    },
+    "design": {
+      "title": "DESIGN SYSTEM",
+      "subTitle": "How should we create the design?",
+      "first": "Building a Design System",
+      "firstContent": [
+        "We introduced a design system to ensure consistent design application and to prevent confusion or mismatched specifications during development.",
+        "In the Foundation, we set and stored colors, typography, and specifications, which were then used in UI components.",
+        "From the design stage, we considered componentization, designed components divided by UI, and then used them in the final design."
+      ]
+    },
+    "api": {
+      "title": "OPEN API",
+      "subTitle": "Which APIs should we use and how?",
+      "first": "Bookstore API",
+      "firstContent": [
+        "For domestic book information, there are bookstore APIs from Naver and Aladin, each with its own characteristics.",
+        "Therefore, we used Naver for searches as it provides more book information, and Aladin API for the book detail pages as it offers more detailed information for each book."
+      ],
+      "second": "Library API",
+      "secondContent": [
+        "For libraries, we used public APIs and stored a list of libraries separately. When a desired library is selected, we check the availability of books using each library's ID."
+      ],
+      "third": "React-query and API folder",
+      "thirdContent": [
+        "Values fetched from APIs are cached using staletime to avoid unnecessary repeated API calls.",
+        "Instead of fetching APIs directly on the client-side, we divided each API into folders and set up a uniform format for calling APIs in server components."
+      ],
+      "firstCodeEx": ["Search results use the Naver API."],
+      "secondCodeEx": [
+        "The result list is implemented using useInfiniteQuery to automatically load the next page when scrolling down."
+      ],
+      "thirdCodeEx": [
+        "Book information is retrieved through crawling and APIs specific to each bookstore."
+      ]
+    },
+    "state": {
+      "title": "STATE",
+      "subTitle": "How can we pass information when navigating between pages?",
+      "first": "API Recall Problem",
+      "firstContent": [
+        "The book search page and book detail page have different routes, requiring the page to be reloaded. However, this causes a delay problem as the API needs to be called again each time.",
+        "To solve this, we thought of passing the already fetched search results to the book detail page, allowing values to be displayed immediately."
+      ],
+      "second": "Using Redux",
+      "secondContent": [
+        "While it was possible to pass values from the search page to the detail page using query parameters, this would make the URL messy. Instead, we chose to store the values in Redux and retrieve them from there."
+      ],
+      "firstCodeEx": [
+        "When listing book information, clicking on each book manages the values through Redux."
+      ],
+      "secondCodeEx": [
+        "The BookDetail page doesn't fetch the book information again via API, but instead composes the page using the information managed in Redux."
+      ]
+    },
+    "login": {
+      "title": "LOGIN",
+      "subTitle": "Methods to check logged-in users based on user type",
+      "first": "Firebase",
+      "firstContent": [
+        "For login, we implemented methods using Firebase, including email and password login, and Google login."
+      ],
+      "second": "Middleware",
+      "secondContent": [
+        "Since users have their own database and need to check their library, we need to verify whether they are logged in or not.",
+        "This verification is done through middleware, which intercepts the signal, checks if it's a designated link, and shows the appropriate page accordingly."
+      ],
+      "firstCodeEx": [
+        "The middleware is located at the page root and intercepts requests to check specified paths.",
+        "If it determines that login is required for a path, it redirects to the login page."
+      ]
+    },
+    "data": {
+      "title": "DB",
+      "subTitle": "How to manage information that needs to be stored?",
+      "first": "Firestore",
+      "firstContent": [
+        "Initially, we only stored the ISBN of books saved by each user in the user data. However, this required API calls even for the book list, so we decided to include the already fetched API data when saving on the page."
+      ],
+      "firstCodeEx": [
+        "Since books selected by users need to be managed in order, we also included the time of saving."
+      ]
+    },
+    "animation": {
+      "title": "ANIMATION",
+      "subTitle": "Considering more user-friendly UI/UX.",
+      "first": "Phase",
+      "firstContent": [
+        "To make it more interesting when fetching values from the API, instead of just showing 'Loading', we created characters in Figma, then used an animation tool called Phase to create an mp4, which is displayed during loading."
+      ],
+      "second": "CSS && Framer",
+      "secondContent": [
+        "The book list display on the homepage and the bookstore list display were implemented using CSS and Framer respectively."
+      ]
     }
   }
 }

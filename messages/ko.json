@@ -453,18 +453,114 @@
       "timelineTitle": "타임라인",
       "timeline": "3주, 2024년 8월 시작",
       "techTitle": "사용 기술",
-      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer",
+      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer, Phase",
       "overviewTitle": "개요",
       "overview": [
         "책모음 서비스는 여러 사이트를 돌아다니면서 책을 찾을 필요없이, 한 곳에서 책을 어디서 볼 수 있는지 찾아볼 수 있는 책 검색 사이트입니다.",
         "피그마를 활용하여 타이포그래피, 색상, 간격 UI 컴포넌트 등 디자인 시스템을 구현 한뒤에 디자인 작업을 진행했습니다. 반응형을 고려하여 디자인 되었습니다.",
         "Next.js를 기반으로 작성된 웹페이지이며 TypeScript를 사용해 타입을 명시하였습니다. 책 정보는 검색에서는 최대한 많은 책 정보를 제공하는 Naver API를 사용했고, 책 디테일 페이지에 들어갔을 때는 더 디테일한 정보를 제공하는 알라딘 API를 활용하였습니다.",
-        "로그인은 Firebase를 사용하여 구현하였고, 책 정보는 교보문고, Yes24, 알라딘, 리디북스 내가 선택한 도서관에서 책보유 유무를 검사해 표시합니다. 알라딘과 도서관은 API를 사용하였고, 나머지 서점들을 크롤링을 통해 값들을 가져왔습니다."
+        "로그인과 DB는 Firebase를 사용하여 구현하였고, 책 정보는 교보문고, Yes24, 알라딘, 리디북스 내가 선택한 도서관에서 책보유 유무를 검사해 표시합니다. 알라딘과 도서관은 API를 사용하였고, 나머지 서점들을 크롤링을 통해 값들을 가져왔습니다."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "서점과 도서관의 OPEN APIs와 크롤링을 사용하여 어디서 책을 읽을 수 있는지 한곳에서 정보를 제공합니다."
+    },
+    "design": {
+      "title": "DESIGN SYSTEM",
+      "subTitle": "디자인은 어떻게 만들어야 할까?",
+      "first": "디자인 시스템 구축",
+      "firstContent": [
+        "일관화된 디자인을 적용하여 개발을 할 때 헷갈리거나 규격이 맞지 않는 일이 발생하지 않도록 하기 위해 디자인 시스템을 도입했습니다.",
+        "Foundation에는 색상과 타이포그래피 및 규격을 설정해 저장해두었고, UI 컴포넌트에서 설정을 가져와 사용하였습니다.",
+        "디자인 단계에서부터 컴포넌트화를 생각해 디자인하였고, 컴포넌트들을 UI 별로 나눠 디자인을 한 다음 최종 디자인에서 사용하였습니다."
+      ]
+    },
+    "api": {
+      "title": "OPEN API",
+      "subTitle": "어떤 API를 어떻게 사용해야할까?",
+      "first": "서점 API",
+      "firstContent": [
+        "국내도서정보를 제공하는 서점 API는 네이버, 알라딘이 존재하는데, 각각의 API마다 특색이 다릅니다.",
+        "그래서 검색을 할 때는 책 정보가 더 많은 네이버를 사용하였고, 책 디테일 페이지에서는 각 도서마다 더 자세한 정보를 제공하는 알라딘 API를 사용하였습니다."
+      ],
+      "second": "도서관 API",
+      "secondContent": [
+        "도서관 같은 경우는 공공 API를 사용해 API 제공을 하는 도서관을 사용하였고, 도서관리스트를 따로 저장해 놓고 원하는 도서관을 선택하면 각 도서관 id를 가지고 도서의 보유 유무를 확인하였습니다."
+      ],
+      "third": "React-query 및 api 폴더",
+      "thirdContent": [
+        "api로 가져온 값은 staletime으로 api를 불필요하게 많이 재호출할 필요없게 캐싱을 합니다.",
+        "api는 client-side에서 fetch를 통해 바로 api를 가져오는 것이 아니라. 각 api마다 폴더를 나눠놓고 동일한 형식으로 server component에서 api를 호출할 수 있도록 했습니다."
+      ],
+      "firstCodeEx": [
+        "검색 결과는 네이버 API를 사용합니다."
+      ],
+      "secondCodeEx": [
+        "결과값 리스트는 useInfiniteQuery를 사용해 스크롤을 내리면 자동으로 다음 페이지를 불러올 수 있게 구현해주었습니다."
+      ],
+      "thirdCodeEx": [
+        "책 정보는 각각 서점에 따른 크롤링과 API를 통해 가져오게 됩니다."
+      ]
+    },
+    "state": {
+      "title": "STATE",
+      "subTitle": "페이지가 넘어갈 때 정보를 어떻게 넘겨줄 수 있을까?",
+      "first": "API 재호출 문제",
+      "firstContent": [
+        "책검색 페이지와 책 디테일 페이지는 라우터가 달라서 페이지를 다시 불러와야 합니다. 하지만 그때마다 api를 다시 불러와야 하는 지연문제가 발생합니다.",
+        "그래서 생각을 한 방법이 책 검색에서 이미 한번 불러온 결과값을 책 디테일 페이지에 넘겨주어 값이 바로 표시되게 하는 것이었습니다."
+      ],
+      "second": "Redux 사용",
+      "secondContent": [
+        "query를 통해서 검색 페이지에서 디테일 페이지에 값을 전달하는 방법도 있었지만, 그렇게 하면 url가 너무 더러워지기 때문에 Redux에 저장해놓고 그 값을 가져오는 방법을 선택했습니다."
+      ],
+      "firstCodeEx": [
+        "책 정보를 리스트화 할 당시 각 책마다 클릭을 하면 Redux를 통해 값을 관리합니다."
+      ],
+      "secondCodeEx": [
+        "BookDetail 페이지에서는 api를 다시 불러와 책 정보를 가져오는 것이 아니라. Redux에서 관리되고 있는 정보를 가져와 페이지를 구성하게 됩니다."
+      ]
+    },
+    "login": {
+      "title": "LOGIN",
+      "subTitle": "사용자에 따라서 로그인 유저를 검사하는 방법",
+      "first": "Firebase",
+      "firstContent": [
+        "로그인 같은 경우는 firebase를 사용해서 이메일과 비밀번호를 사용하여 로그인하는 방법, 구글을 통해서 로그인하는 방법을 구현하였습니다."
+      ],
+      "second": "Middleware",
+      "secondContent": [
+        "사용자에 따라서 본인의 데이터베이스가 존재하고 내 서재를 확인해야 하기 때문에 로그인 한 상태인지 아닌지를 확인해야합니다.",
+        "확인은 middleware를 통해서 신호를 가로챈다음 지정한 링크인지 아닌지를 확인하고 그에 맞는 페이지를 보여줍니다."
+      ],
+      "firstCodeEx": [
+        "middleware는 페이지 루트에 위치하며 요청을 중간에서 가로채 지정된 경로를 확인합니다.",
+        "경로를 확인했을 때 로그인을 해야 하는 상황이라면 로그인 페이지로 리다이렉션을 시켜줍니다."
+      ]
+    },
+    "data": {
+      "title": "DB",
+      "subTitle": "저장해야 하는 정보는 어떻게 관리하는가?",
+      "first": "Firestore",
+      "firstContent": [
+        "처음에는 유저 data에 각 사용자가 저장한 책 리스트를 isbn으로만 저장을 했으나, 그렇게 되면 책 리스트에서도 api를 불러와야 하기 때문에, 이미 한번 불러온 api를 저장할 당시 페이지에서 data에 넣어줬습니다."
+      ],
+      "firstCodeEx": [
+        "사용자가 선택한 책은 순서별로 관리가 되어야하기 때문에 저장을 한 시간도 같이 집어넣어주었습니다."
+      ]
+    },
+    "animation": {
+      "title": "ANIMATION",
+      "subTitle": "조금 더 사용자 친화적인 UI/UX 고려.",
+      "first": "Phase",
+      "firstContent": [
+        "api로 값을 가져올 때 단순히 로딩 중이라고만 뜨면 심심할 것 같아. Figma로 캐릭터 작업 후 Phase라는 애니메이션 툴을 사용하여 mp4로 만들어 준다음에 loading시 표시되게 했습니다."
+      ],
+      "second": "CSS && Framer",
+      "secondContent": [
+        "홈페이지에서 책리스트가 표시되는 부분과 서점 리스트가 표시되는 부분은 각각 CSS와 Framer를 사용해 구현하였습니다."
+      ]
     }
   }
 }
