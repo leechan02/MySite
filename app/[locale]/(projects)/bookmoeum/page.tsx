@@ -4,6 +4,7 @@ import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
 import Design from "./_components/Design";
+import OpenAPI from "./_components/OpenAPI";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -53,9 +54,11 @@ export default async function Bookmoeum({
         </section>
         <div className='w-full border border-foreground opacity-10' />
         <Design />
+        <div className='w-full border border-foreground opacity-10' />
+        <OpenAPI />
       </div>
       <div className='hidden md:block'>
-        <TableOfContents sections={["Overview", "Highlights", "Design System"]} />
+        <TableOfContents sections={["Overview", "Highlights", "Design System", "Open APIs"]} />
       </div>
     </div>
   );
