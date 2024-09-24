@@ -6,6 +6,8 @@ import ProjectTitle from "../_components/ProjectTitle";
 import Design from "./_components/Design";
 import Language from "./_components/Language";
 import TableSection from "./_components/TableSection";
+import State from "./_components/State";
+import Animation from "./_components/Animation";
 
 export default async function MySite({
   params: { locale },
@@ -58,10 +60,22 @@ export default async function MySite({
         <Language />
         <div className='w-full border border-foreground opacity-10' />
         <TableSection />
+        <div className='w-full border border-foreground opacity-10' />
+        <State />
+        <div className='w-full border border-foreground opacity-10' />
+        <Animation />
       </div>
       <div className='hidden md:block'>
         <TableOfContents
-          sections={["Overview", "Highlights", "Design", "Language Change", "Table of Contents"]}
+          sections={[
+            "Overview",
+            "Highlights",
+            "Design",
+            "Language Change",
+            "Table of Contents",
+            "State",
+            "Animation",
+          ]}
         />
       </div>
     </div>
