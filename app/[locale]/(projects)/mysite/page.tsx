@@ -5,6 +5,7 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
 import Design from "./_components/Design";
 import Language from "./_components/Language";
+import TableSection from "./_components/TableSection";
 
 export default async function MySite({
   params: { locale },
@@ -17,10 +18,6 @@ export default async function MySite({
     {
       type: "video" as const,
       src: "/video/mysite.mp4",
-    },
-    {
-      type: "image" as const,
-      src: "/image/mysite/mysite.png",
     },
     {
       type: "image" as const,
@@ -59,10 +56,12 @@ export default async function MySite({
         <Design />
         <div className='w-full border border-foreground opacity-10' />
         <Language />
+        <div className='w-full border border-foreground opacity-10' />
+        <TableSection />
       </div>
       <div className='hidden md:block'>
         <TableOfContents
-          sections={["Overview", "Highlights", "Design", "Language Change"]}
+          sections={["Overview", "Highlights", "Design", "Language Change", "Table of Contents"]}
         />
       </div>
     </div>
