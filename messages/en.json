@@ -453,6 +453,81 @@
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "A personal portfolio website providing project descriptions and a personal resume."
+    },
+    "design": {
+      "title": "DESIGN",
+      "subTitle": "Elements considered during design.",
+      "first": "Componentization",
+      "firstContent": [
+        "From the beginning of the design process, we applied componentization considering reusability. Through componentization, we aimed for optimization in the development process."
+      ],
+      "second": "Responsive Design",
+      "secondContent": [
+        "We applied designs that change according to screen size. In the code, we used Tailwindcss to apply the designs.",
+        "For parts where animations change according to the design, we detected this using window.addEventListener."
+      ],
+      "firstCodeEx": [
+        "For components, descriptions are displayed when the mouse hovers over them. However, since you can't hover on a phone, we checked the size to apply different animations."
+      ],
+      "secondCodeEx": [
+        "On larger screens, the description is displayed on hover, but on phone-sized screens, the description is shown for components that enter the viewport."
+      ]
+    },
+    "lang": {
+      "title": "LANGUAGE",
+      "subTitle": "How to implement Korean-English switching?",
+      "first": "Middleware",
+      "firstContent": [
+        "We use dynamic routing to detect 'ko' or 'en' according to the locale. When the language mode switch is pressed, it sets a new path, and the middleware intercepts this signal and changes it to the appropriate path."
+      ],
+      "second": "i18n",
+      "secondContent": [
+        "We used the i18n library, which enables internationalization processing such as language conversion. Different message files are loaded according to the locale settings."
+      ],
+      "firstCodeEx": ["The locale value is detected through middleware."],
+      "secondCodeEx": [
+        "In the library, we set the value of the file to be exported according to the Locale value."
+      ],
+      "thirdCodeEx": ["We use a provider to detect the locale value."],
+      "fourthCodeEx": [
+        "We use useTranslations to fetch the file matching the locale and display the text."
+      ]
+    },
+    "table": {
+      "title": "TABLE OF CONTENTS",
+      "subTitle": "How to navigate to the table of contents across numerous pages.",
+      "first": "Section",
+      "firstContent": [
+        "We used IntersectionObserver to detect each section. Clicking scrolls to each section using scrollIntoView."
+      ],
+      "firstCodeEx": [
+        "Check the position of each section and determine which section is currently visible on the screen."
+      ],
+      "secondCodeEx": [
+        "Clicking on the table of contents moves to each section."
+      ]
+    },
+    "state": {
+      "title": "STATE",
+      "subTitle": "How to manage state using Redux on pages.",
+      "first": "Dark mode",
+      "firstContent": [
+        "When the darkModeSwitch is pressed, we use dispatch to store the value in Redux. Through the provider, we check the locale value and change the dark mode value."
+      ],
+      "firstCodeEx": [
+        "When the dark mode button is pressed, the value is updated through dispatch."
+      ]
+    },
+    "animation": {
+      "title": "ANIMATION",
+      "subTitle": "Increasing smooth user experience.",
+      "first": "Framer",
+      "firstContent": [
+        "We used Framer to smoothly implement movements such as components slightly rising on mouse hover, navigation bar movement, and popup component display."
+      ],
+      "firstCodeEx": [
+        "We applied animations for components appearing and disappearing."
+      ]
     }
   },
   "bookmoeum": {

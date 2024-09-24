@@ -438,6 +438,85 @@
     "highlights": {
       "title": "HIGHLIGHTS",
       "highlights": "개인 포트폴리오 웹사이트로 프로젝트의 설명과 개인 이력서를 제공합니다."
+    },
+    "design": {
+      "title": "DESIGN",
+      "subTitle": "디자인할 때 고려한 요소들.",
+      "first": "컴포넌트화",
+      "firstContent": [
+        "디자인을 시작할 때부터, 재사용성을 고려하여 컴포넌트화를 적용하였습니다. 컴포넌트화를 통해 개발과정에서 최적화를 추구하였습니다."
+      ],
+      "second": "컴포넌트화",
+      "secondContent": [
+        "화면 크기에 따라 변하는 디자인을 적용하였습니다. 코드에서는 Tailwindcss을 사용하여 디자인을 적용하였습니다.",
+        "디자인에 따라서 애니메이션이 바뀌는 부분은 window.addEventListener를 통해 감지해주었습니다."
+      ],
+      "firstCodeEx": [
+        "컴포넌트 같은 경우는 마우스를 올리면 설명이 표시됩니다. 하지만 핸드폰에서는 마우스를 올릴 수가 없기 때문에 다른 애니메이션을 적용해주기 위해. 사이즈를 체크해주었습니다."
+      ],
+      "secondCodeEx": [
+        "화면이 클때는 마우스를 올려야 표시가 되지만, 핸드폰 사이즈일때는 그냥 화면에 들어오는 컴포넌트에 설명이 표시됩니다."
+      ]
+    },
+    "lang": {
+      "title": "LANGUAGE",
+      "subTitle": "한영 전환은 어떻게 해야할까?",
+      "first": "middleware",
+      "firstContent": [
+        "동적라우팅을 사용하여 locale에 따라 ko, en을 감지합니다. langmodeswitch가 눌리면 새로운 경로로 설정하고, middleware는 그 신호를 가로채 알맞는 경로로 바꾸어줍니다."
+      ],
+      "second": "i18n",
+      "secondContent": [
+        "언어 변환 등 국제화처리를 가능하게 해주는 i18n 라이브러리를 사용하였습니다. locale 설정에 따라 다른 message 파일을 불러옵니다."
+      ],
+      "firstCodeEx": [
+        "middleware를 통해 locale의 값을 감지합니다."
+      ],
+      "secondCodeEx": [
+        "라이브러리에서 Locale의 값에 따라 내보내주어야 할 파일의 값을 설정해줍니다."
+      ],
+      "thirdCodeEx": [
+        "provider를 사용해서 locale 값을 감지합니다."
+      ],
+      "fourthCodeEx": [
+        "useTranslations를 사용해서 locale에 맞는 파일을 가져와 텍스트를 표시합니다."
+      ]
+    },
+    "table": {
+      "title": "TABLECONTENTS",
+      "subTitle": "수많은 페이지에서 목차를 찾아가는 방법.",
+      "first": "Section",
+      "firstContent": [
+        "IntersectionObserver를 사용해 각 section을 감지하였습니다. 클릭하면 scrollIntoView를 사용해 각 section으로 이동합니다."
+      ],
+      "firstCodeEx": [
+        "각 section의 위치를 확인하고, 현재 화면에 보이는 section이 무엇인지 확인합니다."
+      ],
+      "secondCodeEx": [
+        "목차를 클릭하면 각 section으로 넘어갑니다."
+      ]
+    },
+    "state": {
+      "title": "STATE",
+      "subTitle": "페이지에서 Redux를 사용해 상태관리를 하는 방법.",
+      "first": "다크모드",
+      "firstContent": [
+        "darkModeSwitch를 누르면 dispatch를 사용해 redux에 값을 저장합니다. provider를 통해 locale의 값을 확인하고, dark 모드 값을 변경합니다."
+      ],
+      "firstCodeEx": [
+        "다크모드 버튼을 누르면 dispatch를 통해 값을 업데이트합니다."
+      ]
+    },
+    "animation": {
+      "title": "ANIMATION",
+      "subTitle": "부드러운 사용자 경험성 증가.",
+      "first": "Framer",
+      "firstContent": [
+        "마우스를 올리면 컴포넌트가 살짝 올라오는 것, Nav 바 이동 popop 컴포넌트 표시 등을 Framer를 사용해 움직임을 부드럽게 구현했습니다."
+      ],
+      "firstCodeEx": [
+        "컴포넌트가 나타나고 사라지는 애니메이션을 적용하였습니다."
+      ]
     }
   },
   "bookmoeum": {
