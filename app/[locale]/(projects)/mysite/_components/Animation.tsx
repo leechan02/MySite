@@ -1,6 +1,7 @@
 import CodeSection from "@/components/content/CodeSection";
 import Content from "@/components/content/Content";
 import Title from "@/components/content/Title";
+import VideoBox from "@/components/content/VideoBox";
 
 interface CodeItem {
   code: string;
@@ -40,6 +41,7 @@ export default function Animation() {
         project='mysite.animation'
         codeItems={codeItems}
       />
+      <VideoBox src="/video/mysite_animation.mp4" />
     </section>
   );
 }
