@@ -3,6 +3,7 @@ import Highlights from "../_components/Highlights";
 import TableOfContents from "../_components/TableOfContents";
 import { unstable_setRequestLocale } from "next-intl/server";
 import ProjectTitle from "../_components/ProjectTitle";
+import Design from "./_components/Design";
 
 export default async function MySite({
   params: { locale },
@@ -53,9 +54,11 @@ export default async function MySite({
             mediaItems={highlightMediaItems}
           />
         </section>
+        <div className='w-full border border-foreground opacity-10' />
+        <Design />
       </div>
       <div className='hidden md:block'>
-        <TableOfContents sections={["Overview", "Highlights"]} />
+        <TableOfContents sections={["Overview", "Highlights", "Design"]} />
       </div>
     </div>
   );
