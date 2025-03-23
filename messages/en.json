@@ -35,33 +35,33 @@
   },
   "info": {
     "mainTitle": "Hello I'm Euichan Lee",
-    "subTitle": "I enjoy defining problems and finding solutions to make the world a bit more convenient.",
+    "subTitle": "I have a strong desire to define and solve problems prevalent in the world to contribute even a little to society.",
     "about": {
       "leftFirstTitle": "My background in Computer Science",
       "leftFirstContent": [
-        "I wasn't initially interested in development. Just two years ago, I didn’t even know what coding was, but as I became more interested in the world, I realized how many inconveniences existed.",
+        "I wasn't initially interested in development. Just two years ago, I didn't even know what coding was, but as I became more interested in the world, I realized how many inconveniences existed.",
         "Through this process, I realized the importance of problem-defining skills and became interested in the technologies that could solve these issues.",
-        "s a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning.",
-        "After completing two years of study there, I'm now pursuing a career as a developer."
+        "As a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning.",
+        "After completing two years of study there, I'm now a backend developer intern."
       ],
-      "leftSecondTitle": "Coding style",
+      "leftSecondTitle": "Work Style",
       "leftSecondContent": [
-        "I appreciate beauty. That's why when writing code, I consider whether someone seeing it for the first time can understand it, whether the structure isn't too complex, and I always think about code reusability for optimization.",
-        "Because I believe that working together is better than working alone, I think communication skills are essential for developers. Having started from scratch, I enjoy and excel at explaining things in a way that anyone can understand easily.",
-        "I save time by utilizing AI. I tend to use it to improve code quality or as an alternative to searching, and if something seems off, I refer to Google and official documentation to refine the code."
+        "Because I know that better results come when working together rather than alone, I think communication skills are essential. Having started from scratch, I enjoy and excel at explaining things in a way that anyone can understand easily.",
+        "I save time by utilizing AI. I tend to use it to improve code quality or as an alternative to searching, and if something seems off, I refer to Google and official documentation to refine the code.",
+        "Knowing there's much I don't know, I'm not ashamed to ask questions and strive to learn, and I document what I learn to not forget it.",
+        "I believe that accurately defining a problem is the most important step in solving it. To solve defined problems, I don't discriminate against any technology."
       ],
       "rightFirstTitle": "But I want more",
       "rightFirstContent": [
         "I'm curious about many things and have a lot I want to learn. As I go through life, I realize there's always more that I don't know than what I do know. But because of this, I always recognize that I could be wrong and constantly strive to grow.",
         "I believe that while things can be difficult, nothing is impossible. Having started in a completely new field two years ago, I had no choice but to work harder than others.",
-        "I tackled each problem as it arose, and while building my foundational knowledge in computer science, I gained experience through over 300 code reviews and writing more than 10,000 lines of code for a single project.",
-        "As a result, I've become fearless in acquiring new knowledge and skills and facing challenges. As a technical example, I have experience deploying a website built with Next.js, a completely new framework for me, in just three weeks."
+        "I tackled each problem as it arose, finding breakthrough solutions, and as a result, I've become fearless in acquiring new knowledge and skills and facing challenges."
       ],
-      "rightSecondTitle": "In my spare time,",
+      "rightSecondTitle": "In My Spare Time,",
       "rightSecondContent": [
         "I believe that knowledge broadens our perspective, and our perspective shapes our dreams. That's why I love learning, challenging myself, and documenting my experiences.",
         "I read books because I want to know and see more. I enjoy challenges, so I often just dive in and try things. Recently, I went on a trek in the Himalayas.",
-        "I believe that what we learn becomes truly ours when we record and share it. That's why I run a small YouTube channel, like a growing diary where I jot down my thoughts and experiences."
+        "I believe that what we learn becomes truly ours when we record and share it."
       ]
     },
     "education": {
