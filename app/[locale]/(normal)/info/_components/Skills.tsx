@@ -40,6 +40,14 @@ export default function Skills() {
         })),
       },
       {
+        title: t('backend.title'),
+        skills: t('backend.skills'),
+        details: (t.raw('backend.details') as SkillDetail[]).map((detail) => ({
+          skill: detail.skill,
+          description: detail.description
+        })),
+      },
+      {
         title: t('tools.title'),
         skills: t('tools.skills'),
         details: (t.raw('tools.details') as SkillDetail[]).map((detail) => ({

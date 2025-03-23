@@ -78,7 +78,7 @@
       "second": "Korea National Open University",
       "secondLocation": "Seoul, Korea",
       "secondDate": "Sep 2023 - Present",
-      "secondContent": "B.A. degree expected in Computer Science in 2028"
+      "secondContent": "Computer Science Major"
     },
     "etc": {
       "first": "OPIc AL",
@@ -118,7 +118,7 @@
       },
       "frontend": {
         "title": "Frontend",
-        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
+        "skills": "React, Next.js, TailwindCSS, Framer Motion, i18n",
         "details": [
           {
             "skill": "React ⭐️⭐️",
@@ -127,14 +127,6 @@
           {
             "skill": "Next.js ⭐️⭐️",
             "description": "I know the difference between SSR and CSR, and have experience deploying services using dynamic routing and middleware-based routing."
-          },
-          {
-            "skill": "React Query ⭐️",
-            "description": "I have experience managing API caches and implementing infinite scrolling using queries."
-          },
-          {
-            "skill": "Redux ⭐️",
-            "description": "I understand the structure from implementing a pub/sub pattern similar to Redux in JavaScript, and can perform basic state management using Redux."
           },
           {
             "skill": "TailwindCSS ⭐️⭐️",
@@ -150,9 +142,36 @@
           }
         ]
       },
+      "backend": {
+        "title": "Backend",
+        "skills": "Nest.js, Laravel, Php, MSSQL, MySQL",
+        "details": [
+          {
+            "skill": "Nest.js ⭐️⭐️",
+            "description": "I have experience designing and implementing APIs using Nest.js."
+          },
+          {
+            "skill": "Laravel ⭐️⭐️",
+            "description": "I have experience maintaining and updating Laravel projects."
+          },
+          {
+            "skill": "Php ⭐️⭐️",
+            "description": "I have experience maintaining and updating Php projects."
+          },
+          {
+            "skill": "MSSQL ⭐️⭐️",
+            "description": "I have experience designing and implementing DB schemas using MSSQL."
+          },
+          {
+            "skill": "MySQL ⭐️⭐️",
+            "description": "I have experience designing and implementing DB schemas using MySQL and Nest.js."
+          }
+        ]
+          
+      },
       "tools": {
         "title": "Others",
-        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
+        "skills": "Git/GitHub, Figma, Slack, Notion, Docker, Jira, Postman",
         "details": [
           {
             "skill": "Git/GitHub ⭐️⭐",
@@ -171,12 +190,16 @@
             "description": "I organize most information in Notion, and was always in charge of organizing the team space Notion during team projects."
           },
           {
-            "skill": "Visual Studio Code ⭐️⭐️️",
-            "description": "I'm a hybrid user using the vim plugin in Visual Studio."
-          },
-          {
             "skill": "Docker ⭐️",
             "description": "I understand the basic concepts of Docker and can build and set up Docker images."
+          },
+          {
+            "skill": "Jira ⭐️⭐️",
+            "description": "I have experience using Jira's Scrum method for project management."
+          },
+          {
+            "skill": "Postman ⭐️⭐️",
+            "description": "I use Postman for API testing and management."
           }
         ]
       }

@@ -77,7 +77,7 @@
       "second": "한국방송통신대학교",
       "secondLocation": "한국, 서울",
       "secondDate": "2023년 9월 - 현재",
-      "secondContent": "2028년 졸업 예정, 컴퓨터공학 학사"
+      "secondContent": "컴퓨터과학 전공"
     },
     "etc": {
       "first": "오픽 AL",
@@ -117,7 +117,7 @@
       },
       "frontend": {
         "title": "프론트엔드",
-        "skills": "React, Next.js, React Query, Redux, TailwindCSS, Framer Motion, i18n",
+        "skills": "React, Next.js, TailwindCSS, Framer Motion, i18n",
         "details": [
           {
             "skill": "React ⭐️⭐️",
@@ -126,14 +126,6 @@
           {
             "skill": "Next.js ⭐️⭐️",
             "description": "SSR과 CSR의 차이에 대해 알고 있으며, 동적라우팅 및 middleware를 사용한 라우팅을 활용해 서비스를 배포해본 경험이 있습니다."
-          },
-          {
-            "skill": "React Query ⭐️",
-            "description": "query 사용한 api 캐시 관리 및 무한 스크롤 구현 경험이 있습니다."
-          },
-          {
-            "skill": "Redux ⭐️",
-            "description": "Redux와 비슷한 pub/sub 패턴을 javascript로 구현해 본 경험으로 구조에 대해 이해하고 있으며 Redux를 활용한 기본적인 상태관리를 할 수 있습니다."
           },
           {
             "skill": "TailwindCSS ⭐️⭐️",
@@ -149,9 +141,35 @@
           }
         ]
       },
+      "backend": {
+        "title": "백엔드",
+        "skills": "Nest.js, Laravel, Php, MSSQL, MySQL",
+        "details": [
+          {
+            "skill": "Nest.js ⭐️⭐️",
+            "description": "Nest.js를 사용한 API 설계 구현 경험이 있습니다."
+          },
+          {
+            "skill": "Laravel ⭐️⭐️",
+            "description": "Laravel을 사용한 백엔드 유지보수 경험이 있습니다."
+          },
+          {
+            "skill": "Php ⭐️⭐️",
+            "description": "Php를 사용한 백엔드 유지보수 경험이 있습니다."
+          },
+          {
+            "skill": "MSSQL ⭐️⭐️",
+            "description": "MSSQL을 사용한 백엔드 유지보수 경험이 있습니다."
+          },
+          {
+            "skill": "MySQL ⭐️⭐️",
+            "description": "MySQL과 Nest.js를 사용한 DB 스키마 설계 경험이 있습니다."
+          }
+        ]
+      },
       "tools": {
         "title": "기타",
-        "skills": "Git/GitHub, Figma, Slack, Notion, Visual Studio Code, Docker",
+        "skills": "Git/GitHub, Figma, Slack, Notion, Docker, Jira, Postman",
         "details": [
           {
             "skill": "Git/GitHub ⭐️⭐",
@@ -170,12 +188,16 @@
             "description": "웬만한 정보는 노션으로 정리, 팀 프로젝트 당시 항상 팀스페이스 노션 정리 담당이었습니다."
           },
           {
-            "skill": "Visual Studio Code ⭐️⭐️️",
-            "description": "비쥬얼스튜디오에서 vim 플러그인 사용하는 혼종유저입니다."
-          },
-          {
             "skill": "Docker ⭐️",
             "description": "도커의 기본 개념을 알고 있고 도커 이미지 빌드 및 세팅 가능합니다."
+          },
+          {
+            "skill": "Jira ⭐️⭐️",
+            "description": "Jira 스크럼 방식을 활용한 프로젝트 관리 경험이 있습니다."
+          },
+          {
+            "skill": "Postman ⭐️⭐️",
+            "description": "API 테스트 및 관리는 주로 Postman을 사용합니다."
           }
         ]
       }
