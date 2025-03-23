@@ -29,7 +29,7 @@ export default function Info({
           <Link href='https://github.com/leechan02' target='_blank'>
             <FiGithub className='inline text-foreground' size={20} />
           </Link>
-          <Link href='https://www.youtube.com/@euiclee' target='_blank'>
+          <Link href='https://www.youtube.com/@euiclee_archive' target='_blank'>
             <FiYoutube className='inline text-foreground' size={20} />
           </Link>
         </div>
