@@ -63,6 +63,12 @@
         "배운 것은 기록하고 말해야 본인 것이 된다고 생각합니다."
       ]
     },
+    "workExperience": {
+      "first": "셀메이트",
+      "firstLocation": "한국, 서울",
+      "firstDate": "2024년 11월 - 현재",
+      "firstContent": "백엔드 개발자 인턴"
+    },
     "education": {
       "first": "42서울",
       "firstLocation": "한국, 서울",

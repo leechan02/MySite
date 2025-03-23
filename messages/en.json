@@ -11,7 +11,7 @@
   },
   "work": {
     "mainTitle": "I want to solve inconvenient problems in the world.",
-    "subTitle": "I enjoy creating things.",
+    "subTitle": "I enjoy the process of defining and solving problems.",
     "bookmoeum": {
       "title": "Bookmoeum",
       "date": "Seoul Aug 2024",
@@ -63,6 +63,12 @@
         "I read books because I want to know and see more. I enjoy challenges, so I often just dive in and try things. Recently, I went on a trek in the Himalayas.",
         "I believe that what we learn becomes truly ours when we record and share it."
       ]
+    },
+    "workExperience": {
+      "first": "Sellmate",
+      "firstLocation": "Seoul, Korea",
+      "firstDate": "Nov 2024 - Present",
+      "firstContent": "Backend Developer Intern"
     },
     "education": {
       "first": "42 Seoul",
