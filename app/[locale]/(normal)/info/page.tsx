@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiGithub, FiMail, FiYoutube } from "react-icons/fi";
+import { FiArchive, FiGithub, FiMail, FiYoutube } from "react-icons/fi";
 import About from "./_components/About";
 import Education from "./_components/Education";
 import Skills from "./_components/Skills";
@@ -31,6 +31,9 @@ export default function Info({
           </Link>
           <Link href='https://www.youtube.com/@euiclee_archive' target='_blank'>
             <FiYoutube className='inline text-foreground' size={20} />
+          </Link>
+          <Link href='https://euiclee.notion.site' target='_blank'>
+            <FiArchive className='inline text-foreground' size={20} />
           </Link>
         </div>
       </div>
