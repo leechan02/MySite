@@ -12,9 +12,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
         <div className='font-mono text-foreground text-3xl font-extrabold'>
           {t('mainTitle')}
         </div>
-        <div className='font-mono text-foreground opacity-30 text-sm font-bold'>
-          {t('subTitle')}
-        </div>
       </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
         <ProjectBox

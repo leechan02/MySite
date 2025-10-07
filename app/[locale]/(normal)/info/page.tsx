@@ -37,9 +37,6 @@ export default function Info({
           </Link>
         </div>
       </div>
-      <h1 className='w-[320px] sm:w-[640px] lg:w-[900px] text-xl sm:text-3xl font-black font-mono text-foreground text-center px-2'>
-        {t("subTitle")}
-      </h1>
       <About />
       <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
       <WorkExperience />
