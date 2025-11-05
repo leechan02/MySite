@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import MacButtons from "../button/MacButtons";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 

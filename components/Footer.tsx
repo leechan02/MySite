@@ -3,6 +3,7 @@ import DarkModeSwitch from "./switch/DarkModeSwitch";
 import LangModeSwitch from "./switch/LangModeSwitch";
 import { getLastUpdateTime } from "@/lib/github/github";
 import Link from "next/link";
+import { Link as I18nLink } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
@@ -18,20 +19,20 @@ export default function Footer() {
               <div className='self-stretch text-foreground opacity-50 text-[8px] font-medium font-[family-name:var(--font-geist-mono)]'>
                 MAIN
               </div>
-              <Link href='/'>
+              <I18nLink href='/'>
                 <div className='self-stretch h-4 py-[3px] justify-center items-center inline-flex'>
                   <div className='text-center text-foreground text-xs font-medium font-[family-name:var(--font-geist-mono)]'>
                     Work
                   </div>
                 </div>
-              </Link>
-              <Link href='/info'>
+              </I18nLink>
+              <I18nLink href='/info'>
                 <div className='self-stretch h-4 justify-center items-center gap-2.5 inline-flex'>
                   <div className='grow shrink basis-0 text-foreground text-xs font-medium font-[family-name:var(--font-geist-mono)]'>
                     Info
                   </div>
                 </div>
-              </Link>
+              </I18nLink>
             </div>
             <div className='w-[150px] flex-col justify-start items-start gap-4 inline-flex'>
               <div className='text-center text-foreground opacity-50 text-[8px] font-medium font-[family-name:var(--font-geist-mono)]'>

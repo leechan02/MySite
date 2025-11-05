@@ -8,11 +8,6 @@ export default function Home({ params: { locale } }: { params: { locale: string 
 
   return (
     <div className='flex-col justify-center items-center inline-flex gap-16'>
-      <div className='flex flex-col justify-center items-center gap-2 px-4 text-center'>
-        <div className='font-mono text-foreground text-3xl font-extrabold'>
-          {t('mainTitle')}
-        </div>
-      </div>
       <div className='flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16'>
         <ProjectBox
           title={t('bookmoeum.title')}

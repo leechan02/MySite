@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { usePathname } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/lib/redux/store";
@@ -56,8 +56,8 @@ export default function NavBar() {
           damping: 30,
         }}
       />
-      <NavItem text='Work' link={`/${locale}`} />
-      <NavItem text='Info' link={`/${locale}/info`} />
+      <NavItem text='Work' link='/' />
+      <NavItem text='Info' link='/info' />
     </div>
   );
 }
