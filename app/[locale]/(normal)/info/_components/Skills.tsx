@@ -24,6 +24,14 @@ export default function Skills() {
   const skillsData = useMemo(() => {
     return [
       {
+        title: t('ai.title'),
+        skills: t('ai.skills'),
+        details: (t.raw('ai.details') as SkillDetail[]).map((detail) => ({
+          skill: detail.skill,
+          description: detail.description
+        })),
+      },
+      {
         title: t('language.title'),
         skills: t('language.skills'),
         details: (t.raw('language.details') as SkillDetail[]).map((detail) => ({

@@ -41,8 +41,7 @@
       "leftFirstContent": [
         "I wasn't initially interested in development. Just two years ago, I didn't even know what coding was, but as I became more interested in the world, I realized how many inconveniences existed.",
         "Through this process, I realized the importance of problem-defining skills and became interested in the technologies that could solve these issues.",
-        "As a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning.",
-        "After completing two years of study there, I'm now a backend developer intern."
+        "As a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning, and after completing two years of study there, I am now working as a backend developer."
       ],
       "leftSecondTitle": "Work Style",
       "leftSecondContent": [
@@ -77,7 +76,7 @@
       "firstContent": "Experience in various toy projects",
       "second": "Korea National Open University",
       "secondLocation": "Seoul, Korea",
-      "secondDate": "Sep 2023 - Present",
+      "secondDate": "Sep 2023 - On leave",
       "secondContent": "Computer Science Major"
     },
     "etc": {
@@ -86,6 +85,24 @@
     },
     "skills": {
       "title": "SKILLS",
+      "ai": {
+        "title": "AI",
+        "skills": "Claude Code, OpenCode, ChatGPT / Claude / Gemini",
+        "details": [
+          {
+            "skill": "Claude Code ⭐️⭐️⭐️",
+            "description": "I break work into planning, implementation, refactoring, and debugging steps, then design prompts and run a fast verify loop to improve output quality. With AI-assisted development, I treat language/framework constraints as minimal and use any stack that improves delivery efficiency."
+          },
+          {
+            "skill": "OpenCode ⭐️⭐️⭐️",
+            "description": "I use it as an alternative to Claude Code for codebase exploration, repetitive task automation, and faster documentation output."
+          },
+          {
+            "skill": "ChatGPT / Claude / Gemini ⭐️⭐️",
+            "description": "I primarily use them for technical questions to quickly validate concepts and compare options, then cross-check with official docs and real code."
+          }
+        ]
+      },
       "language": {
         "title": "Languages",
         "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
