@@ -29,6 +29,15 @@ const config: Config = {
         sans: ["var(--font-geist-sans)"],
         mono: ["var(--font-geist-mono)"],
       },
+      keyframes: {
+        'bounce-arrow': {
+          '0%, 100%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(2px, -2px)' },
+        },
+      },
+      animation: {
+        'bounce-arrow': 'bounce-arrow 1.5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

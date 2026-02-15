@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NavBar from "../nav/NavBar";
-import { FiPrinter } from "react-icons/fi";
+import { FiPrinter, FiArrowUpRight } from "react-icons/fi";
 import { useTranslations } from "next-intl";
 
 export default function Header() {
@@ -15,8 +15,9 @@ export default function Header() {
         <NavBar />
       </div>
       <div className='text-foreground text-base font-bold font-mono w-1/3 flex justify-end'>
-        <Link href={t("resume")} target='_blank' rel='noopener noreferrer'>
+        <Link href={t("resume")} target='_blank' rel='noopener noreferrer' className='flex items-center gap-0.5'>
           <span className='hidden sm:inline'>Resume</span>
+          <FiArrowUpRight className='hidden sm:inline animate-bounce-arrow' size={18} />
           <FiPrinter className='sm:hidden text-foreground' size={20} />
         </Link>
       </div>
