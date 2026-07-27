@@ -10,6 +10,7 @@ import Login from "./_components/Login";
 import Data from "./_components/Data";
 import Animation from "./_components/Animation";
 import Responsive from "./_components/Responsive";
+import MobileApp from "./_components/MobileApp";
 
 export default async function Bookmoeum({
   params: { locale },
@@ -68,6 +69,8 @@ export default async function Bookmoeum({
         <div className='w-full border border-foreground opacity-10' />
         <Data />
         <div className='w-full border border-foreground opacity-10' />
+        <MobileApp />
+        <div className='w-full border border-foreground opacity-10' />
         <Animation />
         <div className='w-full border border-foreground opacity-10' />
         <Responsive />
@@ -82,6 +85,7 @@ export default async function Bookmoeum({
             "State",
             "Login",
             "Database",
+            "Mobile App",
             "Animation",
             "Responsive Design",
           ]}

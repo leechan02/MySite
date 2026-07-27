@@ -18,11 +18,11 @@ export default function SkillPopup({
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.9 }}
       transition={{ duration: 0.3 }}
-      className='fixed inset-0 z-50 flex items-center justify-center p-4'
+      className='fixed inset-0 z-50 flex items-center justify-center bg-background/60 p-4 backdrop-blur-sm'
       onClick={onClose}
     >
       <motion.div
-        className='bg-foreground/5 shadow border-2 border-foreground/10 rounded-[40px] backdrop-blur-[15px] p-6 px-8 w-full max-w-[80%] sm:max-w-md font-mono'
+        className='bg-background shadow-2xl border-2 border-foreground/10 rounded-[32px] p-6 px-8 w-full max-w-[80%] sm:max-w-md font-mono'
         onClick={(e) => e.stopPropagation()}
       >
         <div className='flex flex-col items-start gap-4'>

@@ -14,8 +14,8 @@
     "subTitle": "I enjoy the process of defining and solving problems.",
     "bookmoeum": {
       "title": "Bookmoeum",
-      "date": "Seoul Aug 2024",
-      "description": "Book search web service."
+      "date": "Aug 2024 - 2026",
+      "description": "A book management service across web and mobile."
     },
     "mysite": {
       "title": "MySite",
@@ -41,12 +41,12 @@
       "leftFirstContent": [
         "I wasn't initially interested in development. Just two years ago, I didn't even know what coding was, but as I became more interested in the world, I realized how many inconveniences existed.",
         "Through this process, I realized the importance of problem-defining skills and became interested in the technologies that could solve these issues.",
-        "As a result, I discovered 42 Seoul, a school that offered project-based active learning of fundamental computer science concepts such as operating systems, data structures, algorithms, and networks, rather than just lecture-based learning, and after completing two years of study there, I am now working as a backend developer."
+        "As a result, I discovered 42 Seoul, a school offering project-based active learning of computer science fundamentals such as operating systems, data structures, algorithms, and networks. After two years of study, I began as a backend developer and now work across planning, frontend, backend, QA, and operations."
       ],
       "leftSecondTitle": "Work Style",
       "leftSecondContent": [
         "Because I know that better results come when working together rather than alone, I think communication skills are essential. Having started from scratch, I enjoy and excel at explaining things in a way that anyone can understand easily.",
-        "I save time by utilizing AI. I tend to use it to improve code quality or as an alternative to searching, and if something seems off, I refer to Google and official documentation to refine the code.",
+        "I use AI to improve productivity and efficiency across planning, development, documentation, and validation. I actively explore and adopt tools and methods that help produce better results.",
         "Knowing there's much I don't know, I'm not ashamed to ask questions and strive to learn, and I document what I learn to not forget it.",
         "I believe that accurately defining a problem is the most important step in solving it. To solve defined problems, I don't discriminate against any technology."
       ],
@@ -60,14 +60,23 @@
       "rightSecondContent": [
         "I believe that knowledge broadens our perspective, and our perspective shapes our dreams. That's why I love learning, challenging myself, and documenting my experiences.",
         "I read books because I want to know and see more. I enjoy challenges, so I often just dive in and try things. Recently, I went on a trek in the Himalayas.",
-        "I believe that what we learn becomes truly ours when we record and share it."
+        "I enjoy finding everyday inconveniences and solving them with technology."
       ]
     },
     "workExperience": {
       "first": "Sellmate",
-      "firstLocation": "Seoul, Korea",
       "firstDate": "Nov 2024 - Present",
-      "firstContent": "Backend Developer"
+      "firstContent": "WMS Product Development · Full-stack",
+      "openDetails": "View Sellmate work details",
+      "detailsTitle": "Sellmate · WMS Team",
+      "detailsIntro": "I joined the WMS project before launch. In 2025, I developed core logistics domains as a backend engineer in a ten-person team. In the first half of 2026, I owned end-to-end delivery in a two-person team; in the second half, I independently cover mobile as well as web, focusing on turning operational problems into practical product solutions.",
+      "detailsHighlights": [
+        "Defined, built, and operated product flows for inbound, transfers, outbound, picking, shipping verification, returns, inventory adjustments, and logistics settlement.",
+        "Turned operational requirements into policies, edge cases, user flows, UI behavior, and API contracts.",
+        "Analyzed real-world integration problems with OMS, carriers, packaging, and sorters, then designed synchronization, retries, logs, and recovery flows.",
+        "Connected web UI, backend APIs, QA, post-release operations, and mobile work to solve problems end-to-end.",
+        "Improved query performance, data consistency, concurrency, and timeout issues to create a more reliable operational product experience."
+      ]
     },
     "education": {
       "first": "42 Seoul",
@@ -105,7 +114,7 @@
       },
       "language": {
         "title": "Languages",
-        "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, English",
+        "skills": "C/C++, JavaScript, TypeScript, HTML, CSS, SQL, English",
         "details": [
           {
             "skill": "C/C++ ⭐️⭐️",
@@ -117,7 +126,7 @@
           },
           {
             "skill": "TypeScript ⭐️",
-            "description": "I can use TypeScript with React, setting up types using interfaces."
+            "description": "I use it across NestJS, Next.js, and React Native projects to connect typed API contracts with product UI."
           },
           {
             "skill": "HTML ⭐⭐️️",
@@ -135,11 +144,11 @@
       },
       "frontend": {
         "title": "Frontend",
-        "skills": "React, Next.js, TailwindCSS, Framer Motion, i18n",
+        "skills": "React, Next.js, React Native, Expo, Tailwind CSS, TanStack Query, Zustand, i18n",
         "details": [
           {
             "skill": "React ⭐️⭐️",
-            "description": "I understand React component structure from experience implementing component modularization with JavaScript alone, and can use React-dom for routing and components."
+            "description": "I build component-based UI, state, and API integrations for WMS web features and personal products."
           },
           {
             "skill": "Next.js ⭐️⭐️",
@@ -156,12 +165,20 @@
           {
             "skill": "i18n ⭐️⭐️",
             "description": "I have experience implementing Korean-English switching functionality using the i18n library."
+          },
+          {
+            "skill": "React Native / Expo ⭐️⭐️",
+            "description": "I built the Bookmoeum mobile app with Expo Router and set up iOS and Android delivery and device-validation flows."
+          },
+          {
+            "skill": "TanStack Query / Zustand ⭐️⭐️",
+            "description": "I separate server and client state to manage data fetching and UI state across web and mobile."
           }
         ]
       },
       "backend": {
         "title": "Backend",
-        "skills": "Nest.js, Laravel, Php, MSSQL, MySQL",
+        "skills": "NestJS, TypeScript, Prisma, TypeORM, MySQL, PostgreSQL, Redis, RabbitMQ, Docker",
         "details": [
           {
             "skill": "Nest.js ⭐️⭐️",
@@ -181,7 +198,15 @@
           },
           {
             "skill": "MySQL ⭐️⭐️",
-            "description": "I have experience designing and implementing DB schemas using MySQL and Nest.js."
+            "description": "I handle data modeling, query performance improvements, and consistency checks for WMS domains."
+          },
+          {
+            "skill": "Prisma / PostgreSQL ⭐️⭐️",
+            "description": "I configured Prisma migrations and PostgreSQL-backed APIs for Bookmoeum."
+          },
+          {
+            "skill": "Redis / RabbitMQ ⭐️⭐️",
+            "description": "I use them for caching, asynchronous work, and resilient external-system integration."
           }
         ]
           
@@ -682,6 +707,15 @@
       ],
       "firstCodeEx": [
         "Since books selected by users need to be managed in order, we also included the time of saving."
+      ]
+    },
+    "mobile": {
+      "title": "MOBILE APP",
+      "subTitle": "Extending the reading experience to mobile",
+      "first": "From web to mobile",
+      "firstContent": [
+        "I expanded the Next.js web service into a React Native app built with Expo Router. Authentication, search, personal libraries, statistics, calendars, book details, and sharing were designed for a mobile experience.",
+        "Readers can review their reading records, explore relationships between books and tags through graphs, discover curated recommendations, and share personal libraries with a link."
       ]
     },
     "animation": {

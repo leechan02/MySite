@@ -72,7 +72,7 @@ export default function Skills() {
       {skillsData.map((skill, index) => (
         <div key={index} className='flex flex-col justify-start items-start gap-2 font-mono text-foreground w-full'>
           <div className='flex items-center gap-2 w-full justify-between'>
-            <div className='text-sm font-bold'>{skill.title}</div>
+            <div className='text-lg font-bold'>{skill.title}</div>
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
