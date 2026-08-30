@@ -47,6 +47,7 @@ export default async function Bookmoeum({
           project='bookmoeum.content'
           brColor='border-color3'
           deploy='https://www.bookmoeum.com/'
+          appStore='https://apps.apple.com/kr/app/%EC%B1%85%EB%AA%A8%EC%9D%8C/id6761052537?l=en-GB'
         />
         <section id='overview'>
           <Overview project='bookmoeum.overview' />

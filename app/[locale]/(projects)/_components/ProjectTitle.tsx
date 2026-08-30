@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiCompass, FiGithub } from "react-icons/fi";
+import { FaAppStoreIos } from "react-icons/fa6";
 import { useTranslations } from "next-intl";
 import { Suspense } from 'react';
 
@@ -11,6 +12,7 @@ interface ProjectTitleProps {
   image: string;
   project: string;
   brColor: string;
+  appStore?: string;
 }
 
 const ImageSkeleton = () => (
@@ -33,6 +35,7 @@ export default function ProjectTitle({
   project,
   brColor,
   deploy,
+  appStore,
 }: ProjectTitleProps) {
   const t = useTranslations(project);
 
@@ -48,6 +51,11 @@ export default function ProjectTitle({
           {deploy && (
             <Link href={deploy} target='_blank'>
               <FiCompass className='inline text-foreground' size={20} />
+            </Link>
+          )}
+          {appStore && (
+            <Link href={appStore} target='_blank' aria-label='App Store'>
+              <FaAppStoreIos className='inline text-foreground' size={20} />
             </Link>
           )}
         </div>
