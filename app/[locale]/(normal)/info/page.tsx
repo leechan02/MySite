@@ -6,6 +6,7 @@ import Skills from "./_components/Skills";
 import Etc from "./_components/Etc";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { useTranslations } from "next-intl";
+import PersonalProject from "./_components/PersonalProject";
 import WorkExperience from "./_components/WorkExperience";
 
 export default function Info({
@@ -37,6 +38,8 @@ export default function Info({
       <About />
       <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
       <WorkExperience />
+      <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
+      <PersonalProject />
       <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />
       <Skills />
       <div className='w-[320px] sm:w-[640px] lg:w-[900px] border border-foreground opacity-10' />

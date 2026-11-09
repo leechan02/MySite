@@ -14,8 +14,8 @@
     "subTitle": "문제를 정의하고 해결하는 과정을 즐기는 편.",
     "bookmoeum": {
       "title": "책모음",
-      "date": "2024년 8월 - 2026년",
-      "description": "웹·모바일을 아우르는 책 관리 서비스."
+      "date": "2024년 8월 - 현재",
+      "description": "iOS 앱으로 출시한 독서 기록·서재 관리 서비스."
     },
     "mysite": {
       "title": "마이사이트",
@@ -244,6 +244,17 @@
           }
         ]
       }
+    },
+    "personalProject": {
+      "title": "책모음 · 개인 프로젝트",
+      "date": "2024년 8월 - 현재",
+      "description": "책모음은 도서 검색에서 시작해 독서 기록과 개인 서재를 관리하는 웹·모바일 서비스로 확장한 개인 프로젝트입니다. iOS 앱을 App Store에 출시하고 지속적으로 기능과 운영 안정성을 개선하고 있습니다.",
+      "highlights": [
+        "웹·모바일·백엔드를 직접 설계·개발하고 iOS 앱 출시",
+        "독서 기록·통계·캘린더, 메모·태그 그래프와 서재 공유 구현",
+        "NestJS·Prisma·PostgreSQL 공통 API, 소셜 인증과 Redis 캐시 구성"
+      ],
+      "link": "책모음 프로젝트 자세히 보기 →"
     }
   },
   "webserv": {
@@ -255,7 +266,11 @@
       "myRoleTitle": "내 역할",
       "myRole": "구조 설계, Config 파싱, HTTP 파싱, 디버깅 로그 작성, 코드 리펙토링, 동작 확인 페이지 구현",
       "teamTitle": "팀",
-      "team": ["허진호", "안현준", "임윤선"],
+      "team": [
+        "허진호",
+        "안현준",
+        "임윤선"
+      ],
       "timelineTitle": "타임라인",
       "timeline": "4달, 2023년 8월 시작",
       "techTitle": "사용 기술",
@@ -298,7 +313,9 @@
         "설정 파일은 {}, ;를 기준으로 블럭 형식으로 되어있고, 감싸고 있는 괄호를 부모라고 한다면 자식요소는 부모 요소의 설정을 반영합니다.",
         "그렇기 때문에 {}와 ;를 기준으로 트리를 구성한다면 location 블럭이 수 없이 들어가도 부모 요소의 모든 설정을 다 반영할 수 있습니다."
       ],
-      "firstCodeEx": ["트리와 Map은 Common 클래스에서 전역으로 관리됩니다."],
+      "firstCodeEx": [
+        "트리와 Map은 Common 클래스에서 전역으로 관리됩니다."
+      ],
       "secondCodeEx": [
         "WebServer가 생성되면 생성됨과 동시에 생성자에서 config 파일을 넘겨줘서 파싱을 완료합니다."
       ],
@@ -355,8 +372,12 @@
       "secondCodeEx": [
         "state를 통해 현재 파싱하고 있는 값이 무엇인지 검사합니다."
       ],
-      "thirdCodeEx": ["HTTP/1.1 규격에 맞춰서 들어온 요청 문법을 검사합니다. "],
-      "fourthCodeEx": ["실행한 결과를 응답 규격에 맞춰서 작성합니다."]
+      "thirdCodeEx": [
+        "HTTP/1.1 규격에 맞춰서 들어온 요청 문법을 검사합니다. "
+      ],
+      "fourthCodeEx": [
+        "실행한 결과를 응답 규격에 맞춰서 작성합니다."
+      ]
     },
     "test": {
       "title": "TEST",
@@ -376,7 +397,11 @@
       "myRoleTitle": "내 역할",
       "myRole": "디자인, 프론트엔드, 프로젝트 리드",
       "teamTitle": "팀",
-      "team": ["박태양 백엔드", "안현준 벡엔드", "임윤선 게임"],
+      "team": [
+        "박태양 백엔드",
+        "안현준 벡엔드",
+        "임윤선 게임"
+      ],
       "timelineTitle": "타임라인",
       "timeline": "4 Months, starts December 2023",
       "techTitle": "사용 기술",
@@ -409,11 +434,15 @@
       "firstContent": [
         "React 컴포넌트를 참고 했습니다. 컴포넌트화를 하기 위해서 컴포넌트 클래스를 만들었고, 모든 함수형 클래스들은 컴포넌트를 상속하여 render()를 통해 컴포넌트를 렌더링하게 됩니다."
       ],
-      "firstCodeEx": ["Component 클래스는 render() 메소드를 가지고 있습니다."],
+      "firstCodeEx": [
+        "Component 클래스는 render() 메소드를 가지고 있습니다."
+      ],
       "secondCodeEx": [
         "모든 함수형 클래스들은 Component 클래스를 상속하여 render()를 통해 렌더링하게 됩니다."
       ],
-      "thirdCodeEx": ["createComponent 함수를 통해 컴포넌트를 생성합니다."],
+      "thirdCodeEx": [
+        "createComponent 함수를 통해 컴포넌트를 생성합니다."
+      ],
       "fourthCodeEx": [
         "컴포넌트화를 통해 상황에 따라 페이지 전체를 리로드하는게 아니라 컴포넌트만 바꾸어 줄 수 있습니다."
       ]
@@ -495,7 +524,9 @@
       "myRoleTitle": "내 역할",
       "myRole": "내가 혼자 다함.",
       "teamTitle": "팀",
-      "team": ["이의찬"],
+      "team": [
+        "이의찬"
+      ],
       "timelineTitle": "타임라인",
       "timeline": "1주일, 2024년 9월 시작",
       "techTitle": "사용 기술",
@@ -593,34 +624,37 @@
   "bookmoeum": {
     "content": {
       "title": "책모음",
-      "date": "2024년 8월"
+      "date": "2024년 8월 - 현재"
     },
     "overview": {
       "myRoleTitle": "내 역할",
-      "myRole": "내가 혼자 다함.",
+      "myRole": "개인 프로젝트 · 기획, 디자인, 웹·모바일·백엔드 개발, 배포 및 운영",
       "teamTitle": "팀",
-      "team": ["이의찬"],
+      "team": [
+        "이의찬"
+      ],
       "timelineTitle": "타임라인",
-      "timeline": "3주, 2024년 8월 시작",
+      "timeline": "2024년 8월 - 현재",
       "techTitle": "사용 기술",
-      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer, Phase",
+      "techKeywords": "Next.js, React Native, Expo Router, TypeScript, NestJS, Prisma, PostgreSQL, Redis, TanStack Query, Zustand, Tailwind CSS",
       "overviewTitle": "개요",
       "overview": [
-        "책모음 서비스는 여러 사이트를 돌아다니면서 책을 찾을 필요없이, 한 곳에서 책을 어디서 볼 수 있는지 찾아볼 수 있는 책 검색 사이트입니다.",
-        "피그마를 활용하여 타이포그래피, 색상, 간격 UI 컴포넌트 등 디자인 시스템을 구현 한뒤에 디자인 작업을 진행했습니다. 반응형을 고려하여 디자인 되었습니다.",
-        "Next.js를 기반으로 작성된 웹페이지이며 TypeScript를 사용해 타입을 명시하였습니다. 책 정보는 검색에서는 최대한 많은 책 정보를 제공하는 Naver API를 사용했고, 책 디테일 페이지에 들어갔을 때는 더 디테일한 정보를 제공하는 알라딘 API를 활용하였습니다.",
-        "로그인과 DB는 Firebase를 사용하여 구현하였고, 책 정보는 교보문고, Yes24, 알라딘, 리디북스 내가 선택한 도서관에서 책보유 유무를 검사해 표시합니다. 알라딘과 도서관은 API를 사용하였고, 나머지 서점들을 크롤링을 통해 값들을 가져왔습니다."
+        "책모음은 도서 검색에서 시작해 독서 기록과 개인 서재를 관리하는 웹·모바일 서비스로 확장한 개인 프로젝트입니다. iOS 앱을 App Store에 출시하고 지속적으로 기능과 운영 안정성을 개선하고 있습니다.",
+        "읽기 상태와 독서 기간, 메모·리뷰·태그를 기록하고 통계와 캘린더로 독서 흐름을 돌아볼 수 있습니다. 책과 태그의 관계를 그래프로 탐색하고, 서재를 링크로 공유할 수 있습니다.",
+        "초기 Next.js·Firebase 웹 버전에서 NestJS API와 Prisma·PostgreSQL 기반으로 구조를 재구성했습니다. Next.js 웹과 Expo Router 기반 React Native 앱이 같은 백엔드를 사용합니다.",
+        "외부 도서 API 변경에 대응해 국립중앙도서관 서지정보 API로 검색·상세 조회를 전환했습니다. 저장된 도서 정보와 교보문고 표지로 누락 정보를 보완하고 Redis로 조회 결과를 캐싱합니다."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "서점과 도서관의 OPEN APIs와 크롤링을 사용하여 어디서 책을 읽을 수 있는지 한곳에서 정보를 제공합니다."
+      "highlights": "App Store에 출시한 독서 앱입니다. 검색부터 독서 기록, 통계·캘린더, 책·태그 그래프와 서재 공유까지 웹과 모바일로 연결했습니다."
     },
     "design": {
       "title": "DESIGN SYSTEM",
       "subTitle": "디자인은 어떻게 만들어야 할까?",
       "first": "디자인 시스템 구축",
       "firstContent": [
+        "아래 이미지는 2024년 초기 웹 버전의 디자인 시스템입니다. 도서 검색 서비스에서 현재의 웹·모바일 독서 관리 서비스로 확장한 출발점을 보여줍니다.",
         "일관화된 디자인을 적용하여 개발을 할 때 헷갈리거나 규격이 맞지 않는 일이 발생하지 않도록 하기 위해 디자인 시스템을 도입했습니다.",
         "Foundation에는 색상과 타이포그래피 및 규격을 설정해 저장해두었고, UI 컴포넌트에서 설정을 가져와 사용하였습니다.",
         "디자인 단계에서부터 컴포넌트화를 생각해 디자인하였고, 컴포넌트들을 UI 별로 나눠 디자인을 한 다음 최종 디자인에서 사용하였습니다."
@@ -628,90 +662,53 @@
     },
     "api": {
       "title": "OPEN API",
-      "subTitle": "어떤 API를 어떻게 사용해야할까?",
-      "first": "서점 API",
+      "subTitle": "도서 API 변경에도 이어지는 검색 경험",
+      "first": "국립중앙도서관 API와 데이터 보완",
       "firstContent": [
-        "국내도서정보를 제공하는 서점 API는 네이버, 알라딘이 존재하는데, 각각의 API마다 특색이 다릅니다.",
-        "그래서 검색을 할 때는 책 정보가 더 많은 네이버를 사용하였고, 책 디테일 페이지에서는 각 도서마다 더 자세한 정보를 제공하는 알라딘 API를 사용하였습니다."
-      ],
-      "second": "도서관 API",
-      "secondContent": [
-        "도서관 같은 경우는 공공 API를 사용해 API 제공을 하는 도서관을 사용하였고, 도서관리스트를 따로 저장해 놓고 원하는 도서관을 선택하면 각 도서관 id를 가지고 도서의 보유 유무를 확인하였습니다."
-      ],
-      "third": "React-query 및 api 폴더",
-      "thirdContent": [
-        "api로 가져온 값은 staletime으로 api를 불필요하게 많이 재호출할 필요없게 캐싱을 합니다.",
-        "api는 client-side에서 fetch를 통해 바로 api를 가져오는 것이 아니라. 각 api마다 폴더를 나눠놓고 동일한 형식으로 server component에서 api를 호출할 수 있도록 했습니다."
-      ],
-      "firstCodeEx": [
-        "검색 결과는 네이버 API를 사용합니다."
-      ],
-      "secondCodeEx": [
-        "결과값 리스트는 useInfiniteQuery를 사용해 스크롤을 내리면 자동으로 다음 페이지를 불러올 수 있게 구현해주었습니다."
-      ],
-      "thirdCodeEx": [
-        "책 정보는 각각 서점에 따른 크롤링과 API를 통해 가져오게 됩니다."
+        "검색과 도서 상세 정보를 국립중앙도서관 서지정보 API로 전환하고, 카테고리 검색은 PostgreSQL에 저장된 도서 데이터로 처리합니다.",
+        "외부 응답과 저장된 도서 정보를 조합하고 표지가 없으면 교보문고 이미지를 활용합니다. Redis 캐시와 조회 결과 정규화로 웹과 앱에 같은 데이터 형식을 제공합니다."
       ]
     },
     "state": {
       "title": "STATE",
-      "subTitle": "페이지가 넘어갈 때 정보를 어떻게 넘겨줄 수 있을까?",
-      "first": "API 재호출 문제",
+      "subTitle": "서버 상태와 화면 상태의 역할 분리",
+      "first": "TanStack Query · Zustand",
       "firstContent": [
-        "책검색 페이지와 책 디테일 페이지는 라우터가 달라서 페이지를 다시 불러와야 합니다. 하지만 그때마다 api를 다시 불러와야 하는 지연문제가 발생합니다.",
-        "그래서 생각을 한 방법이 책 검색에서 이미 한번 불러온 결과값을 책 디테일 페이지에 넘겨주어 값이 바로 표시되게 하는 것이었습니다."
-      ],
-      "second": "Redux 사용",
-      "secondContent": [
-        "query를 통해서 검색 페이지에서 디테일 페이지에 값을 전달하는 방법도 있었지만, 그렇게 하면 url가 너무 더러워지기 때문에 Redux에 저장해놓고 그 값을 가져오는 방법을 선택했습니다."
-      ],
-      "firstCodeEx": [
-        "책 정보를 리스트화 할 당시 각 책마다 클릭을 하면 Redux를 통해 값을 관리합니다."
-      ],
-      "secondCodeEx": [
-        "BookDetail 페이지에서는 api를 다시 불러와 책 정보를 가져오는 것이 아니라. Redux에서 관리되고 있는 정보를 가져와 페이지를 구성하게 됩니다."
+        "TanStack Query로 도서·서재·독서 기록의 조회와 변경을 관리하고, Zustand로 인증·테마 등 클라이언트 상태를 관리합니다.",
+        "웹과 모바일에서 API 호출과 상태 관리의 역할을 나누어 화면을 구성하고, 데이터 변경 후 관련 조회를 갱신하도록 구현했습니다."
       ]
     },
     "login": {
       "title": "LOGIN",
-      "subTitle": "사용자에 따라서 로그인 유저를 검사하는 방법",
-      "first": "Firebase",
+      "subTitle": "웹과 앱을 연결하는 사용자 인증",
+      "first": "소셜 로그인 · JWT 세션",
       "firstContent": [
-        "로그인 같은 경우는 firebase를 사용해서 이메일과 비밀번호를 사용하여 로그인하는 방법, 구글을 통해서 로그인하는 방법을 구현하였습니다."
-      ],
-      "second": "Middleware",
-      "secondContent": [
-        "사용자에 따라서 본인의 데이터베이스가 존재하고 내 서재를 확인해야 하기 때문에 로그인 한 상태인지 아닌지를 확인해야합니다.",
-        "확인은 middleware를 통해서 신호를 가로챈다음 지정한 링크인지 아닌지를 확인하고 그에 맞는 페이지를 보여줍니다."
-      ],
-      "firstCodeEx": [
-        "middleware는 페이지 루트에 위치하며 요청을 중간에서 가로채 지정된 경로를 확인합니다.",
-        "경로를 확인했을 때 로그인을 해야 하는 상황이라면 로그인 페이지로 리다이렉션을 시켜줍니다."
+        "NestJS 백엔드에서 JWT 기반 인증과 토큰 갱신을 처리합니다. 모바일에는 Google·Kakao·Apple 로그인 연동을 구현했습니다.",
+        "앱에서는 Expo SecureStore에 액세스·리프레시 토큰을 저장하고, 로그인 상태와 API 인증을 연결해 개인 서재와 기록에 접근하도록 구성했습니다."
       ]
     },
     "data": {
       "title": "DB",
-      "subTitle": "저장해야 하는 정보는 어떻게 관리하는가?",
-      "first": "Firestore",
+      "subTitle": "독서 기록을 중심으로 재설계한 데이터 모델",
+      "first": "Prisma · PostgreSQL",
       "firstContent": [
-        "처음에는 유저 data에 각 사용자가 저장한 책 리스트를 isbn으로만 저장을 했으나, 그렇게 되면 책 리스트에서도 api를 불러와야 하기 때문에, 이미 한번 불러온 api를 저장할 당시 페이지에서 data에 넣어줬습니다."
-      ],
-      "firstCodeEx": [
-        "사용자가 선택한 책은 순서별로 관리가 되어야하기 때문에 저장을 한 시간도 같이 집어넣어주었습니다."
+        "Firebase 기반 초기 구조를 NestJS·Prisma·PostgreSQL로 재구성하고, 도서와 사용자별 독서 기록, 서재, 메모, 리뷰, 태그의 관계를 모델링했습니다.",
+        "서재 저장·공유와 사용자 팔로우, 알림·공지·기능 요청까지 API를 확장했습니다. Prisma 마이그레이션으로 스키마 변경을 관리합니다."
       ]
     },
     "mobile": {
       "title": "MOBILE APP",
       "subTitle": "읽는 경험을 손안으로 확장하다",
-      "first": "웹에서 모바일까지",
+      "first": "iOS 앱 출시와 지속적인 개선",
       "firstContent": [
+        "React Native·Expo로 구현한 iOS 앱을 App Store에 출시했습니다. 웹과 동일한 NestJS API를 활용하면서 독서 기록·검색·서재 탐색을 모바일 화면에 맞게 구성했습니다.",
         "Next.js 웹 서비스를 넘어 Expo Router 기반의 React Native 앱으로 확장했습니다. 인증, 검색, 내 서재, 통계, 캘린더, 도서 상세와 공유 기능을 모바일 경험에 맞춰 설계했습니다.",
         "독서 기록을 한눈에 보고, 책·태그 관계를 그래프로 탐색하며, 관심 있는 인물의 추천 도서와 내 서재를 링크로 공유할 수 있도록 구현했습니다."
       ]
     },
     "animation": {
       "title": "ANIMATION",
-      "subTitle": "조금 더 사용자 친화적인 UI/UX 고려.",
+      "subTitle": "초기 웹 버전의 구현 과정",
       "first": "Phase",
       "firstContent": [
         "api로 값을 가져올 때 단순히 로딩 중이라고만 뜨면 심심할 것 같아. Figma로 캐릭터 작업 후 Phase라는 애니메이션 툴을 사용하여 mp4로 만들어 준다음에 loading시 표시되게 했습니다."
@@ -723,7 +720,7 @@
     },
     "responsive": {
       "title": "RESPONSIVE DESIGN",
-      "subTitle": "사용자는 어떤 기기를 더 많이 사용할까?",
+      "subTitle": "초기 웹 버전의 구현 과정",
       "first": "반응형 디자인",
       "firstContent": [
         "저 같은 경우는 노트북을 더 많이 사용하지만 주변에 책 읽기 좋아하는 사람들에게 설문조사를 한 결과 핸드폰을 사용하는 빈도가 높아. 디자인과 개발시 반응형 디자인을 고려하여 디자인하였습니다.",

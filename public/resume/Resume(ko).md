@@ -35,6 +35,18 @@
 - 기술 스택: `PHP`, `Laravel`, `ASP`, `MSSQL`
 - 업무 기간: `2024년 11월 - 2026년 1월`
 
+## 개인 프로젝트
+
+### 책모음 · 개인 프로젝트
+- 2024년 8월 - 현재
+- 책모음은 도서 검색에서 시작해 독서 기록과 개인 서재를 관리하는 웹·모바일 서비스로 확장한 개인 프로젝트입니다. iOS 앱을 App Store에 출시하고 지속적으로 기능과 운영 안정성을 개선하고 있습니다.
+- 웹·모바일·백엔드를 직접 설계·개발하고 iOS 앱 출시
+- 독서 기록·통계·캘린더, 메모·태그 그래프와 서재 공유 구현
+- NestJS·Prisma·PostgreSQL 공통 API, 소셜 인증과 Redis 캐시 구성
+- Stack: `Next.js`, `React Native`, `Expo`, `NestJS`, `TypeScript`, `Prisma`, `PostgreSQL`, `Redis`, `TanStack Query`, `Zustand`
+- Web: https://www.bookmoeum.com/
+- App Store: https://apps.apple.com/app/id6761052537
+
 ## 교육
 
 ### 42 서울

@@ -35,6 +35,18 @@
 - Tech stack: `PHP`, `Laravel`, `ASP`, `MSSQL`
 - Period: `Nov 2024 - Jan 2026`
 
+## Personal Projects
+
+### Bookmoeum · Personal project
+- Aug 2024 - Present
+- Bookmoeum began as a book search website and evolved into a web and mobile service for reading records and personal libraries. I released the iOS app on the App Store and continue to improve its features and reliability.
+- Designed and built the web, mobile and backend applications; released the iOS app
+- Implemented reading records, statistics, a calendar, note/tag graphs and library sharing
+- Built shared NestJS, Prisma and PostgreSQL APIs, social authentication and Redis caching
+- Stack: `Next.js`, `React Native`, `Expo`, `NestJS`, `TypeScript`, `Prisma`, `PostgreSQL`, `Redis`, `TanStack Query`, `Zustand`
+- Web: https://www.bookmoeum.com/
+- App Store: https://apps.apple.com/app/id6761052537
+
 ## Education
 
 ### 42 Seoul

@@ -14,8 +14,8 @@
     "subTitle": "I enjoy the process of defining and solving problems.",
     "bookmoeum": {
       "title": "Bookmoeum",
-      "date": "Aug 2024 - 2026",
-      "description": "A book management service across web and mobile."
+      "date": "Aug 2024 - Present",
+      "description": "A reading tracker and personal library service, released on iOS."
     },
     "mysite": {
       "title": "MySite",
@@ -209,7 +209,6 @@
             "description": "I use them for caching, asynchronous work, and resilient external-system integration."
           }
         ]
-          
       },
       "tools": {
         "title": "Others",
@@ -245,6 +244,17 @@
           }
         ]
       }
+    },
+    "personalProject": {
+      "title": "Bookmoeum · Personal project",
+      "date": "Aug 2024 - Present",
+      "description": "Bookmoeum began as a book search website and evolved into a web and mobile service for reading records and personal libraries. I released the iOS app on the App Store and continue to improve its features and reliability.",
+      "highlights": [
+        "Designed and built the web, mobile and backend applications; released the iOS app",
+        "Implemented reading records, statistics, a calendar, note/tag graphs and library sharing",
+        "Built shared NestJS, Prisma and PostgreSQL APIs, social authentication and Redis caching"
+      ],
+      "link": "View the Bookmoeum project →"
     }
   },
   "webserv": {
@@ -256,7 +266,11 @@
       "myRoleTitle": "MyRole",
       "myRole": "Architecture Design, Config Parsing, HTTP Parsing, debugging log implementation, code refactoring, functional verification page development",
       "teamTitle": "Team",
-      "team": ["Jinho Heo", "Hyeonjun An", "Yunseon Im"],
+      "team": [
+        "Jinho Heo",
+        "Hyeonjun An",
+        "Yunseon Im"
+      ],
       "timelineTitle": "Timeline",
       "timeline": "4 Months, starts August 2023",
       "techTitle": "Tech Keywords",
@@ -422,7 +436,9 @@
       "firstContent": [
         "I referred to React components. To componentize, I created a component class, and all functional classes inherit from this component, rendering through the render() method."
       ],
-      "firstCodeEx": ["The Component class has a render() method."],
+      "firstCodeEx": [
+        "The Component class has a render() method."
+      ],
       "secondCodeEx": [
         "All functional classes inherit from the Component class and render through the render() method."
       ],
@@ -510,7 +526,9 @@
       "myRoleTitle": "MyRole",
       "myRole": "I did everything.",
       "teamTitle": "Team",
-      "team": ["Euichan Lee"],
+      "team": [
+        "Euichan Lee"
+      ],
       "timelineTitle": "Timeline",
       "timeline": "1 Week, starts September 2024",
       "techTitle": "Tech Keywords",
@@ -555,11 +573,15 @@
       "secondContent": [
         "We used the i18n library, which enables internationalization processing such as language conversion. Different message files are loaded according to the locale settings."
       ],
-      "firstCodeEx": ["The locale value is detected through middleware."],
+      "firstCodeEx": [
+        "The locale value is detected through middleware."
+      ],
       "secondCodeEx": [
         "In the library, we set the value of the file to be exported according to the Locale value."
       ],
-      "thirdCodeEx": ["We use a provider to detect the locale value."],
+      "thirdCodeEx": [
+        "We use a provider to detect the locale value."
+      ],
       "fourthCodeEx": [
         "We use useTranslations to fetch the file matching the locale and display the text."
       ]
@@ -604,34 +626,37 @@
   "bookmoeum": {
     "content": {
       "title": "Bookmoeum",
-      "date": "August 2024"
+      "date": "Aug 2024 - Present"
     },
     "overview": {
       "myRoleTitle": "MyRole",
-      "myRole": "I did everything.",
+      "myRole": "Solo project · Product planning, design, web, mobile, backend, deployment and operation",
       "teamTitle": "Team",
-      "team": ["Euichan Lee"],
+      "team": [
+        "Euichan Lee"
+      ],
       "timelineTitle": "Timeline",
-      "timeline": "3 Weeks, starts August 2024",
+      "timeline": "Aug 2024 - Present",
       "techTitle": "Tech Keywords",
-      "techKeywords": "Next.js, TypeScript, Figma, Tailwindcss, Redux, React-query, OPEN APIs, Firebase, middleware, useInfinityScroll, Framer, Phase",
+      "techKeywords": "Next.js, React Native, Expo Router, TypeScript, NestJS, Prisma, PostgreSQL, Redis, TanStack Query, Zustand, Tailwind CSS",
       "overviewTitle": "Overview",
       "overview": [
-        "Book Collection is a book search service where users can find where to read books in one place, eliminating the need to search multiple sites.",
-        "I implemented a design system including typography, colors, spacing, and UI components using Figma before proceeding with the design work. The design was created with responsiveness in mind.",
-        "It's a web page based on Next.js, with TypeScript used for type specifications. For book information, I used the Naver API for searches to provide as much book information as possible, and the Aladin API for more detailed information on the book detail page.",
-        "Login ans DB was implemented using Firebase, and book information checks and displays book availability from Kyobo Book Centre, Yes24, Aladin, Ridibooks, and the user's selected library. I used APIs for Aladin and libraries, and web crawling for the other bookstores."
+        "Bookmoeum began as a book search website and evolved into a web and mobile service for reading records and personal libraries. I released the iOS app on the App Store and continue to improve its features and reliability.",
+        "Readers can track reading status and dates, notes, reviews and tags, then revisit their activity through statistics and a calendar. A graph connects books and tags, and libraries can be shared by link.",
+        "I rebuilt the original Next.js and Firebase application around a NestJS API with Prisma and PostgreSQL. The Next.js website and Expo Router React Native app share this backend.",
+        "When external book APIs changed, I migrated search and detail queries to the National Library of Korea bibliographic API. Stored book data and Kyobo cover images fill gaps, while Redis caches query results."
       ]
     },
     "highlights": {
       "title": "HIGHLIGHTS",
-      "highlights": "Provides information on where to read books in one place using OPEN APIs from bookstores and libraries, as well as web crawling."
+      "highlights": "A reading app released on the App Store, connecting book search, reading records, statistics, a calendar, book/tag graphs and library sharing across web and mobile."
     },
     "design": {
       "title": "DESIGN SYSTEM",
       "subTitle": "How should we create the design?",
       "first": "Building a Design System",
       "firstContent": [
+        "The images below show the design system for the original 2024 website, the starting point for the current web and mobile reading service.",
         "We introduced a design system to ensure consistent design application and to prevent confusion or mismatched specifications during development.",
         "In the Foundation, we set and stored colors, typography, and specifications, which were then used in UI components.",
         "From the design stage, we considered componentization, designed components divided by UI, and then used them in the final design."
@@ -639,88 +664,53 @@
     },
     "api": {
       "title": "OPEN API",
-      "subTitle": "Which APIs should we use and how?",
-      "first": "Bookstore API",
+      "subTitle": "Keeping book search working as APIs change",
+      "first": "Bibliographic API and data enrichment",
       "firstContent": [
-        "For domestic book information, there are bookstore APIs from Naver and Aladin, each with its own characteristics.",
-        "Therefore, we used Naver for searches as it provides more book information, and Aladin API for the book detail pages as it offers more detailed information for each book."
-      ],
-      "second": "Library API",
-      "secondContent": [
-        "For libraries, we used public APIs and stored a list of libraries separately. When a desired library is selected, we check the availability of books using each library's ID."
-      ],
-      "third": "React-query and API folder",
-      "thirdContent": [
-        "Values fetched from APIs are cached using staletime to avoid unnecessary repeated API calls.",
-        "Instead of fetching APIs directly on the client-side, we divided each API into folders and set up a uniform format for calling APIs in server components."
-      ],
-      "firstCodeEx": ["Search results use the Naver API."],
-      "secondCodeEx": [
-        "The result list is implemented using useInfiniteQuery to automatically load the next page when scrolling down."
-      ],
-      "thirdCodeEx": [
-        "Book information is retrieved through crawling and APIs specific to each bookstore."
+        "Search and book details use the National Library of Korea bibliographic API, while category searches query books stored in PostgreSQL.",
+        "The backend combines external responses with stored book data and fills missing covers with Kyobo images. Redis caching and response normalization provide a consistent data format for web and mobile."
       ]
     },
     "state": {
       "title": "STATE",
-      "subTitle": "How can we pass information when navigating between pages?",
-      "first": "API Recall Problem",
+      "subTitle": "Separating server data from UI state",
+      "first": "TanStack Query · Zustand",
       "firstContent": [
-        "The book search page and book detail page have different routes, requiring the page to be reloaded. However, this causes a delay problem as the API needs to be called again each time.",
-        "To solve this, we thought of passing the already fetched search results to the book detail page, allowing values to be displayed immediately."
-      ],
-      "second": "Using Redux",
-      "secondContent": [
-        "While it was possible to pass values from the search page to the detail page using query parameters, this would make the URL messy. Instead, we chose to store the values in Redux and retrieve them from there."
-      ],
-      "firstCodeEx": [
-        "When listing book information, clicking on each book manages the values through Redux."
-      ],
-      "secondCodeEx": [
-        "The BookDetail page doesn't fetch the book information again via API, but instead composes the page using the information managed in Redux."
+        "TanStack Query manages queries and mutations for books, libraries and reading records. Zustand manages client state such as authentication and theme.",
+        "Web and mobile screens separate API access from UI state, and refresh related queries after records change."
       ]
     },
     "login": {
       "title": "LOGIN",
-      "subTitle": "Methods to check logged-in users based on user type",
-      "first": "Firebase",
+      "subTitle": "User authentication across web and mobile",
+      "first": "Social sign-in · JWT sessions",
       "firstContent": [
-        "For login, we implemented methods using Firebase, including email and password login, and Google login."
-      ],
-      "second": "Middleware",
-      "secondContent": [
-        "Since users have their own database and need to check their library, we need to verify whether they are logged in or not.",
-        "This verification is done through middleware, which intercepts the signal, checks if it's a designated link, and shows the appropriate page accordingly."
-      ],
-      "firstCodeEx": [
-        "The middleware is located at the page root and intercepts requests to check specified paths.",
-        "If it determines that login is required for a path, it redirects to the login page."
+        "The NestJS backend handles JWT authentication and token refresh. The mobile app integrates Google, Kakao and Apple sign-in.",
+        "The app stores access and refresh tokens in Expo SecureStore and connects session state to authenticated API access for personal libraries and records."
       ]
     },
     "data": {
       "title": "DB",
-      "subTitle": "How to manage information that needs to be stored?",
-      "first": "Firestore",
+      "subTitle": "A data model built around reading records",
+      "first": "Prisma · PostgreSQL",
       "firstContent": [
-        "Initially, we only stored the ISBN of books saved by each user in the user data. However, this required API calls even for the book list, so we decided to include the already fetched API data when saving on the page."
-      ],
-      "firstCodeEx": [
-        "Since books selected by users need to be managed in order, we also included the time of saving."
+        "I rebuilt the initial Firebase structure with NestJS, Prisma and PostgreSQL, modeling books, user reading records, shelves, notes, reviews and tags.",
+        "The API also supports saved and shared shelves, follows, notifications, announcements and feature requests. Prisma migrations track schema changes."
       ]
     },
     "mobile": {
       "title": "MOBILE APP",
       "subTitle": "Extending the reading experience to mobile",
-      "first": "From web to mobile",
+      "first": "iOS release and ongoing improvements",
       "firstContent": [
+        "I released the React Native and Expo iOS app on the App Store. It shares the NestJS API with the website, with reading records, search and library navigation adapted for mobile.",
         "I expanded the Next.js web service into a React Native app built with Expo Router. Authentication, search, personal libraries, statistics, calendars, book details, and sharing were designed for a mobile experience.",
         "Readers can review their reading records, explore relationships between books and tags through graphs, discover curated recommendations, and share personal libraries with a link."
       ]
     },
     "animation": {
       "title": "ANIMATION",
-      "subTitle": "Considering more user-friendly UI/UX.",
+      "subTitle": "Implementation of the original website",
       "first": "Phase",
       "firstContent": [
         "To make it more interesting when fetching values from the API, instead of just showing 'Loading', we created characters in Figma, then used an animation tool called Phase to create an mp4, which is displayed during loading."
@@ -732,7 +722,7 @@
     },
     "responsive": {
       "title": "RESPONSIVE DESIGN",
-      "subTitle": "Which devices do users use more frequently?",
+      "subTitle": "Implementation of the original website",
       "first": "Responsive Design",
       "firstContent": [
         "While I personally use a laptop more often, a survey of book-loving people around me showed that the frequency of mobile phone use is higher. We considered responsive design during both the design and development phases.",

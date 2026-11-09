@@ -19,30 +19,13 @@ export default async function Bookmoeum({
 }) {
   unstable_setRequestLocale(locale);
 
-  const highlightMediaItems = [
-    {
-      type: "video" as const,
-      src: "/video/bookmoeum.mp4",
-    },
-    {
-      type: "image" as const,
-      src: "/image/bookmoeum/bookSearch.png",
-    },
-    {
-      type: "image" as const,
-      src: "/image/bookmoeum/bookDetail.png",
-    },
-    {
-      type: "image" as const,
-      src: "/image/bookmoeum/bookMobileDetail.png",
-    },
-  ];
+
 
   return (
     <div className='relative flex justify-center w-full'>
       <div className='flex flex-col justify-center items-center gap-24 pb-24 font-mono text-foreground w-[320px] sm:w-[640px] lg:w-[900px]'>
         <ProjectTitle
-          link='https://github.com/leechan02/Bookmoeum'
+          link='https://github.com/leechan02/books'
           image='/image/bookmoeum/bookmoeum.png'
           project='bookmoeum.content'
           brColor='border-color3'
@@ -56,9 +39,11 @@ export default async function Bookmoeum({
           <Highlights
             project='bookmoeum.highlights'
             bgColor='bg-color3'
-            mediaItems={highlightMediaItems}
+            mediaItems={[]}
           />
         </section>
+        <div className='w-full border border-foreground opacity-10' />
+        <MobileApp />
         <div className='w-full border border-foreground opacity-10' />
         <Design />
         <div className='w-full border border-foreground opacity-10' />
@@ -70,8 +55,6 @@ export default async function Bookmoeum({
         <div className='w-full border border-foreground opacity-10' />
         <Data />
         <div className='w-full border border-foreground opacity-10' />
-        <MobileApp />
-        <div className='w-full border border-foreground opacity-10' />
         <Animation />
         <div className='w-full border border-foreground opacity-10' />
         <Responsive />
@@ -81,12 +64,12 @@ export default async function Bookmoeum({
           sections={[
             "Overview",
             "Highlights",
+            "Mobile App",
             "Design System",
             "Open APIs",
             "State",
             "Login",
             "Database",
-            "Mobile App",
             "Animation",
             "Responsive Design",
           ]}
